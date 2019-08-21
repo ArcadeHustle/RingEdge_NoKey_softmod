@@ -12,8 +12,8 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
 
 # Stage One:
 
-"【お知らせ】サービスを終了いたしました。" 
-As of Friday, March 31, 2017 at 27:59 The service has ended for “Puyo Puyo !! Quest Arcade” - http://puyoquest-am.blog.jp/archives/1063562161.html
+"【お知らせ】サービスを終了いたしました。"<br>
+As of Friday, March 31, 2017 at 27:59 The service has ended for “Puyo Puyo !! Quest Arcade” - http://puyoquest-am.blog.jp/archives/1063562161.html<br>
 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=http%3A%2F%2Fpuyoquest-am.blog.jp%2Farchives%2F1063562161.html
 
 <p align="center">

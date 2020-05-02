@@ -49,7 +49,7 @@ For a long time the details of how Ring* game images are ReKeyed, or NoKeyed has
 / paid for secret. With the first decade of deployment coming to a close, it is also time to close off this "Internet Money Maker". 
 As hardware begins to fail, the threat of required preservation looms. 
 
------
+```
 
 # ./unlock.sh /dev/sdb 
 Read 32 bytes from "file".
@@ -288,6 +288,7 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Hi
 HideMyComputerIcons in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WindowsEmbedded\ProductVersion
+```
 
 Cursor.cur needs replaced also. C:\windows\Cursors, download a new one from the internet
 

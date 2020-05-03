@@ -76,10 +76,6 @@ TeknoParrot Patreon 0.4a out, have fun. #teknoparrot - May 29, 2017
 https://twitter.com/ReaverTeknoGods/status/869293180730081280
 
 TeknoParrot currently supports emulation of a good chunk of the Ring library. 
-https://github.com/search?p=1&q=org%3Ateknogods+ring&type=Code
-https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossRaid.json
-https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossExlesia.json
-https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossElysion.json
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/Transformers.json
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/SRC.json
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/SDR.json
@@ -115,7 +111,9 @@ https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Desc
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/GGXX.json
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ArcadeLove.json
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/MeltyBloodRE2.json
-
+https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossRaid.json
+https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossExlesia.json
+https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossElysion.json
 
 # Stage Three
 Well after the dick wagging on Assembler Games a random technical examination of the RingEdge popped up:

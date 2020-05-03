@@ -23,14 +23,14 @@ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=http%3A%
 
 Additional text relevant to this document can be found below: 
 
-Exemptions to Prohibition against Circumvention of Technological Measures Protecting Copyrighted Works – Seventh 
-Triennial Section 1201 Final Rule, Effective October 28, 2018 https://library.osu.edu/document-registry/docs/1027/stream 
-"Video games in the form of computer programs, where outside server support has been discontinued, to allow individual 
-play and preservation by an eligible library, archive, or museum"
+Exemptions to Prohibition against Circumvention of Technological Measures Protecting Copyrighted Works<br>
+Seventh Triennial Section 1201 Final Rule, Effective October 28, 2018 <br>
+https://library.osu.edu/document-registry/docs/1027/stream <br>
+"Video games in the form of computer programs, where outside server support has been discontinued, to allow individual play and preservation by an eligible library, archive, or museum"
 
-https://library.osu.edu/site/copyright/2019/03/20/2018-dmca-section-1201-exemptions-announced/ "Video games in the 
-form of computer programs, lawfully acquired as complete games 37 CFR §201.40(b)(12)" "For personal, local gameplay; 
-or To allow preservation in a playable format..."
+https://library.osu.edu/site/copyright/2019/03/20/2018-dmca-section-1201-exemptions-announced/ <br>
+"Video games in the form of computer programs, lawfully acquired as complete games 37 CFR §201.40(b)(12)"<br> 
+"For personal, local gameplay; or To allow preservation in a playable format..."<br>
 
 Please note that the following text is considered "for purposes of good-faith security research".
 

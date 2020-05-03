@@ -21,7 +21,7 @@ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=http%3A%
   <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/puyo.jpeg">
 </p>
 
-Christmas 2018 of course, brought this game back to life via the amazing "TeknoParrot 1.81 X-Mas Reveal". 
+Christmas 2018 of course, brought this game back to life via the amazing "TeknoParrot 1.81 X-Mas Reveal", albiet only for PC users.  
 
 "Sorry guy, didn't see you there!"
 https://www.youtube.com/watch?v=-ds4xRnI-b8
@@ -31,7 +31,7 @@ https://youtu.be/-ds4xRnI-b8?t=190
 
 What about *actual* Ring hardware owners, and arcade operators in need? Have they been left out of the most recent CoronaVirus release just the same? 
 
-"Hello my friends, it seems that we are in the middle of a cross road, and now I have decided that I will enable all the RingEdge, RindEdge2, and RingWide cores on Teknoparrot, directly to public. Also if the entire internet dies because of coronavirus, I have given the arvhice and the source code to a few friends, expect an update. Good luck everybody."
+"Hello my friends, it seems that we are in the middle of a cross road, and now I have decided that I will enable all the RingEdge, RindEdge2, and RingWide cores on Teknoparrot, directly to public. Also if the entire internet dies because of coronavirus, I have given the archive and the source code to a few friends, expect an update. Good luck everybody."
 https://www.youtube.com/watch?v=lS3gSW3ZskQ
 
 Additional text relevant to this document can be found below: 

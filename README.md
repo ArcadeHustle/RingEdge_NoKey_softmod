@@ -146,8 +146,18 @@ http://d4.princess.ne.jp/diary/20157.html
 "But even if you extract it, you still have to modify the exe"
 https://club.tgfcer.com/thread-7148133-1-1.html
 
+The partition layout is as follows. 
+Partition 1 - \System\ (Boot Partition)
+Partition 2 - \MiniNT  (Recovery Partition)
+Partition 3 - 518 Meg  (?TrueCrypt? Partition)
+Partition 4 - 	       (Update Partition - TrueCrypt Protected)
+Partition 5 -          (? ? Partition)
+Partition 6 -          (? OS Drivers ? Partition)
+Partition 7 -          (Game Partition  - TrueCrypt Protected)
+
+
 https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html
-MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf exist seemingly confirming the suspicion. 
+MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf exist seemingly confirming the suspicion about it being an MS9667 based PC.  
 
 "The RingEdge BIOS will only boot a SSD that has the valid TDK RS2 signature on the ATA Identify structure and is locked and also needs to have the password calculated by the BIOS and bassed on that TDK RS2 signature"<br>
 https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681443
@@ -164,23 +174,50 @@ https://web.archive.org/web/20170628094958/https://www.assemblergames.com/thread
 "You might be able to just take off the delete permission from windows temp"
 https://web.archive.org/web/20170630214524/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-3#post-681518
 
-"ts much more easy than that, just get a file access tool like filemon and see the parameters segaboot is giving to truecrypt, you will know where its storing the binary file that truecrypt uses as password to decrypt the partition"
+"Its much more easy than that, just get a file access tool like filemon and see the parameters segaboot is giving to truecrypt, you will know where its storing the binary file that truecrypt uses as password to decrypt the partition"
 https://www.assembler-games.com/threads/sega-ringedge-motherboard-inside-pictures.46424/
 
-The big "secret", is just Truecrypt, as noted above. 
+So, yeah the big "secret" is just Truecrypt, as noted above. 
 https://en.wikipedia.org/wiki/TrueCrypt
 
 https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
-Specifically the Ring system makes use of AES LRW mode TrueCrypt containers alongside a keyfile and password. 
+Specifically the Ring system makes use of TrueCrypt 4.3 in AES LRW mode for TrueCrypt containers, alongside a keyfile and password. 
 
 As expected it did not take long for folks to start selling "bootleg" versions of Ring games that did not require a key. Sometimes refered to as "NoKey" games. 
-"Topic: Initial D8 Server Ringedge (Original, No Bootleg!)", so wait, where is the bootleg one you made then. lol. 
+"Topic: Initial D8 Server Ringedge (Original, No Bootleg!)", so wait, where is the bootleg one you made then? lol. 
 http://www.ukvac.com/forum/initial-d8-server-ringedge-original-no-bootleg_topic367630.html
 
 One of the first examples was a Chinese Operation Ghost Nokey. 
 "I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome." 
 "I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015 
 http://archive.is/M1hvR
+
+There were some interesting *leaks* from the Chinese sega Factory: "the guy who send this to me is at the factory"
+https://assemblergames.com/threads/so-recently-i-got-a-strange-board-from-a-factory-which-makes-sega-boards.57620/#post-825992
+
+"Here I have a Simplified Chinese version music game called MaiMai running on RingEdge2 platform. In order to avoid the spam detector please send me a message if you want to get the raw iso data. We tried to make a copy of this disk but failed.If you have tools to decrypt it , please tell us."
+https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc-based-arcade-games.42102/page-3#post-745324
+
+"SEGA is giving up China market.The JingWen Sega co,ltd has closed at earlier this year,a music game needs frequently update.We have no choice. If nothing unexpected happens,this will be the last update of Wumeng(Chinese version MaiMai).The MaiMai overseas (Version Green) has periodic update per week and the program is totally different to the mainland China version.We cannot get updates and the company has gone.So we find help for carck it."
+https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc-based-arcade-games.42102/page-3#post-745386
+
+It is unclear at this time where Woodu obtained his Ring* knowledge. 
+"This site is not official SEGAJINWIN corp. website, is hosted by Woodu at China Arcade"
+https://segajinwin.com
+
+You can see the original Sega Jinwin site in the archives. 
+https://web.archive.org/web/20130910052147/http://www.segajinwin.com/
+
+"Established in 2009, Sega Jinwin (Shanghai) Amusement Co. Ltd is a joint-venture of Shanghai Jingwen Investment Co. Ltd., Japan Sega Corporation and affiliated company of China National Center for developing Animation, Cartoon & Game Industry."
+http://www.amusewind.com/catalog/all_ENTERPRISES/2012629/27_201262912749768_1.html
+
+Woodu has many interesting Ring related things on his site 
+https://woodu.me/author/woodu/
+"It has been a long time since I started doing maimai's magical reform in 15 years, and I haven't even put energy on it for a long time. But still did something a little above. What I can take out recently is that I started selling alternative hard drives for the mainframe. This is also the only relatively legal thing"
+"SSD for Ringseries. Click here to buy"
+https://woodu.me/eryijiuniansanyue/
+Ringedge2 120G 固态硬盘 ¥300.00 - 599.00
+https://item.taobao.com/item.htm?id=586390733234
 
 You could occasionally find folks offering archival services similarly, this conversation exposes the concept of a rekey.  
 "if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)."
@@ -221,6 +258,7 @@ security_password: 72 42 52 5a ba 52 6a 5a ea 72 62 78 ca 42 da 4a 2a 22 3a 2a 0
 
 # fdisk -l /dev/sdb
 Disk /dev/sdb: 29.8 GiB, 32017047552 bytes, 62533296 sectors
+
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 33553920 bytes

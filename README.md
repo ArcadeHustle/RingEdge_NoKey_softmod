@@ -26,8 +26,10 @@ Christmas 2018 of course, brought this game back to life via the amazing "TeknoP
 "Sorry guy, didn't see you there!"
 https://www.youtube.com/watch?v=-ds4xRnI-b8
 
-"Now it is time to take out my Santa bag, and give you presents"/ 
+"Now it is time to take out my Santa bag, and give you presents" 
 https://youtu.be/-ds4xRnI-b8?t=190
+
+What about *actual* Ring hardware owners, and arcade operators in need? 
 
 Additional text relevant to this document can be found below: 
 

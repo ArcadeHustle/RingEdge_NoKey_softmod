@@ -37,6 +37,9 @@ https://www.youtube.com/watch?v=lS3gSW3ZskQ
 "We set out rules and people couldn't follow them. This new stuff is bringing too much drama."
 https://www.arcade-projects.com/forums/index.php?thread/12974-ringedge-help-section/&postID=210050#post210050
 
+RIP Sega Ringedge, Ringwide and Nu subgroup on AP. 
+https://web.archive.org/web/20171014003744/http://www.arcade-projects.com/forums/index.php?board/73-sega-ringedge-ringwide-and-nu/
+
 Additional text relevant to this document can be found below: 
 
 Exemptions to Prohibition against Circumvention of Technological Measures Protecting Copyrighted Works<br>
@@ -118,9 +121,12 @@ https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Desc
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossExlesia.json
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossElysion.json
 
-At a certain point interest picked up on the Arcade Projects forums about the Ring based systems. 
+At a certain point interest picked up on the Arcade Projects forums about the Ring based systems, eventually leading to the need to censor some of the commentary on the security mechanisms employed by Sega.  
 "What can one do with a RingEdge?"
 http://archive.is/wOIjp
+
+Once folks in the "Ringedge/2/wide/Nu game list" thread heard "they can run locally and offline!", the thirst began. 
+https://webcache.googleusercontent.com/search?q=cache:CiZlw8FpwmEJ:https://www.arcade-projects.com/forums/index.php%3Fthread/6466-ringedge-2-wide-nu-game-list/%26pageNo%3D2+&cd=1&hl=en&ct=clnk&gl=us
 
 # Stage Three
 Well after the dick wagging on Assembler Games a random technical examination of the RingEdge popped up:
@@ -161,15 +167,41 @@ https://web.archive.org/web/20170630214524/https://www.assemblergames.com/thread
 "ts much more easy than that, just get a file access tool like filemon and see the parameters segaboot is giving to truecrypt, you will know where its storing the binary file that truecrypt uses as password to decrypt the partition"
 https://www.assembler-games.com/threads/sega-ringedge-motherboard-inside-pictures.46424/
 
+The big "secret", is just Truecrypt, as noted above. 
+https://en.wikipedia.org/wiki/TrueCrypt
+
+https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
+Specifically the Ring system makes use of AES LRW mode TrueCrypt containers alongside a keyfile and password. 
+
+As expected it did not take long for folks to start selling "bootleg" versions of Ring games that did not require a key. Sometimes refered to as "NoKey" games. 
+
+One of the first examples was a Chinese Operation Ghost Nokey. 
+"I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome." 
+"I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015 
+http://archive.is/M1hvR
+
+You could occasionally find folks offering archival services similarly, this conversation exposes the concept of a rekey.  
+"if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)."
+"Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."
+https://www.assembler-games.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/#post-866358
+
+Mahjong for example is SBVF a VERY easy to obtain KeyChip... wonder why so may shared images are keyed to it? ;)
+https://gakman.forumgaming.fr/t72-ringedge-ringwide#454
+
+Modern times have finally brought forth conversations about a Ring* keychip emulator.
+https://github.com/ArcadeHustle/RingEdge_SSD_Softmod/issues/1
+
+# Stage Four
+
+"It's pretty very much illegal and too new for this site's content anyway."
+https://webcache.googleusercontent.com/search?q=cache:kPxP6VQIhZYJ:https://www.arcade-projects.com/forums/index.php%3Fthread/10695-sega-ringedge-2-questions-on-obtaining-systems-disks-etc/%26pageNo%3D1+&cd=2&hl=en&ct=clnk&gl=us
+
+
 For what ever reason Ring* information is often censored quickly, and with malice. There are few remaining bits of archived information. Among them however are these gems:
+Both of the archived poss contain partially usable instructions, but can indeed be worked out into a usable technique.
 https://pastebin.com/zQYxBU1e
 https://pastebin.com/2qiQdPQ6
 
-The big secret, is just Truecrypt, as noted above. 
-https://en.wikipedia.org/wiki/TrueCrypt
-
-
-Both contain partially usable instructions, but can be worked out into a more usable technique.
 
 ```
 # hdparm --user-master u --security-unlock hex:7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A /dev/sdc
@@ -463,6 +495,10 @@ on hand. If you sell the drive, sell the key chip with it. Don't sell rekeyed, o
 http://www.emuline.org/topic/1836-under-night-in-birth-sega-ringedge-2-need-help-with-decrypting/?do=findComment&comment=67770
 
 # Final Boss
+
+"Someone know how we can change games inside a ringedge motherboard?"
+http://www.neo-arcadia.com/forum/viewtopic.php?t=62415
+
 Editing Niko's RE2Multi is very straight forward. Steps 1, 2, 3, 4 we should all be familiar with...
 
 unlock multi drive with ata password

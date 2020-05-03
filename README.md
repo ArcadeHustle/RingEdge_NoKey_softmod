@@ -347,7 +347,27 @@ $ truecrypt -d /tmp/tc
 
 ```
 
-From here you can begin modifying the system to be more friendly for casual non gaming use. (Such as dumping key chips)
+You may be wondering at this point how exactly the KeyFile was obtained. There were bried notes in the pastebin links above, but we really need to go in depth. 
+
+A number of academic articles on attacking TrueCrypt seem applicable, there was so much news hype on weaknesses within the platform. How do they play out in the real world? How do they impact Sega's implementation? 
+Lets examine a few of the papers: 
+Detecting the use of TrueCrypt - http://docs.media.bitpipe.com/io_10x/io_102267/item_885954/RH%203%20Davies.pdf
+Error Correction and the Cryptographic Key - ftp://ftp.cs.princeton.edu/techreports/2011/897.pdf
+This page contains source code for some of the software that we developed in the course of this research - https://citp.princeton.edu/our-work/memory/code
+Security Analysis of TrueCrypt 7.0a with an Attack on the Keyfile Algorithm - https://cyberside.net.ee/truecrypt/misc/truecrypt_7.0a-analysis-en.pdf, https://cyberside.net.ee/truecrypt/misc/
+Mastering TrueCrypt: Windows 8 and Server 2012 Memory Forensics - https://downloads.volatilityfoundation.org/omfw/2013/OMFW2013_Ligh.pdf
+A Security Analysis of TrueCrypt: Detecting hidden volumes and operating systems - https://www.ma.rhul.ac.uk/static/techrep/2014/RHUL-MA-2014-10.pdf
+#TrueCrypt PlaidCTF Writeup: Fun with Firewire - https://mweissbacher.com/tag/truecrypt
+truecrypt second encryption of the master and XTS key with a back door password - https://security.stackexchange.com/questions/19764/truecrypt-second-encryption-of-the-master-and-xts-key-with-a-back-door-password
+TrueCrypt Master Key Extraction And Volume Identification - https://volatility-labs.blogspot.com/2014/01/truecrypt-master-key-extraction-and.html
+
+The following tools also provide intellectual reading on the subject at hand. 
+tckfs: This tool seeks asynchronously TrueCrypt key file using combinations of provided key files with provided password. - https://github.com/Octosec/tckfc
+Untrue: Tool for checking passwords against TrueCrypt encrypted volumes and disks, and/or decrypting the data. - https://github.com/nccgroup/Untrue
+Master Key Decryptor: is a python script to assist with decrypting encrypted volumes using the recovered masterkey for various truecrypt type encrypted volumes. https://github.com/AmNe5iA/MKDecrypt
+Truecrypt volume parsing library - https://github.com/4144414D/pytruecrypt
+
+Regardless of how you obtained the key, once you get the drives mounted, you can begin modifying the system to be more friendly for casual non gaming use. (Such as dumping key chips)
 
 First we use chntpw to list the users on the system. 
 ```

@@ -211,6 +211,15 @@ https://web.archive.org/web/20130910052147/http://www.segajinwin.com/
 "Established in 2009, Sega Jinwin (Shanghai) Amusement Co. Ltd is a joint-venture of Shanghai Jingwen Investment Co. Ltd., Japan Sega Corporation and affiliated company of China National Center for developing Animation, Cartoon & Game Industry."
 http://www.amusewind.com/catalog/all_ENTERPRISES/2012629/27_201262912749768_1.html
 
+"Hi from inside of the great firewall."
+https://github.com/Woodu
+
+Woodu is really obsessed with sega stuff that is for sure. 
+"Bought a new domain name"
+"Jingwen Sega really is a magic company."
+"I miss it very much."
+https://woodu.me/youxinmailegeyuming/
+
 Woodu has many interesting Ring related things on his site 
 https://woodu.me/author/woodu/
 "It has been a long time since I started doing maimai's magical reform in 15 years, and I haven't even put energy on it for a long time. But still did something a little above. What I can take out recently is that I started selling alternative hard drives for the mainframe. This is also the only relatively legal thing"
@@ -218,6 +227,17 @@ https://woodu.me/author/woodu/
 https://woodu.me/eryijiuniansanyue/
 Ringedge2 120G 固态硬盘 ¥300.00 - 599.00
 https://item.taobao.com/item.htm?id=586390733234
+
+"Sega's arcade platform began to completely transform into an X86 based architecture PC, which opened the door to cracking. It is no exaggeration to say that, in addition to the latest arcades such as Ship Mother, DIVA, and Chunithm, SEGA's games can be said to be lost across the board"
+https://woodu.me/2017/03/
+"This arcade is an arcade machine that has been represented in the era of Jingwen Sega. It is a full Chinese version, and there are still people selling it on Taobao."
+
+"海岛探险游戏机"
+http://www.haoyunlaigame.com/arc/view-119.html
+Totally NOT bootleg "Lost on Island of Tropics
+
+"Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island."
+http://m.amunion.com/product/247889.html
 
 You could occasionally find folks offering archival services similarly, this conversation exposes the concept of a rekey.  
 "if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)."

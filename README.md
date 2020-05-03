@@ -156,6 +156,10 @@ For what ever reason Ring* information is often censored quickly, and with malic
 https://pastebin.com/zQYxBU1e
 https://pastebin.com/2qiQdPQ6
 
+The big secret, is just Truecrypt, as noted above. 
+https://en.wikipedia.org/wiki/TrueCrypt
+
+
 Both contain partially usable instructions, but can be worked out into a more usable technique.
 
 ```

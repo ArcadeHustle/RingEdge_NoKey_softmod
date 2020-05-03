@@ -130,8 +130,18 @@ http://d4.princess.ne.jp/diary/20158.html
 "NTFS is a basic 3 partition configuration consisting of 2 partitions and an extended partition (content unknown). The first NTFS will bring up the RINGEDGE system. Of course, since there is no key-chip, it will stop with an error. The second is a system update. Probably an update of RINGEDGE itself. Maybe the game installation is also over here? The contents of the extended partition are completely unknown. Is it decrypted using the key of the key-chip? "
 http://d4.princess.ne.jp/diary/20157.html
 
+https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html
+MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf exist seemingly confirming the suspicion. 
+
 "The RingEdge BIOS will only boot a SSD that has the valid TDK RS2 signature on the ATA Identify structure and is locked and also needs to have the password calculated by the BIOS and bassed on that TDK RS2 signature"<br>
 https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681443
+
+GBDriver RS2 - 2010. RS3 - 2011
+https://product.tdk.com/en/products/flash-storage/flashstorage-catalog_en.pdf
+
+Serial-ATA-II Compatible NAND-Type Flash Memory Controller IC GBDriver RS2 Series
+https://product.tdk.com/info/en/catalog/datasheets/ew_015_rs2.pdf
+
 
 "SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip, the process is really complex, but it generates a file on c:\windows\temp with the keyfile, then mounts the TC container and after the TC Container is successfully mounted deletes the Keyfile from C:\windows\temp, is just 2 minutes to pach that, is only a matter to remove the DeleteFile function from SegaBoot with simple NOPs and let SegaBoot to mount the game, then the Keyfile will be there on c:\windows\temp"<br>
 https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681449
@@ -146,11 +156,14 @@ https://pastebin.com/2qiQdPQ6
 Both contain partially usable instructions, but can be worked out into a more usable technique.
 
 ```
-# ./unlock.sh /dev/sdb 
-Read 32 bytes from "file".
+# hdparm --user-master u --security-unlock hex:7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A /dev/sdc
+security_password: 72 42 52 5a ba 52 6a 5a ea 72 62 78 ca 42 da 4a 2a 22 3a 2a 0a 22 1a 2a 6a 02 7a 0a 5c ce 4a 0a
 
-/dev/sdb:
- Issuing SECURITY_UNLOCK command, password="[read from file]", user=user
+/dev/sdc:
+ Issuing SECURITY_UNLOCK command, password="rBRZ?RjZ?rbx?B?J*":*
+"*jz
+\?J
+", user=user
 
 # fdisk -l /dev/sdb
 Disk /dev/sdb: 29.8 GiB, 32017047552 bytes, 62533296 sectors

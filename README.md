@@ -21,6 +21,14 @@ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=http%3A%
   <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/puyo.jpeg">
 </p>
 
+Christmas 2018 of course, brought this game back to life via the amazing "TeknoParrot 1.81 X-Mas Reveal". 
+
+"Sorry guy, didn't see you there!"
+https://www.youtube.com/watch?v=-ds4xRnI-b8
+
+"Now it is time to take out my Santa bag, and give you presents"/ 
+https://youtu.be/-ds4xRnI-b8?t=190
+
 Additional text relevant to this document can be found below: 
 
 Exemptions to Prohibition against Circumvention of Technological Measures Protecting Copyrighted Works<br>

@@ -18,7 +18,7 @@ http://puyoquest-am.blog.jp/archives/1063562161.html<br>
 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=http%3A%2F%2Fpuyoquest-am.blog.jp%2Farchives%2F1063562161.html<br>
 
 <p align="center">
-  <img src="http://livedoor.blogimg.jp/am_puyoquest/imgs/4/3/436f7037.jpg">
+  <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/puyo.jpeg">
 </p>
 
 Additional text relevant to this document can be found below: 

@@ -186,9 +186,13 @@ You could occasionally find folks offering archival services similarly, this con
 "if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)."
 "Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."
 https://www.assembler-games.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/#post-866358
+https://web.archive.org/web/20190403174837/https://assemblergames.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/
 
 Mahjong for example is SBVF a VERY easy to obtain KeyChip... wonder why so may shared images are keyed to it? ;)
 https://gakman.forumgaming.fr/t72-ringedge-ringwide#454
+
+There was an effort at one point to document as many chip ID's as possible on AP forums. 
+https://webcache.googleusercontent.com/search?q=cache:kfuo1iRQy3wJ:https://www.arcade-projects.com/forums/index.php%3Fthread/4456-ringedge-keychip-id/+&cd=1&hl=en&ct=clnk&gl=us
 
 Modern times have finally brought forth conversations about a Ring* keychip emulator.
 https://github.com/ArcadeHustle/RingEdge_SSD_Softmod/issues/1

@@ -174,6 +174,8 @@ https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
 Specifically the Ring system makes use of AES LRW mode TrueCrypt containers alongside a keyfile and password. 
 
 As expected it did not take long for folks to start selling "bootleg" versions of Ring games that did not require a key. Sometimes refered to as "NoKey" games. 
+"Topic: Initial D8 Server Ringedge (Original, No Bootleg!)", so wait, where is the bootleg one you made then. lol. 
+http://www.ukvac.com/forum/initial-d8-server-ringedge-original-no-bootleg_topic367630.html
 
 One of the first examples was a Chinese Operation Ghost Nokey. 
 "I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome." 

@@ -22,6 +22,7 @@ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=http%3A%
 </p>
 
 Christmas 2018 of course, brought this game back to life via the amazing "TeknoParrot 1.81 X-Mas Reveal", albiet only for PC users.  
+https://archive.org/download/Arcade-Sega-RingEdge-2018-12-23
 
 "Sorry guy, didn't see you there!"
 https://www.youtube.com/watch?v=-ds4xRnI-b8
@@ -177,12 +178,6 @@ https://web.archive.org/web/20170630214524/https://www.assemblergames.com/thread
 "Its much more easy than that, just get a file access tool like filemon and see the parameters segaboot is giving to truecrypt, you will know where its storing the binary file that truecrypt uses as password to decrypt the partition"
 https://www.assembler-games.com/threads/sega-ringedge-motherboard-inside-pictures.46424/
 
-So, yeah the big "secret" is just Truecrypt, as noted above. 
-https://en.wikipedia.org/wiki/TrueCrypt
-
-https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
-Specifically the Ring system makes use of TrueCrypt 4.3 in AES LRW mode for TrueCrypt containers, alongside a keyfile and password. 
-
 As expected it did not take long for folks to start selling "bootleg" versions of Ring games that did not require a key. Sometimes refered to as "NoKey" games. 
 "Topic: Initial D8 Server Ringedge (Original, No Bootleg!)", so wait, where is the bootleg one you made then? lol. 
 http://www.ukvac.com/forum/initial-d8-server-ringedge-original-no-bootleg_topic367630.html
@@ -193,7 +188,7 @@ One of the first examples was a Chinese Operation Ghost Nokey.
 http://archive.is/M1hvR
 
 There were some interesting *leaks* from the Chinese sega Factory: "the guy who send this to me is at the factory"
-https://assemblergames.com/threads/so-recently-i-got-a-strange-board-from-a-factory-which-makes-sega-boards.57620/#post-825992
+https://assembler-games.com/threads/so-recently-i-got-a-strange-board-from-a-factory-which-makes-sega-boards.57620/#post-825992
 
 "Here I have a Simplified Chinese version music game called MaiMai running on RingEdge2 platform. In order to avoid the spam detector please send me a message if you want to get the raw iso data. We tried to make a copy of this disk but failed.If you have tools to decrypt it , please tell us."
 https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc-based-arcade-games.42102/page-3#post-745324
@@ -259,12 +254,16 @@ https://github.com/ArcadeHustle/RingEdge_SSD_Softmod/issues/1
 "It's pretty very much illegal and too new for this site's content anyway."
 https://webcache.googleusercontent.com/search?q=cache:kPxP6VQIhZYJ:https://www.arcade-projects.com/forums/index.php%3Fthread/10695-sega-ringedge-2-questions-on-obtaining-systems-disks-etc/%26pageNo%3D1+&cd=2&hl=en&ct=clnk&gl=us
 
+So, yeah the big "secret" is just Truecrypt, as noted above. 
+https://en.wikipedia.org/wiki/TrueCrypt
+
+https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
+Specifically the Ring system makes use of TrueCrypt 4.3 in AES LRW mode for TrueCrypt containers, alongside a keyfile and password. 
 
 For what ever reason Ring* information is often censored quickly, and with malice. There are few remaining bits of archived information. Among them however are these gems:
 Both of the archived poss contain partially usable instructions, but can indeed be worked out into a usable technique.
 https://pastebin.com/zQYxBU1e
 https://pastebin.com/2qiQdPQ6
-
 
 ```
 # hdparm --user-master u --security-unlock hex:7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A /dev/sdc
@@ -302,7 +301,15 @@ Device     Boot    Start      End  Sectors   Size Id Type
  boot.ini                  NTDETECT.COM  'Program Files'   RECYCLER  'System Volume Information'   WERUNTIME.INI
 'Documents and Settings'   ntldr         '$RECYCLE.BIN'    System    '$UGM'                        WINDOWS
 
----------------
+```
+
+You can mount TrueCrypt images, and drives within linux, either encrypted files, dd images (via losetup), or actual drive partitions. 
+
+First you will need a workign TrueCrypt setup. In theory some versions of Veracrypt are also usable, but LRW support must be present. 
+
+Fuse makes LRW work on versions past 4.x, so you'll need that too. https://forums.gentoo.org/viewtopic-t-688399-start-0.html
+
+```
 https://github.com/DrWhax/truecrypt-archive
 https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
 
@@ -316,7 +323,6 @@ Installation package file truecrypt_5.1a-0_amd64.deb extracted and placed in /tm
 # truecrypt --version
 TrueCrypt 5.1a
 
-
 # dpkg -l fuse
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -324,9 +330,11 @@ Desired=Unknown/Install/Remove/Purge/Hold
 ||/ Name                                Version                Architecture           Description
 +++-===================================-======================-======================-===========================================================================
 ii  fuse                                2.9.4-1ubuntu3.1       amd64                  Filesystem in Userspace
+```
 
+Once fuse works, and your truecrypt has been installed you can mount TC containers. 
 
-
+```
 $ mkdir /tmp/tc
 $ sudo truecrypt -p segahardpassword -k SystemKeyFile System /tmp/tc
 
@@ -337,8 +345,12 @@ develop_regset.txt  mxgcatcher.exe  mxinstaller.exe  mxnetwork.exe  mxshellexecu
 
 $ truecrypt -d /tmp/tc
 
----------------
+```
 
+From here you can begin modifying the system to be more friendly for casual non gaming use. (Such as dumping key chips)
+
+First we use chntpw to list the users on the system. 
+```
 # cd /tmp/a/WINDOWS/system32/config
 # wget https://pogostick.net/~pnh/ntpasswd/chntpw-source-140201.zip
 
@@ -355,8 +367,10 @@ Used for data: 208/15824 blocks/bytes, unused: 6/4496 blocks/bytes.
 | 01f5 | Guest                          |        | dis/lock |
 | 03e8 | SystemUser                     | ADMIN  |          |
 
+```
 
-----
+Next we begin to edit the registry to be more permissive. 
+```
 
 # ./chntpw -i ../SAM
 chntpw version 1.00 140201, (c) Petter N Hagen
@@ -451,7 +465,11 @@ Total  login count: 44
 Select: [q] > 2
 Unlocked!
 
-...
+```
+
+Once we've opened the users up a bit, we need to save. 
+
+```
 
 What to do? [1] -> q
 
@@ -461,6 +479,11 @@ Hives that have changed:
 Write hive files? (y/n) [n] : y
  0  <../SAM> - OK
 
+```
+
+Next we move on to makign the UI more usable. 
+
+```
 
 # ./chntpw -i ../SYSTEM
 chntpw version 1.00 140201, (c) Petter N Hagen
@@ -539,24 +562,23 @@ Hives that have changed:
 Write hive files? (y/n) [n] : y
  0  <../SYSTEM> - OK
 
+```
+
+Some other keys to consider looking at
 REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 0 /f 
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\HideIcons
 
 HideMyComputerIcons in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WindowsEmbedded\ProductVersion
-```
 
 Cursor.cur needs replaced also. C:\windows\Cursors, download a new one from the internet
 
-http://registry-finder.com use the Find changes within date range feature 
+You can use http://registry-finder.com use the Find changes within date range feature to find the changes Sega made to the base system image. 
 
-Please note: You may no longer need to have the *proper* / *original* security key in order to play the cloned drive. Don't be a dick... 
+Please note: You may no longer need to have the *proper* / *original* security key in order to play the a drive. Don't be a dick... 
 like others before today. Use this to back up your hardware for preservation sake, not for resale purposes! Keep your orignal key chips
 on hand. If you sell the drive, sell the key chip with it. Don't sell rekeyed, or nokeyed drives. 
-
-"You can get it online without any restrictions, still it is delivered as an encrypted container, you should have a key."
-http://www.emuline.org/topic/1836-under-night-in-birth-sega-ringedge-2-need-help-with-decrypting/?do=findComment&comment=67770
 
 # Final Boss
 
@@ -587,6 +609,8 @@ cd into win32 mimikatz directory
 type: runas /user:hacker mimikatz.exe
 type: sekurlsa::kerberos
 (press alt+spacebar, then E, then L, to scroll)
+
+The password for SystemUser is <6/=U=#tpe!$*3!5
 
 <Add notes on BIOS password here>
 

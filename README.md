@@ -13,14 +13,13 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
 # Stage One:
 
 "【お知らせ】サービスを終了いたしました。"<br>
-As of Friday, March 31, 2017 at 27:59 The service has ended for “Puyo Puyo !! Quest Arcade” - http://puyoquest-am.blog.jp/archives/1063562161.html<br>
-https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=http%3A%2F%2Fpuyoquest-am.blog.jp%2Farchives%2F1063562161.html
+As of Friday, March 31, 2017 at 27:59 The service has ended for “Puyo Puyo !! Quest Arcade”<br>
+http://puyoquest-am.blog.jp/archives/1063562161.html<br>
+https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=http%3A%2F%2Fpuyoquest-am.blog.jp%2Farchives%2F1063562161.html<br>
 
 <p align="center">
   <img src="http://livedoor.blogimg.jp/am_puyoquest/imgs/4/3/436f7037.jpg">
 </p>
-
-...
 
 Additional text relevant to this document can be found below: 
 
@@ -35,22 +34,39 @@ or To allow preservation in a playable format..."
 
 Please note that the following text is considered "for purposes of good-faith security research".
 
-For now some of this information will be further gatekept. 
+This write up will give you all the knowledge, and access you need to backup and preserve your RingEdge hardware featuring Puyo Puyo !! Quest Arcade. 
 
-This write up will absolutly however give you all the access you need to backup and preserve your RingEdge hardware featuring Puyo Puyo !! Quest Arcade. 
-
-Please note that this preservation may apply to other devices, and games in the Ring* family such as RingEdge2, and RingWide. 
+Note that this preservation may apply to other devices, and games in the Ring* family such as RingEdge2, and RingWide. 
 
 Please remember the wise words of Mitsurugi_w "The info itself is not new or special. It's all over the web anyways" 
 
 # Stage Two:
 
-For a long time the details of how Ring* game images are ReKeyed, or NoKeyed has been a closely guarded, and heavily traded 
-/ paid for secret. With the first decade of deployment coming to a close, it is also time to close off this "Internet Money Maker". 
-As hardware begins to fail, the threat of required preservation looms. 
+For a long time the details of how Ring* game images are ReKeyed, or NoKeyed has been a closely guarded, and heavily traded / paid for secret. With the first decade of deployment coming to a close, it is also time to close off this "Internet Money Maker". As hardware begins to fail, the threat of required preservation looms. 
+
+One of the earlier forum disucssions on the Ring* subject was found on Assembler games. Several known scene players can be seen waving their dicks around. <br>
+"Get system, then come talk. This is why this information is not public because people who have no knowledge come to public and act like experts with no stripes." - Jackalus 
+https://web.archive.org/web/20170630214524/https://assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-3
+
+The initial manifesto that Jackalus laid down is actually a great place to start...
+"Still you don't have the system, for example newer ring games have custom protector that works with the rootkits and only runs when everything is in order and only on original machine. You cannot attach debugger, most debuggers can't even see the process because of ring0 stuff, you cannot dump the process without ring0 methods and even then not easily, you cannot press alt+tab or use any key combination keys (Unless you know how to go around them). The windows protection is very complicated and strong, you are still just speculating here. It's not some jumps you patch to skip the dongle check. And it's not as simple as Taito Type X2 which was mostly a joke."
+
+The subsequent rant about his work as a Jr Malware Researcher for F-Secure (https://www.linkedin.com/in/giansanti/) was as follows:  
+"I have unpacked hundreds of custom malware packers, Commercial protections: Securom (Yes with VM Redirects, Opcode VM, Constant Hook Stealer etc), SafeDisk(+Nanomites), ASProtect SKE(+VM) blablabla. And when I tell you newer sega games have good protection, it really does have it. Sure you can clone it but emulation and running on PC is pretty much impossible without deprotecting the binary and emulating entire MX drivers/libraries."
+
+"I have already run Ring games on PC but it's gay" - Jackalus, Jun 19, 2013
+
+4 years later under a new moniker...
+"Core work done for RingEdge 2 support, currently disabled. (amAuth emulation)" - Changes TeknoParrot 0.4a Patreon Build
+https://www.teknogods.com/viewtopic.php?t=38580
+TeknoParrot 0.4a PATREON - TeknoGods.com - May 29, 2017
+
+https://twitter.com/ReaverTeknoGods/status/869293180730081280
+TeknoParrot Patreon 0.4a out, have fun. #teknoparrot - May 29, 2017
+https://github.com/search?p=1&q=org%3Ateknogods+ring&type=Code
+
 
 ```
-
 # ./unlock.sh /dev/sdb 
 Read 32 bytes from "file".
 
@@ -81,6 +97,43 @@ Device     Boot    Start      End  Sectors   Size Id Type
 # ls
  boot.ini                  NTDETECT.COM  'Program Files'   RECYCLER  'System Volume Information'   WERUNTIME.INI
 'Documents and Settings'   ntldr         '$RECYCLE.BIN'    System    '$UGM'                        WINDOWS
+
+---------------
+https://github.com/DrWhax/truecrypt-archive
+https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
+
+# wget https://github.com/stefansundin/truecrypt-archive/raw/master/truecrypt-5.1a-ubuntu-x64.tar.gz
+# tar -zxvf truecrypt-5.1a-ubuntu-x64.tar.gz 
+# ./truecrypt-5.1a-setup-ubuntu-x64 
+...
+Installation package file truecrypt_5.1a-0_amd64.deb extracted and placed in /tmp
+
+# dpkg -i --force-all truecrypt_5.1a-0_amd64.deb
+# truecrypt --version
+TrueCrypt 5.1a
+
+
+# dpkg -l fuse
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                Version                Architecture           Description
++++-===================================-======================-======================-===========================================================================
+ii  fuse                                2.9.4-1ubuntu3.1       amd64                  Filesystem in Userspace
+
+
+
+$ mkdir /tmp/tc
+$ sudo truecrypt -p segahardpassword -k SystemKeyFile System /tmp/tc
+
+$ ls /tmp/tc
+d3dref9.dll         lockid.txt      mxgdeliver.exe   mxkeychip.exe  mxsegaboot_2052.dll  mxstorage.exe        $RECYCLE.BIN
+default_regset.txt  mxauthdisc.exe  mxgfetcher.exe   mxmaster.exe   mxsegaboot.exe       ORIG_mxkeychip.exe   ringmaster_pub.pem
+develop_regset.txt  mxgcatcher.exe  mxinstaller.exe  mxnetwork.exe  mxshellexecute.exe   ORIG_mxsegaboot.exe  System Volume Information
+
+$ truecrypt -d /tmp/tc
+
+---------------
 
 # cd /tmp/a/WINDOWS/system32/config
 # wget https://pogostick.net/~pnh/ntpasswd/chntpw-source-140201.zip
@@ -297,6 +350,9 @@ http://registry-finder.com use the Find changes within date range feature
 Please note: You may no longer need to have the *proper* / *original* security key in order to play the cloned drive. Don't be a dick... 
 like others before today. Use this to back up your hardware for preservation sake, not for resale purposes! Keep your orignal key chips
 on hand. If you sell the drive, sell the key chip with it. Don't sell rekeyed, or nokeyed drives. 
+
+"You can get it online without any restrictions, still it is delivered as an encrypted container, you should have a key."
+http://www.emuline.org/topic/1836-under-night-in-birth-sega-ringedge-2-need-help-with-decrypting/?do=findComment&comment=67770
 
 Have fun! Be safe!
 

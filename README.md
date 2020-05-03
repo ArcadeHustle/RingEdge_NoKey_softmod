@@ -48,24 +48,78 @@ One of the earlier forum disucssions on the Ring* subject was found on Assembler
 "Get system, then come talk. This is why this information is not public because people who have no knowledge come to public and act like experts with no stripes."
 https://web.archive.org/web/20170630214524/https://assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-3
 
-The initial manifesto that Jackalus laid down is actually a great place to start...<br>
-"Still you don't have the system, for example newer ring games have custom protector that works with the rootkits and only runs when everything is in order and only on original machine. You cannot attach debugger, most debuggers can't even see the process because of ring0 stuff, you cannot dump the process without ring0 methods and even then not easily, you cannot press alt+tab or use any key combination keys (Unless you know how to go around them). The windows protection is very complicated and strong, you are still just speculating here. It's not some jumps you patch to skip the dongle check. And it's not as simple as Taito Type X2 which was mostly a joke."
+The initial manifesto that Jackalus laid down is actually a great place to start... "Still you don't have the system, for example newer ring games have custom protector that works with the rootkits and only runs when everything is in order and only on original machine. You cannot attach debugger, most debuggers can't even see the process because of ring0 stuff, you cannot dump the process without ring0 methods and even then not easily, you cannot press alt+tab or use any key combination keys (Unless you know how to go around them). The windows protection is very complicated and strong, you are still just speculating here. It's not some jumps you patch to skip the dongle check. And it's not as simple as Taito Type X2 which was mostly a joke."
 
-The subsequent rant about his work as a Jr Malware Researcher for F-Secure (https://www.linkedin.com/in/giansanti/) was as follows:<br>
-"I have unpacked hundreds of custom malware packers, Commercial protections: Securom (Yes with VM Redirects, Opcode VM, Constant Hook Stealer etc), SafeDisk(+Nanomites), ASProtect SKE(+VM) blablabla. And when I tell you newer sega games have good protection, it really does have it. Sure you can clone it but emulation and running on PC is pretty much impossible without deprotecting the binary and emulating entire MX drivers/libraries."
+The subsequent rant about his work as a Jr Malware Researcher for F-Secure (https://www.linkedin.com/in/giansanti/) was as follows: "I have unpacked hundreds of custom malware packers, Commercial protections: Securom (Yes with VM Redirects, Opcode VM, Constant Hook Stealer etc), SafeDisk(+Nanomites), ASProtect SKE(+VM) blablabla. And when I tell you newer sega games have good protection, it really does have it. Sure you can clone it but emulation and running on PC is pretty much impossible without deprotecting the binary and emulating entire MX drivers/libraries."
 
-It was also implied that running Ring games on PC were less than favorable<br>
+It was implied that running Ring games on PC were less than favorable<br>
 "I have already run Ring games on PC but it's gay" - Jackalus, Jun 19, 2013
 
-4 years later under a new moniker...
-"Core work done for RingEdge 2 support, currently disabled. (amAuth emulation)" - Changes TeknoParrot 0.4a Patreon Build
-https://www.teknogods.com/viewtopic.php?t=38580
+4 years later under a new moniker, the tune changes a bit... "Core work done for RingEdge 2 support, currently disabled. (amAuth emulation)" - Changes TeknoParrot 0.4a Patreon Build
 TeknoParrot 0.4a PATREON - TeknoGods.com - May 29, 2017
+https://www.teknogods.com/viewtopic.php?t=38580
 
-https://twitter.com/ReaverTeknoGods/status/869293180730081280
 TeknoParrot Patreon 0.4a out, have fun. #teknoparrot - May 29, 2017
-https://github.com/search?p=1&q=org%3Ateknogods+ring&type=Code
+https://twitter.com/ReaverTeknoGods/status/869293180730081280
 
+TeknoParrot currently supports emulation of a good chunk of the Ring library. 
+https://github.com/search?p=1&q=org%3Ateknogods+ring&type=Code
+https://github.com/teknogods/TeknoParrotUI/blob/5ba2c1b5515ff1b906f6dfff94e7cbacf605a7dc/TeknoParrotUi.Common/Descriptions/ShiningForceCrossRaid.json
+https://github.com/teknogods/TeknoParrotUI/blob/5ba2c1b5515ff1b906f6dfff94e7cbacf605a7dc/TeknoParrotUi.Common/Descriptions/ShiningForceCrossExlesia.json
+https://github.com/teknogods/TeknoParrotUI/blob/5ba2c1b5515ff1b906f6dfff94e7cbacf605a7dc/TeknoParrotUi.Common/Descriptions/ShiningForceCrossElysion.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/Transformers.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/SRC.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/SDR.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/ProjectDiva.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/PPQ.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/MaiMaiGreen.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/OG.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/LGS.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/VT4.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/LGI3D.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/KODrive.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/ID8.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/ID7.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/ID6.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/GGXrd.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/MB.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/LGI.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/GG.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/FightingClimaxIgnition.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/UDX.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/PhantomBreaker.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/DOA5.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/CaladriusAC.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/SSASR.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/Mballblitz.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/CC.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/BorderBreakScramble.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/Koihime.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/GGXrdSIGN.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/FightingClimax.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/BladeArcus.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/UnderNightInBirth.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/GGXX.json
+https://github.com/teknogods/TeknoParrotUI/blob/f2a26e833ad58b66365fda16f54f386470524104/TeknoParrotUi.Common/Descriptions/ArcadeLove.json
+https://github.com/teknogods/TeknoParrotUI/blob/516ff22c933c317fc8f305cf72188269db871661/TeknoParrotUi.Common/Descriptions/MeltyBloodRE2.json
+
+
+# Stage Three
+
+"The RingEdge BIOS will only boot a SSD that has the valid TDK RS2 signature on the ATA Identify structure and is locked and also needs to have the password calculated by the BIOS and bassed on that TDK RS2 signature"<br>
+https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681443
+
+"SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip, the process is really complex, but it generates a file on c:\windows\temp with the keyfile, then mounts the TC container and after the TC Container is successfully mounted deletes the Keyfile from C:\windows\temp, is just 2 minutes to pach that, is only a matter to remove the DeleteFile function from SegaBoot with simple NOPs and let SegaBoot to mount the game, then the Keyfile will be there on c:\windows\temp"<br>
+https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681449
+
+"You might be able to just take off the delete permission from windows temp"
+https://web.archive.org/web/20170630214524/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-3#post-681518
+
+For what ever reason Ring* information is often censored quickly, and with malice. There are few remaining bits of archived information. Among them however are these gems:
+https://pastebin.com/zQYxBU1e
+https://pastebin.com/2qiQdPQ6
+
+Both contain partially usable instructions, but can be worked out into a more usable technique.
 
 ```
 # ./unlock.sh /dev/sdb 

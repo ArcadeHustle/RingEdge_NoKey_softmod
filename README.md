@@ -149,6 +149,9 @@ https://web.archive.org/web/20170628094958/https://www.assemblergames.com/thread
 "You might be able to just take off the delete permission from windows temp"
 https://web.archive.org/web/20170630214524/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-3#post-681518
 
+"ts much more easy than that, just get a file access tool like filemon and see the parameters segaboot is giving to truecrypt, you will know where its storing the binary file that truecrypt uses as password to decrypt the partition"
+https://www.assembler-games.com/threads/sega-ringedge-motherboard-inside-pictures.46424/
+
 For what ever reason Ring* information is often censored quickly, and with malice. There are few remaining bits of archived information. Among them however are these gems:
 https://pastebin.com/zQYxBU1e
 https://pastebin.com/2qiQdPQ6
@@ -445,6 +448,16 @@ on hand. If you sell the drive, sell the key chip with it. Don't sell rekeyed, o
 
 "You can get it online without any restrictions, still it is delivered as an encrypted container, you should have a key."
 http://www.emuline.org/topic/1836-under-night-in-birth-sega-ringedge-2-need-help-with-decrypting/?do=findComment&comment=67770
+
+# Final Boss
+Editing Niko's RE2Multi is very straight forward. Steps 1, 2, 3, 4 we should all be familiar with...
+
+1) unlock multi drive with ata password
+2) decrypt partition 7 with keyfile in C:\RE2Multi\re2multi.key
+3) Copy 'Virtua Tennis 4' folder into Game folder. It should look and be structured like the others already, but double check. game.bat file is setup and ready to go.
+4) dismount truecrpt partition
+5) relock drive with ata sec pass
+6) test in RE1
 
 Have fun! Be safe!
 

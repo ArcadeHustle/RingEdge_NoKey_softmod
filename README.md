@@ -45,15 +45,16 @@ Please remember the wise words of Mitsurugi_w "The info itself is not new or spe
 For a long time the details of how Ring* game images are ReKeyed, or NoKeyed has been a closely guarded, and heavily traded / paid for secret. With the first decade of deployment coming to a close, it is also time to close off this "Internet Money Maker". As hardware begins to fail, the threat of required preservation looms. 
 
 One of the earlier forum disucssions on the Ring* subject was found on Assembler games. Several known scene players can be seen waving their dicks around: <br><br>
-"Get system, then come talk. This is why this information is not public because people who have no knowledge come to public and act like experts with no stripes." - Jackalus 
+"Get system, then come talk. This is why this information is not public because people who have no knowledge come to public and act like experts with no stripes."
 https://web.archive.org/web/20170630214524/https://assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-3
 
-The initial manifesto that Jackalus laid down is actually a great place to start...
+The initial manifesto that Jackalus laid down is actually a great place to start...<br>
 "Still you don't have the system, for example newer ring games have custom protector that works with the rootkits and only runs when everything is in order and only on original machine. You cannot attach debugger, most debuggers can't even see the process because of ring0 stuff, you cannot dump the process without ring0 methods and even then not easily, you cannot press alt+tab or use any key combination keys (Unless you know how to go around them). The windows protection is very complicated and strong, you are still just speculating here. It's not some jumps you patch to skip the dongle check. And it's not as simple as Taito Type X2 which was mostly a joke."
 
-The subsequent rant about his work as a Jr Malware Researcher for F-Secure (https://www.linkedin.com/in/giansanti/) was as follows:  
+The subsequent rant about his work as a Jr Malware Researcher for F-Secure (https://www.linkedin.com/in/giansanti/) was as follows:<br>
 "I have unpacked hundreds of custom malware packers, Commercial protections: Securom (Yes with VM Redirects, Opcode VM, Constant Hook Stealer etc), SafeDisk(+Nanomites), ASProtect SKE(+VM) blablabla. And when I tell you newer sega games have good protection, it really does have it. Sure you can clone it but emulation and running on PC is pretty much impossible without deprotecting the binary and emulating entire MX drivers/libraries."
 
+It was also implied that running Ring games on PC were less than favorable<br>
 "I have already run Ring games on PC but it's gay" - Jackalus, Jun 19, 2013
 
 4 years later under a new moniker...

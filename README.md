@@ -118,6 +118,17 @@ https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Desc
 
 
 # Stage Three
+Well after the dick wagging on Assembler Games a random technical examination of the RingEdge popped up:
+"I have purchased a ring edge that starts a game with a key-chip"
+"And SSD is such a rare item... It is locked by ATA's SECURITY lock, but if you UNLOCK it, you can access it from Windows as usual via USB-SATA bridge. Well, as I wrote the other day, there are unknown partitions."
+"SSD and key-chip are not tied to the motherboard. In other words, even if SSD and key-chip are moved to another ring edge, it will work"
+"Key-chip is linked to the game title. The game does not work even if the key-chip of another game is inserted while it is installed"
+http://d4.princess.ne.jp/diary/20158.html
+
+"Basically it looks like a normal PC. As you can see from the actual specifications, it is an AT compatible machine. The motherboard looks like MS-9667, but there is no stamp" 
+"key-chip communication is a rather troublesome process. I don't know the key-chip because I can't get it."
+"NTFS is a basic 3 partition configuration consisting of 2 partitions and an extended partition (content unknown). The first NTFS will bring up the RINGEDGE system. Of course, since there is no key-chip, it will stop with an error. The second is a system update. Probably an update of RINGEDGE itself. Maybe the game installation is also over here? The contents of the extended partition are completely unknown. Is it decrypted using the key of the key-chip? "
+http://d4.princess.ne.jp/diary/20157.html
 
 "The RingEdge BIOS will only boot a SSD that has the valid TDK RS2 signature on the ATA Identify structure and is locked and also needs to have the password calculated by the BIOS and bassed on that TDK RS2 signature"<br>
 https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681443

@@ -34,6 +34,9 @@ What about *actual* Ring hardware owners, and arcade operators in need? Have the
 "Hello my friends, it seems that we are in the middle of a cross road, and now I have decided that I will enable all the RingEdge, RindEdge2, and RingWide cores on Teknoparrot, directly to public. Also if the entire internet dies because of coronavirus, I have given the archive and the source code to a few friends, expect an update. Good luck everybody."
 https://www.youtube.com/watch?v=lS3gSW3ZskQ
 
+"We set out rules and people couldn't follow them. This new stuff is bringing too much drama."
+https://www.arcade-projects.com/forums/index.php?thread/12974-ringedge-help-section/&postID=210050#post210050
+
 Additional text relevant to this document can be found below: 
 
 Exemptions to Prohibition against Circumvention of Technological Measures Protecting Copyrighted Works<br>
@@ -114,6 +117,10 @@ https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Desc
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossRaid.json
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossExlesia.json
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossElysion.json
+
+At a certain point interest picked up on the Arcade Projects forums about the Ring based systems. 
+"What can one do with a RingEdge?"
+http://archive.is/wOIjp
 
 # Stage Three
 Well after the dick wagging on Assembler Games a random technical examination of the RingEdge popped up:
@@ -458,12 +465,30 @@ http://www.emuline.org/topic/1836-under-night-in-birth-sega-ringedge-2-need-help
 # Final Boss
 Editing Niko's RE2Multi is very straight forward. Steps 1, 2, 3, 4 we should all be familiar with...
 
-1) unlock multi drive with ata password
-2) decrypt partition 7 with keyfile in C:\RE2Multi\re2multi.key
-3) Copy 'Virtua Tennis 4' folder into Game folder. It should look and be structured like the others already, but double check. game.bat file is setup and ready to go.
-4) dismount truecrpt partition
-5) relock drive with ata sec pass
-6) test in RE1
+unlock multi drive with ata password
+decrypt partition 7 with keyfile in C:\RE2Multi\re2multi.key
+Copy 'Virtua Tennis 4' folder into Game folder. It should look and be structured like the others already, but double check. game.bat file is setup and ready to go.
+dismount truecrpt partition
+relock drive with ata sec pass
+test in RE1
+
+If you with to tamper with Niko's multi live you'll probably want the SystemUser password as well as Admin level privs. 
+
+Download ms11-080-AddUser.exe
+Copy to USB stick
+Download mimikatz: https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20200502/mimikatz_trunk.zip
+Unzip mimikatz onto USB stick
+Boot re2multi
+hit C to go to commmand prompt
+Plug in USB stick
+type: D:
+type: ms11-080-AddUser.exe -O XP
+cd into win32 mimikatz directory
+type: runas /user:hacker mimikatz.exe
+type: sekurlsa::kerberos
+(press alt+spacebar, then E, then L, to scroll)
+
+<Add notes on BIOS password here>
 
 Have fun! Be safe!
 

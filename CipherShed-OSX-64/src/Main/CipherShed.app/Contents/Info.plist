@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+
+	<key>CFBundleIdentifier</key>
+	<string>org.CipherShedProject.CipherShed</string>
+
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+
+	<key>CFBundleExecutable</key>
+	<string>CipherShed</string>
+
+	<key>CFBundleIconFile</key>
+	<string>CipherShed.icns</string>
+
+	<key>CFBundleName</key>
+	<string>CipherShed</string>
+
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+
+	<key>CFBundleSignature</key>
+	<string>TRUE</string>
+
+	<key>CFBundleVersion</key>
+	<string>0</string>
+
+	<key>CFBundleShortVersionString</key>
+	<string>#define VERSION_STRING _CS_VERSION_DOTTED_5STR</string>
+
+	<key>CFBundleLongVersionString</key>
+	<string>CipherShed #define VERSION_STRING _CS_VERSION_DOTTED_5STR</string>
+
+	<key>LSRequiresCarbon</key>
+	<true/>
+
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+
+	<key>CSResourcesFileMapped</key>
+	<true/>
+</dict>
+</plist>

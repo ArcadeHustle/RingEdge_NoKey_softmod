@@ -21,35 +21,35 @@ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=http%3A%
   <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/puyo.jpeg">
 </p>
 
-Christmas 2018 of course, brought this game back to life via the amazing "TeknoParrot 1.81 X-Mas Reveal", albiet only for PC users.  
+Christmas 2018 of course, brought this game back to life via the amazing "TeknoParrot 1.81 X-Mas Reveal".<br>
+Unfortunately this restoration only for PC users as opposed to arcade operators. <br>
 https://archive.org/download/Arcade-Sega-RingEdge-2018-12-23
 
-"Sorry guy, didn't see you there!"
-https://www.youtube.com/watch?v=-ds4xRnI-b8
+"Sorry guy, didn't see you there!" https://www.youtube.com/watch?v=-ds4xRnI-b8
 
-"Now it is time to take out my Santa bag, and give you presents" 
-https://youtu.be/-ds4xRnI-b8?t=190
+"Now it is time to take out my Santa bag, and give you presents" https://youtu.be/-ds4xRnI-b8?t=190
 
-What about *actual* Ring hardware owners, and arcade operators in need? Have they been left out of the most recent CoronaVirus release just the same? 
+What about *actual* Ring hardware owners, and arcade operators in need? Have they been left out of the most recent TeknoParrot CoronaVirus (COVID-19) Update just the same? 
 
-"Hello my friends, it seems that we are in the middle of a cross road, and now I have decided that I will enable all the RingEdge, RindEdge2, and RingWide cores on Teknoparrot, directly to public. Also if the entire internet dies because of coronavirus, I have given the archive and the source code to a few friends, expect an update. Good luck everybody."
-https://www.youtube.com/watch?v=lS3gSW3ZskQ
+"Hello my friends, it seems that we are in the middle of a cross road, and now I have decided that I will enable all the RingEdge, RindEdge2, and RingWide cores on Teknoparrot, directly to public. Also if the entire internet dies because of coronavirus, I have given the archive and the source code to a few friends, expect an update. Good luck everybody." https://www.youtube.com/watch?v=lS3gSW3ZskQ
 
-"We set out rules and people couldn't follow them. This new stuff is bringing too much drama."
+Meanwhile, on the *other* side of the interwebs:<br>
+"We set out rules and people couldn't follow them. This new stuff is bringing too much drama."<br>
 https://www.arcade-projects.com/forums/index.php?thread/12974-ringedge-help-section/&postID=210050#post210050
 
-RIP Sega Ringedge, Ringwide and Nu subgroup on AP. 
+RIP Sega Ringedge, Ringwide and Nu subgroup on AP.<br>
 https://web.archive.org/web/20171014003744/http://www.arcade-projects.com/forums/index.php?board/73-sega-ringedge-ringwide-and-nu/
 
 Additional text relevant to this document can be found below: 
 
 Exemptions to Prohibition against Circumvention of Technological Measures Protecting Copyrighted Works<br>
 Seventh Triennial Section 1201 Final Rule, Effective October 28, 2018 <br>
-https://library.osu.edu/document-registry/docs/1027/stream <br>
+https://library.osu.edu/document-registry/docs/1027/stream<br>
 "Video games in the form of computer programs, where outside server support has been discontinued, to allow individual play and preservation by an eligible library, archive, or museum"
 
 https://library.osu.edu/site/copyright/2019/03/20/2018-dmca-section-1201-exemptions-announced/ <br>
-"Video games in the form of computer programs, lawfully acquired as complete games 37 CFR §201.40(b)(12)"<br> 
+"Video games in the form of computer programs, lawfully acquired as complete games 37"<br> 
+"CFR §201.40(b)(12)"<br> 
 "For personal, local gameplay; or To allow preservation in a playable format..."<br>
 
 Please note that the following text is considered "for purposes of good-faith security research".
@@ -629,7 +629,7 @@ unlock multi drive with ata password
 decrypt partition 7 with keyfile in C:\RE2Multi\re2multi.key
 Copy 'Virtua Tennis 4' folder into Game folder. It should look and be structured like the others already, but double check. game.bat file is setup and ready to go.
 dismount truecrpt partition
-relock drive with ata sec pass
+relock drive with ata sec pass (if you wish! or just cut power)
 test in RE1
 
 If you with to tamper with Niko's multi live you'll probably want the SystemUser password as well as Admin level privs. 

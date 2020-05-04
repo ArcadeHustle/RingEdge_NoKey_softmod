@@ -209,9 +209,9 @@ It is unclear at this time where Woodu obtained his Ring* knowledge.<br>
 https://segajinwin.com
 
 It is clear he's really obsessed with Sega Jinwin based arcade stuff. 
-"Bought a new domain name"
-"Jingwen Sega really is a magic company."
-"I miss it very much."
+"Bought a new domain name"<br>
+"Jingwen Sega really is a magic company."<br>
+"I miss it very much."<br>
 https://woodu.me/youxinmailegeyuming/
 
 You can see the original Sega Jinwin site in on The Internet Archive<br>

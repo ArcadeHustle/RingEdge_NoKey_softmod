@@ -221,8 +221,8 @@ https://web.archive.org/web/20130910052147/http://www.segajinwin.com/
 http://www.amusewind.com/catalog/all_ENTERPRISES/2012629/27_201262912749768_1.html
 
 Woodu has many interesting Ring related things on his site<br>
-https://woodu.me/author/woodu/
 "It has been a long time since I started doing maimai's magical reform in 15 years, and I haven't even put energy on it for a long time. But still did something a little above. What I can take out recently is that I started selling alternative hard drives for the mainframe. This is also the only relatively legal thing"<br>
+https://woodu.me/author/woodu/
 
 "SSD for Ringseries. Click here to buy"<br>
 https://woodu.me/eryijiuniansanyue/<br>

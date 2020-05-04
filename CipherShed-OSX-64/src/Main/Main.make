@@ -68,6 +68,7 @@ RESOURCES += ../Format/CipherShed_Wizard.bmp.h
 RESOURCES += ../Mount/Drive_icon_96dpi.bmp.h
 RESOURCES += ../Mount/Drive_icon_mask_96dpi.bmp.h
 RESOURCES += ../Mount/Logo_96dpi.bmp.h
+CXXFLAGS += -D_XOPEN_SOURCE
 endif
 
 CXXFLAGS += -I$(BASE_DIR)/Main
@@ -83,7 +84,7 @@ endif
 
 ifeq "$(TC_BUILD_CONFIG)" "Release"
 
-CXXFLAGS += $(shell $(WX_CONFIG) $(WX_CONFIG_ARGS) --cxxflags)
+CXXFLAGS += $(shell $(WX_CONFIG) $(WX_CONFIG_ARGS) --cxxflags $(WX_CONFIG_LIBS))
 WX_LIBS = $(shell $(WX_CONFIG) $(WX_CONFIG_ARGS) --libs $(WX_CONFIG_LIBS))
 
 else

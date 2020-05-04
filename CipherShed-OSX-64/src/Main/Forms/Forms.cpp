@@ -307,6 +307,9 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	
 	VolumeGridBagSizer->Add( bSizer21, wxGBPosition( 1, 3 ), wxGBSpan( 1, 1 ), wxEXPAND, 5 );
 	
+	VolumeGridBagSizer->AddGrowableCol( 1 );
+	VolumeGridBagSizer->AddGrowableRow( 0 );
+
 	VolumeStaticBoxSizer->Add( VolumeGridBagSizer, 1, wxEXPAND|wxALL, 4 );
 	
 	LowStaticBoxSizer->Add( VolumeStaticBoxSizer, 1, wxEXPAND, 5 );
@@ -1468,6 +1471,8 @@ MountOptionsDialogBase::MountOptionsDialogBase( wxWindow* parent, wxWindowID id,
 	FilesystemOptionsTextCtrl = new wxTextCtrl( m_panel8, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	FilesystemOptionsSizer->Add( FilesystemOptionsTextCtrl, wxGBPosition( 2, 1 ), wxGBSpan( 1, 2 ), wxALIGN_CENTER_VERTICAL|wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
+	FilesystemOptionsSizer->AddGrowableCol( 1 );
+
 	bSizer54->Add( FilesystemOptionsSizer, 0, wxEXPAND, 5 );
 	
 	sbSizer28->Add( bSizer54, 0, wxEXPAND|wxBOTTOM, 5 );
@@ -2950,6 +2955,8 @@ VolumePasswordPanelBase::VolumePasswordPanelBase( wxWindow* parent, wxWindowID i
 	
 	GridBagSizer->Add( PasswordPlaceholderSizer, wxGBPosition( 8, 1 ), wxGBSpan( 1, 2 ), wxTOP|wxEXPAND, 5 );
 	
+	GridBagSizer->AddGrowableCol( 1 );
+
 	bSizer7->Add( GridBagSizer, 1, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer7 );

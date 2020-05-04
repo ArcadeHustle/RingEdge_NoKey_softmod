@@ -24,7 +24,7 @@
 #	ifdef __ppc__
 #		include <ppc/ucontext.h>
 #	else
-#		include <i386/ucontext.h>
+#		include <ucontext.h>
 #	endif
 #elif defined (TC_BSD)
 #	include <ucontext.h>
@@ -58,7 +58,7 @@ namespace CipherShed
 #	ifdef __ppc__
 		faultingInstructionAddress = context->uc_mcontext->ss.srr0;
 #	elif defined (__x86_64__)
-		faultingInstructionAddress = context->uc_mcontext->ss.rip;
+		faultingInstructionAddress = context->uc_mcontext->__ss.__rip;
 #	else
 		faultingInstructionAddress = context->uc_mcontext->ss.eip;
 #	endif

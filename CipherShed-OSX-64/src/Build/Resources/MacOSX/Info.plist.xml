@@ -38,6 +38,9 @@
 	<key>LSRequiresCarbon</key>
 	<true/>
 
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+
 	<key>CSResourcesFileMapped</key>
 	<true/>
 </dict>

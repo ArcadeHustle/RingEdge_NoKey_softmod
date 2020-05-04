@@ -50,7 +50,7 @@ namespace CipherShed
 		{
 //			include "../Common/Language.xml.h" ??? it does not exist and the next is known wrong ???
 #			include "Common/Language.xml.h"
-			, 0
+//			, 0
 		};
 
 		return string ((char*)LanguageXml);
@@ -69,7 +69,7 @@ namespace CipherShed
 		static const byte License[] =
 		{
 #			include "License.txt.h"
-			, 0
+//			, 0
 		};
 
 		return string ((char*)License);

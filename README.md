@@ -168,10 +168,12 @@ https://product.tdk.com/en/products/flash-storage/flashstorage-catalog_en.pdf
 Serial-ATA-II Compatible NAND-Type Flash Memory Controller IC GBDriver RS2 Series
 https://product.tdk.com/info/en/catalog/datasheets/ew_015_rs2.pdf
 
-"SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip, the process is really complex,<br> 
-but it generates a file on c:\windows\temp with the keyfile, then mounts the TC container and after the TC Container is successfully<br> 
-mounted deletes the Keyfile from C:\windows\temp, is just 2 minutes to pach that, is only a matter to remove the DeleteFile function<br> 
-from SegaBoot with simple NOPs and let SegaBoot to mount the game, then the Keyfile will be there on c:\windows\temp"<br>
+"SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip, <br>
+the process is really complex, but it generates a file on c:\windows\temp with the keyfile, <br>
+then mounts the TC container and after the TC Container is successfully mounted deletes the <br>
+Keyfile from C:\windows\temp, is just 2 minutes to pach that, is only a matter to remove the<br>
+DeleteFile function from SegaBoot with simple NOPs and let SegaBoot to mount the game, then the<br>
+Keyfile will be there on c:\windows\temp"<br>
 https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681449
 
 "You might be able to just take off the delete permission from windows temp"<br>

@@ -260,6 +260,9 @@ https://en.wikipedia.org/wiki/TrueCrypt
 https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
 Specifically the Ring system makes use of TrueCrypt 4.3 in AES LRW mode for TrueCrypt containers, alongside a keyfile and password. 
 
+This will help you determine which disk encryption programs are compatable with LRW if you wish to try mounting TC images that *hard* way, opposed to just using TrueCrypt 
+https://wiki2.org/en/Comparison_of_disk_encryption_software
+
 For what ever reason Ring* information is often censored quickly, and with malice. There are few remaining bits of archived information. Among them however are these gems:
 Both of the archived poss contain partially usable instructions, but can indeed be worked out into a usable technique.
 https://pastebin.com/zQYxBU1e

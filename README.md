@@ -118,6 +118,9 @@ https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Desc
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossExlesia.json
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/ShiningForceCrossElysion.json
 
+"this is not the place to ask for neither for teknoparrot nor for roms."
+https://www.arcade-projects.com/forums/index.php?thread/9093-greetings-from-uk/&postID=145048#post145048
+
 At a certain point interest picked up on the Arcade Projects forums about the Ring based systems, eventually leading to the need to censor some of the commentary on the security mechanisms employed by Sega.  
 "What can one do with a RingEdge?"
 http://archive.is/wOIjp
@@ -126,123 +129,127 @@ Once folks in the "Ringedge/2/wide/Nu game list" thread heard "they can run loca
 https://webcache.googleusercontent.com/search?q=cache:CiZlw8FpwmEJ:https://www.arcade-projects.com/forums/index.php%3Fthread/6466-ringedge-2-wide-nu-game-list/%26pageNo%3D2+&cd=1&hl=en&ct=clnk&gl=us
 
 # Stage Three
-Well after the dick wagging on Assembler Games a random technical examination of the RingEdge popped up:
-"I have purchased a ring edge that starts a game with a key-chip"
-"And SSD is such a rare item... It is locked by ATA's SECURITY lock, but if you UNLOCK it, you can access it from Windows as usual via USB-SATA bridge. Well, as I wrote the other day, there are unknown partitions."
-"SSD and key-chip are not tied to the motherboard. In other words, even if SSD and key-chip are moved to another ring edge, it will work"
-"Key-chip is linked to the game title. The game does not work even if the key-chip of another game is inserted while it is installed"
+Well after the dick wagging on Assembler Games a random technical examination of the RingEdge popped up:<br>
+"I have purchased a ring edge that starts a game with a key-chip"<br>
+"And SSD is such a rare item... It is locked by ATA's SECURITY lock, but if you UNLOCK it, you can access it from Windows as usual via USB-SATA bridge. Well, as I wrote the other day, there are unknown partitions."<br>
+"SSD and key-chip are not tied to the motherboard. In other words, even if SSD and key-chip are moved to another ring edge, it will work"<br>
+"Key-chip is linked to the game title. The game does not work even if the key-chip of another game is inserted while it is installed"<br>
 http://d4.princess.ne.jp/diary/20158.html
 
-"Basically it looks like a normal PC. As you can see from the actual specifications, it is an AT compatible machine. The motherboard looks like MS-9667, but there is no stamp" 
-"key-chip communication is a rather troublesome process. I don't know the key-chip because I can't get it."
-"NTFS is a basic 3 partition configuration consisting of 2 partitions and an extended partition (content unknown). The first NTFS will bring up the RINGEDGE system. Of course, since there is no key-chip, it will stop with an error. The second is a system update. Probably an update of RINGEDGE itself. Maybe the game installation is also over here? The contents of the extended partition are completely unknown. Is it decrypted using the key of the key-chip? "
+"Basically it looks like a normal PC. As you can see from the actual specifications, it is an AT compatible machine. The motherboard looks like MS-9667, but there is no stamp"<br>
+"key-chip communication is a rather troublesome process. I don't know the key-chip because I can't get it."<br>
+"NTFS is a basic 3 partition configuration consisting of 2 partitions and an extended partition (content unknown). The first NTFS will bring up the RINGEDGE system. Of course, since there is no key-chip, it will stop with an error. The second is a system update. Probably an update of RINGEDGE itself. Maybe the game installation is also over here? The contents of the extended partition are completely unknown. Is it decrypted using the key of the key-chip?"<br>
 http://d4.princess.ne.jp/diary/20157.html
 
-"See someone abroad who said that the contents of the hard disk partition can be decrypted by hot plugging, but it is too risky to do this. I wonder if there is a great god who has studied this problem here?"
-"Encrypted, I am afraid it is not so easy to unlock"
-"But even if you extract it, you still have to modify the exe"
+"See someone abroad who said that the contents of the hard disk partition can be decrypted by hot plugging, but it is too risky to do this. I wonder if there is a great god who has studied this problem here?"<br>
+"Encrypted, I am afraid it is not so easy to unlock"<br>
+"But even if you extract it, you still have to modify the exe"<br>
 https://club.tgfcer.com/thread-7148133-1-1.html
 
-The partition layout is as follows. 
-Partition 1 - \System\ (Boot Partition)
-Partition 2 - \MiniNT  (Recovery Partition)
-Partition 3 - 518 Meg  (?TrueCrypt? Partition)
-Partition 4 - 	       (Update Partition - TrueCrypt Protected)
-Partition 5 -          (? ? Partition)
-Partition 6 -          (? OS Drivers ? Partition)
-Partition 7 -          (Game Partition  - TrueCrypt Protected)
+The partition layout is as follows.<br>
+Partition 1 - \System\ (Boot Partition)<br>
+Partition 2 - \MiniNT  (Recovery Partition)<br>
+Partition 3 - 518 Meg  (?TrueCrypt? Partition)<br>
+Partition 4 - 	       (Update Partition - TrueCrypt Protected)<br>
+Partition 5 -          (? ? Partition)<br>
+Partition 6 -          (? OS Drivers ? Partition)<br>
+Partition 7 -          (Game Partition  - TrueCrypt Protected)<br>
 
 
-https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html
+https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html<br>
 MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf exist seemingly confirming the suspicion about it being an MS9667 based PC.  
 
 "The RingEdge BIOS will only boot a SSD that has the valid TDK RS2 signature on the ATA Identify structure and is locked and also needs to have the password calculated by the BIOS and bassed on that TDK RS2 signature"<br>
 https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681443
 
-GBDriver RS2 - 2010. RS3 - 2011
+GBDriver RS2 - 2010. RS3 - 2011<br>
 https://product.tdk.com/en/products/flash-storage/flashstorage-catalog_en.pdf
 
 Serial-ATA-II Compatible NAND-Type Flash Memory Controller IC GBDriver RS2 Series
 https://product.tdk.com/info/en/catalog/datasheets/ew_015_rs2.pdf
 
-"SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip, the process is really complex, but it generates a file on c:\windows\temp with the keyfile, then mounts the TC container and after the TC Container is successfully mounted deletes the Keyfile from C:\windows\temp, is just 2 minutes to pach that, is only a matter to remove the DeleteFile function from SegaBoot with simple NOPs and let SegaBoot to mount the game, then the Keyfile will be there on c:\windows\temp"<br>
+"SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip, the process is really complex,<br> 
+but it generates a file on c:\windows\temp with the keyfile, then mounts the TC container and after the TC Container is successfully<br> 
+mounted deletes the Keyfile from C:\windows\temp, is just 2 minutes to pach that, is only a matter to remove the DeleteFile function<br> 
+from SegaBoot with simple NOPs and let SegaBoot to mount the game, then the Keyfile will be there on c:\windows\temp"<br>
 https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681449
 
-"You might be able to just take off the delete permission from windows temp"
+"You might be able to just take off the delete permission from windows temp"<br>
 https://web.archive.org/web/20170630214524/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-3#post-681518
 
-"Its much more easy than that, just get a file access tool like filemon and see the parameters segaboot is giving to truecrypt, you will know where its storing the binary file that truecrypt uses as password to decrypt the partition"
+"Its much more easy than that, just get a file access tool like filemon and see the parameters segaboot is giving to truecrypt, you will know where its storing the binary file that truecrypt uses as password to decrypt the partition"<br>
 https://www.assembler-games.com/threads/sega-ringedge-motherboard-inside-pictures.46424/
 
-As expected it did not take long for folks to start selling "bootleg" versions of Ring games that did not require a key. Sometimes refered to as "NoKey" games. 
-"Topic: Initial D8 Server Ringedge (Original, No Bootleg!)", so wait, where is the bootleg one you made then? lol. 
+As expected it did not take long for folks to start selling "bootleg" versions of Ring games that did not require a key. Sometimes refered to as "NoKey" games.<br>
+"Topic: Initial D8 Server Ringedge (Original, No Bootleg!)", so wait, where is the bootleg one you made then? lol.<br>
 http://www.ukvac.com/forum/initial-d8-server-ringedge-original-no-bootleg_topic367630.html
 
-One of the first examples was a Chinese Operation Ghost Nokey. 
-"I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome." 
-"I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015 
+One of the first examples of bootlegging was a Chinese Operation Ghost Nokey.<br>
+"I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome."<br>
+"I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015<br>
 http://archive.is/M1hvR
 
-There were some interesting *leaks* from the Chinese sega Factory: "the guy who send this to me is at the factory"
+There were some interesting *leaks* from the Chinese sega Factory: "the guy who send this to me is at the factory"<br>
 https://assembler-games.com/threads/so-recently-i-got-a-strange-board-from-a-factory-which-makes-sega-boards.57620/#post-825992
 
-"Here I have a Simplified Chinese version music game called MaiMai running on RingEdge2 platform. In order to avoid the spam detector please send me a message if you want to get the raw iso data. We tried to make a copy of this disk but failed.If you have tools to decrypt it , please tell us."
+"Here I have a Simplified Chinese version music game called MaiMai running on RingEdge2 platform. In order to avoid the spam detector please send me a message if you want to get the raw iso data. We tried to make a copy of this disk but failed.If you have tools to decrypt it , please tell us."<br>
 https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc-based-arcade-games.42102/page-3#post-745324
 
-"SEGA is giving up China market.The JingWen Sega co,ltd has closed at earlier this year,a music game needs frequently update.We have no choice. If nothing unexpected happens,this will be the last update of Wumeng(Chinese version MaiMai).The MaiMai overseas (Version Green) has periodic update per week and the program is totally different to the mainland China version.We cannot get updates and the company has gone.So we find help for carck it."
+"SEGA is giving up China market.The JingWen Sega co,ltd has closed at earlier this year,a music game needs frequently update.We have no choice. If nothing unexpected happens,this will be the last update of Wumeng(Chinese version MaiMai).The MaiMai overseas (Version Green) has periodic update per week and the program is totally different to the mainland China version.We cannot get updates and the company has gone.So we find help for carck it."<br>
 https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc-based-arcade-games.42102/page-3#post-745386
 
-It is unclear at this time where Woodu obtained his Ring* knowledge. 
+"Hi from inside of the great firewall."<br>
+https://github.com/Woodu
+
+It is unclear at this time where Woodu obtained his Ring* knowledge.<br>
 "This site is not official SEGAJINWIN corp. website, is hosted by Woodu at China Arcade"
 https://segajinwin.com
 
-You can see the original Sega Jinwin site in the archives. 
-https://web.archive.org/web/20130910052147/http://www.segajinwin.com/
-
-"Established in 2009, Sega Jinwin (Shanghai) Amusement Co. Ltd is a joint-venture of Shanghai Jingwen Investment Co. Ltd., Japan Sega Corporation and affiliated company of China National Center for developing Animation, Cartoon & Game Industry."
-http://www.amusewind.com/catalog/all_ENTERPRISES/2012629/27_201262912749768_1.html
-
-"Hi from inside of the great firewall."
-https://github.com/Woodu
-
-Woodu is really obsessed with sega stuff that is for sure. 
+It is clear he's really obsessed with Sega Jinwin based arcade stuff. 
 "Bought a new domain name"
 "Jingwen Sega really is a magic company."
 "I miss it very much."
 https://woodu.me/youxinmailegeyuming/
 
-Woodu has many interesting Ring related things on his site 
+You can see the original Sega Jinwin site in on The Internet Archive<br>
+https://web.archive.org/web/20130910052147/http://www.segajinwin.com/
+
+"Established in 2009, Sega Jinwin (Shanghai) Amusement Co. Ltd is a joint-venture of Shanghai Jingwen Investment Co. Ltd., Japan Sega Corporation and affiliated company of China National Center for developing Animation, Cartoon & Game Industry."<br>
+http://www.amusewind.com/catalog/all_ENTERPRISES/2012629/27_201262912749768_1.html
+
+Woodu has many interesting Ring related things on his site<br>
 https://woodu.me/author/woodu/
-"It has been a long time since I started doing maimai's magical reform in 15 years, and I haven't even put energy on it for a long time. But still did something a little above. What I can take out recently is that I started selling alternative hard drives for the mainframe. This is also the only relatively legal thing"
-"SSD for Ringseries. Click here to buy"
-https://woodu.me/eryijiuniansanyue/
-Ringedge2 120G 固态硬盘 ¥300.00 - 599.00
-https://item.taobao.com/item.htm?id=586390733234
+"It has been a long time since I started doing maimai's magical reform in 15 years, and I haven't even put energy on it for a long time. But still did something a little above. What I can take out recently is that I started selling alternative hard drives for the mainframe. This is also the only relatively legal thing"<br>
 
-"Sega's arcade platform began to completely transform into an X86 based architecture PC, which opened the door to cracking. It is no exaggeration to say that, in addition to the latest arcades such as Ship Mother, DIVA, and Chunithm, SEGA's games can be said to be lost across the board"
-https://woodu.me/2017/03/
-"This arcade is an arcade machine that has been represented in the era of Jingwen Sega. It is a full Chinese version, and there are still people selling it on Taobao."
+"SSD for Ringseries. Click here to buy"<br>
+https://woodu.me/eryijiuniansanyue/<br>
+Ringedge2 120G 固态硬盘 ¥300.00 - 599.00<br>
+https://item.taobao.com/item.htm?id=586390733234<br>
 
-"海岛探险游戏机"
+"Sega's arcade platform began to completely transform into an X86 based architecture PC, which opened the door to cracking. It is no exaggeration to say that, in addition to the latest arcades such as Ship Mother, DIVA, and Chunithm, SEGA's games can be said to be lost across the board"<br>
+https://woodu.me/2017/03/<br>
+"This arcade is an arcade machine that has been represented in the era of Jingwen Sega. It is a full Chinese version, and there are still people selling it on Taobao."<br>
+
+Totally NOT bootleg "Lost on Island of Tropics"<br>
+"海岛探险游戏机"<br>
 http://www.haoyunlaigame.com/arc/view-119.html
-Totally NOT bootleg "Lost on Island of Tropics"
 
-"Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island."
+"Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island."<br>
 http://m.amunion.com/product/247889.html
 
-You could occasionally find folks offering archival services similarly, this conversation exposes the concept of a rekey.  
-"if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)."
-"Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."
-https://www.assembler-games.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/#post-866358
+In addition to bootlegs, you could occasionally find folks offering archival services, the conversation below exposes the concept of a rekey.  <br>
+"if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)."<br>
+"Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."<br>
+https://www.assembler-games.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/#post-866358<br>
 https://web.archive.org/web/20190403174837/https://assemblergames.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/
 
-Mahjong for example is SBVF a VERY easy to obtain KeyChip... wonder why so may shared images are keyed to it? ;)
+Mahjong for example is SBVF a VERY easy to obtain KeyChip... wonder why so may shared images are keyed to it? ;)<br>
 https://gakman.forumgaming.fr/t72-ringedge-ringwide#454
 
-There was an effort at one point to document as many chip ID's as possible on AP forums. 
+There was an effort at one point to document as many chip ID's as possible on AP forums. <br>
 https://webcache.googleusercontent.com/search?q=cache:kfuo1iRQy3wJ:https://www.arcade-projects.com/forums/index.php%3Fthread/4456-ringedge-keychip-id/+&cd=1&hl=en&ct=clnk&gl=us
 
-Modern times have finally brought forth conversations about a Ring* keychip emulator.
+Modern times have finally brought forth conversations about a Ring* keychip emulator.<br>
 https://github.com/ArcadeHustle/RingEdge_SSD_Softmod/issues/1
 
 # Stage Four

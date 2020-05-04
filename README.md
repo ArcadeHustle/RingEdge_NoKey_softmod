@@ -350,6 +350,21 @@ $ truecrypt -d /tmp/tc
 
 ```
 
+A patched version of TrueCrypt can be used to mount images on OSX Catalina 10.15 as described here: 
+http://www.nerdenmeister.org/2013/08/16/build-truecrypt-on-os-x-64-bit-with-hardware-acceleration/
+https://gist.github.com/neurodroid/7059368
+A pre-patched version is located here, but you will need to modify the Makefile to make it work on Catalina
+https://github.com/neurodroid/TrueCrypt
+
+If you make use of Paragon NTFS modules for Mac you can also write content to the mounted images. \
+https://www.paragon-software.com/us/home/ntfs-mac/
+
+You will first need to install wxwidgets via brew! 
+
+Alternately you can also mount TC drives on OSX using CipherShed, but you'll need to use the patches from TrueCrypt to make them work on modern OSX
+https://webcache.googleusercontent.com/search?q=cache:rCoVjQzFDMoJ:https://wiki.ciphershed.org/BuildOnOSX+&cd=1&hl=en&ct=clnk&gl=us
+Patched versions of the CipherShed and TrueCrypt repos are included in this git repo, ready to compile on OSX Cataline 10.15. 
+
 You may be wondering at this point how exactly the KeyFile was obtained. There were bried notes in the pastebin links above, but we really need to go in depth. 
 
 A number of academic articles on attacking TrueCrypt seem applicable, there was so much news hype on weaknesses within the platform. How do they play out in the real world? How do they impact Sega's implementation? 

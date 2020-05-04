@@ -1,0 +1,7 @@
+*.o
+*.a
+*.bmp.h
+*.xml.h
+*.txt.h
+
+Main/TrueCrypt*

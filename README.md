@@ -52,11 +52,7 @@ https://library.osu.edu/site/copyright/2019/03/20/2018-dmca-section-1201-exempti
 "CFR §201.40(b)(12)"<br> 
 "For personal, local gameplay; or To allow preservation in a playable format..."<br>
 
-Please note that the following text is considered "for purposes of good-faith security research".
-
-This write up will give you all the knowledge, and access you need to backup and preserve your RingEdge hardware featuring Puyo Puyo !! Quest Arcade. 
-
-Note that this preservation may apply to other devices, and games in the Ring* family such as RingEdge2, and RingWide. 
+Please note that the following text is considered "for purposes of good-faith security research". This write up will give you all the knowledge, and access you need to backup and preserve your RingEdge hardware featuring Puyo Puyo !! Quest Arcade. This preservation may also apply to other devices, and games in the Ring* family such as RingEdge2, and RingWide. 
 
 Please remember the wise words of Mitsurugi_w "The info itself is not new or special. It's all over the web anyways" 
 

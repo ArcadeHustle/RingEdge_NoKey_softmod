@@ -62,10 +62,9 @@ Please remember the wise words of Mitsurugi_w "The info itself is not new or spe
 
 # Stage Two:
 
-For a long time the details of how Ring* game images are ReKeyed, or NoKeyed has been a closely guarded, and heavily traded / paid for secret. With the first decade of deployment coming to a close, it is also time to close off this "Internet Money Maker". As hardware begins to fail, the threat of required preservation looms. 
+For a long time the details of how Ring* game images are ReKeyed, or NoKeyed has been a closely guarded, and heavily traded / paid for secret. With the first decade of deployment coming to a close, it is also time to close off this "Internet Money Maker". None the less, as hardware begins to fail, the threat of required preservation looms. 
 
-One of the earlier forum disucssions on the Ring* subject was found on Assembler games. Several known scene players can be seen waving their dicks around: <br><br>
-"Get system, then come talk. This is why this information is not public because people who have no knowledge come to public and act like experts with no stripes."
+One of the earlier forum disucssions on the Ring* subject was founded on Assembler games. Several known scene players can be seen waving their dicks around: "Get system, then come talk. This is why this information is not public because people who have no knowledge come to public and act like experts with no stripes."
 https://web.archive.org/web/20170630214524/https://assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-3
 
 The initial manifesto that Jackalus laid down is actually a great place to start... "Still you don't have the system, for example newer ring games have custom protector that works with the rootkits and only runs when everything is in order and only on original machine. You cannot attach debugger, most debuggers can't even see the process because of ring0 stuff, you cannot dump the process without ring0 methods and even then not easily, you cannot press alt+tab or use any key combination keys (Unless you know how to go around them). The windows protection is very complicated and strong, you are still just speculating here. It's not some jumps you patch to skip the dongle check. And it's not as simple as Taito Type X2 which was mostly a joke."

@@ -361,6 +361,9 @@ Alternately you can also mount TC drives on OSX using CipherShed, but you'll nee
 https://webcache.googleusercontent.com/search?q=cache:rCoVjQzFDMoJ:https://wiki.ciphershed.org/BuildOnOSX+&cd=1&hl=en&ct=clnk&gl=us
 Patched versions of the CipherShed and TrueCrypt repos are included in this git repo, ready to compile on OSX Cataline 10.15. 
 
+$ ./CipherShed-OSX-64/src/Main/CipherShed -t System_Pengo -k SystemKeyFile /tmp/z -p segahardpassword 
+Protect hidden volume (if any)? (y=Yes/n=No) [No]: 
+
 You may be wondering at this point how exactly the KeyFile was obtained. There were bried notes in the pastebin links above, but we really need to go in depth. 
 
 A number of academic articles on attacking TrueCrypt seem applicable, there was so much news hype on weaknesses within the platform. How do they play out in the real world? How do they impact Sega's implementation? 

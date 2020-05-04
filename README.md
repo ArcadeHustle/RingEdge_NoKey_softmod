@@ -183,12 +183,12 @@ https://web.archive.org/web/20170630214524/https://www.assemblergames.com/thread
 https://www.assembler-games.com/threads/sega-ringedge-motherboard-inside-pictures.46424/
 
 As expected it did not take long for folks to start selling "bootleg" versions of Ring games that did not require a key. Sometimes refered to as "NoKey" games.<br>
+
 "Topic: Initial D8 Server Ringedge (Original, No Bootleg!)", so wait, where is the bootleg one you made then? lol.<br>
 http://www.ukvac.com/forum/initial-d8-server-ringedge-original-no-bootleg_topic367630.html
 
 One of the first examples of bootlegging was a Chinese Operation Ghost Nokey.<br>
-"I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome."<br>
-"I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015<br>
+"I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome... I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015<br>
 http://archive.is/M1hvR
 
 There were some interesting *leaks* from the Chinese sega Factory: "the guy who send this to me is at the factory"<br>

@@ -121,11 +121,16 @@ export PLATFORM_UNSUPPORTED := 0
 export CPU_ARCH ?= unknown
 
 ARCH = $(shell uname -p)
-ifeq "$(ARCH)" "unknown"
+ifeq "$(shell uname -s)" "Darwin"
+	ARCH = $(shell uname -m)
+else ifeq "$(ARCH)" "unknown"
 	ARCH = $(shell uname -m)
 endif
 
-ifneq (,$(filter i386 i486 i586 i686 x86,$(ARCH)))
+ifeq "$(shell uname -s)" "Darwin"
+	CPU_ARCH = x64
+	ASM_OBJ_FORMAT = macho64
+else ifneq (,$(filter i386 i486 i586 i686 x86,$(ARCH)))
 	CPU_ARCH = x86
 	ASM_OBJ_FORMAT = elf32
 else ifneq (,$(filter x86_64 x86-64 amd64 x64,$(ARCH)))
@@ -173,19 +178,18 @@ ifeq "$(shell uname -s)" "Darwin"
 	PLATFORM := MacOSX
 	APPNAME := TrueCrypt
 
-	TC_OSX_SDK ?= /Developer/SDKs/MacOSX10.4u.sdk
-	CC := gcc-4.0
-	CXX := g++-4.0
+	MPPREFIX := /opt/local
 
-	C_CXX_FLAGS += -DTC_UNIX -DTC_BSD -DTC_MACOSX -mmacosx-version-min=10.4 -isysroot $(TC_OSX_SDK)
-	LFLAGS += -mmacosx-version-min=10.4 -Wl,-syslibroot $(TC_OSX_SDK)
-	WX_CONFIGURE_FLAGS += --with-macosx-version-min=10.4 --with-macosx-sdk=$(TC_OSX_SDK)
+	PKG_CONFIG_PATH := $(MPPREFIX)/lib/pkgconfig
+	CC := gcc
+	CXX := g++
+	AS := $(MPPREFIX)/bin/nasm
 
-	ifeq "$(CPU_ARCH)" "x64"
-		CPU_ARCH = x86
-	endif
+	C_CXX_FLAGS += -DTC_UNIX -DTC_BSD -DTC_MACOSX -I./../Pkcs11 -I$(MPPREFIX)/include
+	LFLAGS += -L$(MPPREFIX)/lib
+	WX_CONFIGURE_FLAGS +=
 
-	ASM_OBJ_FORMAT = macho
+	ASM_OBJ_FORMAT = macho64
 	ASFLAGS += --prefix _
 
 	ifeq "$(TC_BUILD_CONFIG)" "Release"
@@ -195,8 +199,8 @@ ifeq "$(shell uname -s)" "Darwin"
 		S := $(C_CXX_FLAGS)
 		C_CXX_FLAGS = $(subst -MMD,,$(S))
 
-		C_CXX_FLAGS += -gfull -arch i386 -arch ppc
-		LFLAGS += -Wl,-dead_strip -arch i386 -arch ppc
+		C_CXX_FLAGS += -gfull
+		LFLAGS += -Wl,-dead_strip
 
 		WX_CONFIGURE_FLAGS += --enable-universal_binary
 		WXCONFIG_CFLAGS += -gfull

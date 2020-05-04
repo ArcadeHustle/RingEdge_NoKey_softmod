@@ -183,7 +183,7 @@ ifeq "$(shell uname -s)" "Darwin"
 	PKG_CONFIG_PATH := $(MPPREFIX)/lib/pkgconfig
 	CC := gcc
 	CXX := g++
-	AS := ../nasm/nasm-2.11.09rc1/nasm
+	AS := $(MPPREFIX)/bin/nasm
 
 	C_CXX_FLAGS += -DTC_UNIX -DTC_BSD -DTC_MACOSX -I./../Pkcs11 -I$(MPPREFIX)/include
 	LFLAGS += -L$(MPPREFIX)/lib

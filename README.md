@@ -75,7 +75,7 @@ It was implied that running Ring games on PC was less than favorable<br>
 "Changes TeknoParrot 0.4a Patreon Build" - May 29, 2017<br>
 https://www.teknogods.com/viewtopic.php?t=38580
 
-TeknoParrot Patreon 0.4a out, have fun. #teknoparrot - May 29, 2017
+"TeknoParrot Patreon 0.4a out, have fun. #teknoparrot" - May 29, 2017
 https://twitter.com/ReaverTeknoGods/status/869293180730081280
 
 TeknoParrot currently supports emulation of a good chunk of the Ring library. 

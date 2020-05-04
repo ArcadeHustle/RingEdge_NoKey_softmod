@@ -229,7 +229,7 @@ https://woodu.me/2017/03/
 
 "海岛探险游戏机"
 http://www.haoyunlaigame.com/arc/view-119.html
-Totally NOT bootleg "Lost on Island of Tropics
+Totally NOT bootleg "Lost on Island of Tropics"
 
 "Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island."
 http://m.amunion.com/product/247889.html
@@ -308,7 +308,7 @@ Device     Boot    Start      End  Sectors   Size Id Type
 
 You can mount TrueCrypt images, and drives within linux, either encrypted files, dd images (via losetup), or actual drive partitions. 
 
-First you will need a workign TrueCrypt setup. In theory some versions of Veracrypt are also usable, but LRW support must be present. 
+First you will need a workign TrueCrypt setup. In theory some versions of Veracrypt are also usable, but LRW support must be present. This should work on linux, but probably will NOT on OSX due to hdiutil being used on the backend. 
 
 Fuse makes LRW work on versions past 4.x, so you'll need that too. https://forums.gentoo.org/viewtopic-t-688399-start-0.html
 

@@ -229,20 +229,18 @@ https://woodu.me/eryijiuniansanyue/<br>
 Ringedge2 120G 固态硬盘 ¥300.00 - 599.00<br>
 https://item.taobao.com/item.htm?id=586390733234<br>
 
-"Sega's arcade platform began to completely transform into an X86 based architecture PC, which opened the door to cracking. It is no exaggeration to say that, in addition to the latest arcades such as Ship Mother, DIVA, and Chunithm, SEGA's games can be said to be lost across the board"<br>
-https://woodu.me/2017/03/<br>
+"Sega's arcade platform began to completely transform into an X86 based architecture PC, which opened the door to cracking. It is no exaggeration to say that, in addition to the latest arcades such as Ship Mother, DIVA, and Chunithm, SEGA's games can be said to be lost across the board" https://woodu.me/2017/03/<br>
 "This arcade is an arcade machine that has been represented in the era of Jingwen Sega. It is a full Chinese version, and there are still people selling it on Taobao."<br>
 
 Totally NOT bootleg "Lost on Island of Tropics"<br>
 "海岛探险游戏机"<br>
 http://www.haoyunlaigame.com/arc/view-119.html
 
-"Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island."<br>
-http://m.amunion.com/product/247889.html
+"Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island." http://m.amunion.com/product/247889.html
 
 In addition to bootlegs, you could occasionally find folks offering archival services, the conversation below exposes the concept of a rekey.  <br>
-"if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)."<br>
-"Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."<br>
+
+"if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)... Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."<br>
 https://www.assembler-games.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/#post-866358<br>
 https://web.archive.org/web/20190403174837/https://assemblergames.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/
 
@@ -259,6 +257,9 @@ https://github.com/ArcadeHustle/RingEdge_SSD_Softmod/issues/1
 
 "It's pretty very much illegal and too new for this site's content anyway."
 https://webcache.googleusercontent.com/search?q=cache:kPxP6VQIhZYJ:https://www.arcade-projects.com/forums/index.php%3Fthread/10695-sega-ringedge-2-questions-on-obtaining-systems-disks-etc/%26pageNo%3D1+&cd=2&hl=en&ct=clnk&gl=us
+
+Yet the whole time in private, Ring* drives were for sale like hotcakes via PM on AP... this little gem, a patched version of mxsegaboot and mxkeychip enabling it all. 
+https://archive.org/details/mxsegaboot
 
 So, yeah the big "secret" is just Truecrypt, as noted above. 
 https://en.wikipedia.org/wiki/TrueCrypt

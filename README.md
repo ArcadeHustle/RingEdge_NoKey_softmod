@@ -395,12 +395,89 @@ A Security Analysis of TrueCrypt: Detecting hidden volumes and operating systems
 #TrueCrypt PlaidCTF Writeup: Fun with Firewire - https://mweissbacher.com/tag/truecrypt
 truecrypt second encryption of the master and XTS key with a back door password - https://security.stackexchange.com/questions/19764/truecrypt-second-encryption-of-the-master-and-xts-key-with-a-back-door-password
 TrueCrypt Master Key Extraction And Volume Identification - https://volatility-labs.blogspot.com/2014/01/truecrypt-master-key-extraction-and.html
+TrueCrypt Security: Securing Yourself against Practical TrueCrypt Attacks - https://resources.infosecinstitute.com/defeating-truecrypt-practical-attacks-truecrypt-security/#gref
 
 The following tools also provide intellectual reading on the subject at hand. 
 tckfs: This tool seeks asynchronously TrueCrypt key file using combinations of provided key files with provided password. - https://github.com/Octosec/tckfc
 Untrue: Tool for checking passwords against TrueCrypt encrypted volumes and disks, and/or decrypting the data. - https://github.com/nccgroup/Untrue
 Master Key Decryptor: is a python script to assist with decrypting encrypted volumes using the recovered masterkey for various truecrypt type encrypted volumes. https://github.com/AmNe5iA/MKDecrypt
 Truecrypt volume parsing library - https://github.com/4144414D/pytruecrypt
+
+$ python vol.py -f /Volumes/UNTITLED11/memdump.raw truecryptsummary
+Volatility Foundation Volatility Framework 2.6.1
+Service              truecrypt state SERVICE_RUNNING
+Kernel Module        truecrypt.sys at 0xb31f8000 - 0xb3225000
+Symbolic Link        P: -> \Device\TrueCryptVolumeP mounted 2020-05-05 08:28:36 UTC+0000
+Symbolic Link        Volume{556d4862-8eaa-11ea-93eb-00d0f1164195} -> \Device\TrueCryptVolumeO mounted 2020-05-05 08:28:35 UTC+0000
+Symbolic Link        P: -> \Device\TrueCryptVolumeP mounted 2020-05-05 08:28:36 UTC+0000
+Symbolic Link        S: -> \Device\TrueCryptVolumeS mounted 2020-05-05 08:28:13 UTC+0000
+Symbolic Link        O: -> \Device\TrueCryptVolumeO mounted 2020-05-05 08:28:36 UTC+0000
+Symbolic Link        Volume{556d485f-8eaa-11ea-93eb-00d0f1164195} -> \Device\TrueCryptVolumeS mounted 2020-05-05 08:28:13 UTC+0000
+Symbolic Link        S: -> \Device\TrueCryptVolumeS mounted 2020-05-05 08:28:13 UTC+0000
+Symbolic Link        Volume{556d4862-8eaa-11ea-93eb-00d0f1164195} -> \Device\TrueCryptVolumeO mounted 2020-05-05 08:28:35 UTC+0000
+Symbolic Link        P: -> \Device\TrueCryptVolumeP mounted 2020-05-05 08:28:36 UTC+0000
+Symbolic Link        Volume{556d4863-8eaa-11ea-93eb-00d0f1164195} -> \Device\TrueCryptVolumeP mounted 2020-05-05 08:28:36 UTC+0000
+Symbolic Link        O: -> \Device\TrueCryptVolumeO mounted 2020-05-05 08:28:35 UTC+0000
+Symbolic Link        P: -> \Device\TrueCryptVolumeP mounted 2020-05-05 08:28:36 UTC+0000
+Symbolic Link        S: -> \Device\TrueCryptVolumeS mounted 2020-05-05 08:28:13 UTC+0000
+...
+File Object          \Device\TrueCryptVolumeP\RE2multi\menu\imageformats\qico.dll at 0x9947360
+File Object          \Device\TrueCryptVolumeO\Games\Blade Arcus from Shining [SDAF]\Blade-Arcus-from-Shining.jpg at 0x994d778
+File Object          \Device\TrueCryptVolumeP\RE2multi\menu\theme\CyberPunk\480p.style at 0x994dc58
+File Object          \Device\TrueCryptVolumeP᱘E2multi\assets\JVSDll.dll at 0x994e648
+File Object          \Device\TrueCryptVolumeP\RE2multi\assets\JVSDll.dll at 0x994e778
+File Object          \Device\TrueCryptVolumeP\RE2multi\menu\imageformats\qjpeg.dll at 0x994e980
+File Object          \Device\TrueCryptVolumeP孠E2multi\menu\plugins\video_output\libdirect2d_plugin.dll at 0x994ea80
+File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\video_output\libcaca_plugin.dll at 0x994eb18
+File Object          \Device\TrueCryptVolumeP鄈�multi\menu\plugins\video_output\libyuv_plugin.dll at 0x994f260
+File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\video_output\libwingdi_plugin.dll at 0x994f2f8
+File Object          \Device\TrueCryptVolumeP䞈៰multi\menu\plugins\video_output\libwingdi_plugin.dll at 0x994f570
+File Object          \Device\TrueCryptVolumeP\RE2multi\menu\theme\CyberPunk\bg_480p.jpg at 0x994f980
+File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\video_output\libglwin32_plugin.dll at 0x994fb80
+File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\video_output\libyuv_plugin.dll at 0x9951300
+File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\plugins.dat at 0x9951ae8
+...
+File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\access\librar_plugin.dll at 0xa1ed2a8
+File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\access\libudp_plugin.dll at 0xa1edb68
+Driver               \Driver\truecrypt at 0x9c56d78 range 0xb31f8000 - 0xb3224340
+Device               TrueCryptVolumeP at 0x8a645030 type FILE_DEVICE_DISK
+Container            Path: <HIDDEN>
+Device               TrueCryptVolumeO at 0x8a644808 type FILE_DEVICE_DISK
+Container            Path: \??\C:\Documents and Settings\k8team\Start Menu\Programs\Startup\desktop.ini?
+Device               TrueCryptVolumeS at 0x89f06030 type FILE_DEVICE_DISK
+Container            Path: \??\C:\System\Execute\System
+Device               TrueCrypt at 0x89f9bcb0 type FILE_DEVICE_UNKNOWN
+
+$ python vol.py -f /Volumes/UNTITLED11/memdump.raw dumpfiles --dump-dir /tmp/zzzz
+Volatility Foundation Volatility Framework 2.6.1
+DataSectionObject 0x8a11ab50   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SYSTEM
+SharedCacheMap 0x8a11ab50   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SYSTEM
+DataSectionObject 0x8a0abdd0   4      \Device\HarddiskVolume1\WINDOWS\system32\config\DEFAULT
+SharedCacheMap 0x8a0abdd0   4      \Device\HarddiskVolume1\WINDOWS\system32\config\DEFAULT
+DataSectionObject 0x8a0a9af0   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SAM
+SharedCacheMap 0x8a0a9af0   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SAM
+DataSectionObject 0x8a610a10   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SOFTWARE
+SharedCacheMap 0x8a610a10   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SOFTWARE
+DataSectionObject 0x8a134a50   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SECURITY
+SharedCacheMap 0x8a134a50   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SECURITY
+...
+ImageSectionObject 0x89f88618   496    \Device\TrueCryptVolumeS\mxkeychip.exe
+DataSectionObject 0x89f88618   496    \Device\TrueCryptVolumeS\mxkeychip.exe
+ImageSectionObject 0x89f866d0   504    \Device\TrueCryptVolumeS\mxnetwork.exe
+DataSectionObject 0x89f866d0   504    \Device\TrueCryptVolumeS\mxnetwork.exe
+ImageSectionObject 0x89efb318   512    \Device\TrueCryptVolumeS\mxstorage.exe
+DataSectionObject 0x89efb318   512    \Device\TrueCryptVolumeS\mxstorage.exe
+ImageSectionObject 0x89f02b80   520    \Device\TrueCryptVolumeS\nxMount.exe
+DataSectionObject 0x89f02b80   520    \Device\TrueCryptVolumeS\nxMount.exe
+ImageSectionObject 0x89e9f768   632    \Device\TrueCryptVolumeS\mxinstaller.exe
+DataSectionObject 0x89e9f768   632    \Device\TrueCryptVolumeS\mxinstaller.exe
+ImageSectionObject 0x89e9c2b8   640    \Device\TrueCryptVolumeS\mxgcatcher.exe
+DataSectionObject 0x89e9c2b8   640    \Device\TrueCryptVolumeS\mxgcatcher.exe
+ImageSectionObject 0x8a5e3c28   476    \Device\TrueCryptVolumeS\mxgfetcher.exe
+DataSectionObject 0x8a5e3c28   476    \Device\TrueCryptVolumeS\mxgfetcher.exe
+ImageSectionObject 0x89e98358   292    \Device\TrueCryptVolumeS\mxgdeliver.exe
+DataSectionObject 0x89e98358   292    \Device\TrueCryptVolumeS\mxgdeliver.exe
+...
 
 Regardless of how you obtained the key, once you get the drives mounted, you can begin modifying the system to be more friendly for casual non gaming use. (Such as dumping key chips)
 

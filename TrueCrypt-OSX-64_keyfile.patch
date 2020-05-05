@@ -1,0 +1,38 @@
+diff -ru TrueCrypt-OSX-64/Volume/VolumeHeader.cpp TrueCrypt-OSX-64_keyfile/Volume/VolumeHeader.cpp
+--- TrueCrypt-OSX-64/Volume/VolumeHeader.cpp	2015-12-05 17:41:44.000000000 -0500
++++ TrueCrypt-OSX-64_keyfile/Volume/VolumeHeader.cpp	2020-05-05 13:32:13.000000000 -0400
+@@ -110,7 +110,32 @@
+ 					}
+ 					else
+ 					{
+-						ea->SetKey (headerKey.GetRange (LegacyEncryptionModeKeyAreaSize, ea->GetKeySize()));
++						FILE *fh = fopen("./master.key", "rb");
++						if (fh == NULL) {
++							ea->SetKey (headerKey.GetRange (LegacyEncryptionModeKeyAreaSize, ea->GetKeySize()));	
++						}
++						else
++						{
++							char * buffer = (char *) malloc (65);
++							memset(buffer, 0, 65);
++							fread(buffer, 64, 1, fh);
++							unsigned char strH[200];
++							int i, j; 
++
++							/*converting str character into Hex and adding into strH*/
++							for(i=0,j=0;i<strlen(buffer);i++,j+=2)
++							{ 
++								sprintf((char*)strH+j,"%02X",buffer[i]);
++							}
++							strH[j]='\0'; /*adding NULL in the end*/
++     
++							printf("Hexadecimal key string is: \n");
++							printf("%s\n",strH);
++
++							ConstBufferPtr cbp = (ConstBufferPtr( (TrueCrypt::byte*) buffer, 32));
++							ea->SetKey (cbp);
++							fclose(fh);
++						}
+ 					}
+ 
+ 					ea->SetMode (mode);
+

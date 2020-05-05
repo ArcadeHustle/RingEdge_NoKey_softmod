@@ -382,7 +382,7 @@ To unmount
 $ ./CipherShed-OSX-64/src/Main/CipherShed -d
 ```
 
-You may be wondering at this point how exactly the KeyFile was obtained. There were bried notes in the pastebin links above, but we really need to go in depth. 
+You may be wondering at this point how exactly the KeyFile was obtained. There were brief notes in the pastebin links above, but we really need to go in depth. 
 
 A number of academic articles on attacking TrueCrypt seem applicable, there was so much news hype on weaknesses within the platform. How do they play out in the real world? How do they impact Sega's implementation? 
 Lets examine a few of the papers: 
@@ -396,12 +396,109 @@ A Security Analysis of TrueCrypt: Detecting hidden volumes and operating systems
 truecrypt second encryption of the master and XTS key with a back door password - https://security.stackexchange.com/questions/19764/truecrypt-second-encryption-of-the-master-and-xts-key-with-a-back-door-password
 TrueCrypt Master Key Extraction And Volume Identification - https://volatility-labs.blogspot.com/2014/01/truecrypt-master-key-extraction-and.html
 TrueCrypt Security: Securing Yourself against Practical TrueCrypt Attacks - https://resources.infosecinstitute.com/defeating-truecrypt-practical-attacks-truecrypt-security/#gref
+Recovery of Encryption Keys from Memory Using a Linear Scan - https://www.researchgate.net/publication/221548532_Recovery_of_Encryption_Keys_from_Memory_Using_a_Linear_Scan
+"TrueCrypt encrypted containers appear to contain nothing but random data and have no file signature. However, the first 512 bytes of a TrueCrypt container are actually a header, but are encrypted using a Header Key so still appears to be random data.
+
+TrueCrypt decrypts the header using a user-supplied password or keyfile, salt from offset 0-64 (bytes) and then the process of trial and error using different encryption and key derivation algorithms, modes of encryption (CBC, LRW etc.) and key derivation algorithms. Successful decryption of the header is when bytes 64-68 decrypt to the ASCII string ‘TRUE’. The entire header is then decrypted which in the case of LRW mode, contains the Master Key and Secondary Master Key (Tweak Key) needed to decrypt the actual contents of the container, from the ‘Data Area’ which begins at offset 512."
 
 The following tools also provide intellectual reading on the subject at hand. 
 tckfs: This tool seeks asynchronously TrueCrypt key file using combinations of provided key files with provided password. - https://github.com/Octosec/tckfc
 Untrue: Tool for checking passwords against TrueCrypt encrypted volumes and disks, and/or decrypting the data. - https://github.com/nccgroup/Untrue
 Master Key Decryptor: is a python script to assist with decrypting encrypted volumes using the recovered masterkey for various truecrypt type encrypted volumes. https://github.com/AmNe5iA/MKDecrypt
 Truecrypt volume parsing library - https://github.com/4144414D/pytruecrypt
+
+Take a memory dump by using mdd.exe, then lets search it for AES keys. 
+
+$ src/bulk_extractor -o /tmp/TC_keys -E aes /Volumes/UNTITLED11/memdump.raw 
+bulk_extractor version: 1.6.0
+Hostname: xxx
+Input file: /Volumes/UNTITLED11/memdump.raw
+Output directory: /tmp/TC_keys
+Disk Size: 2070982656
+Threads: 4
+Attempt to open /Volumes/UNTITLED11/memdump.raw
+16:02:40 Offset 67MB (3.24%) Done in  0:01:05 at 16:03:45
+16:02:42 Offset 150MB (7.29%) Done in  0:00:53 at 16:03:35
+...
+MD5 of Disk Image: f1b7aef524504e1253bc1299d6d5e6cf
+Phase 2. Shutting down scanners
+Phase 3. Creating Histograms
+Elapsed time: 51.3567 sec.
+Total MB processed: 2070
+Overall performance: 40.3254 MBytes/sec (10.0814 MBytes/sec/thread)
+
+$ cat /tmp/TC_keys/aes_keys.txt 
+# BANNER FILE NOT PROVIDED (-b option)
+# BULK_EXTRACTOR-Version: 1.6.0 ($Rev: 10844 $)
+# Feature-Recorder: aes_keys
+# Filename: /Volumes/UNTITLED11/memdump.raw
+# Feature-File-Version: 1.1
+161230888	5c 52 f8 f0 ec 65 38 dc bc 94 6d 70 41 b0 84 f1 4f ea f9 54 5f 28 a3 e9 ac f7 01 16 3c c4 83 43 	AES256
+161427496	0d 0f cf 25 93 61 00 36 25 f7 cd 26 df 74 cd 22 e7 c2 41 3d 4a 90 e3 b9 9c 45 2e 8d 69 a7 c4 45 	AES256
+163037224	f3 5c 32 3e 77 d8 81 b7 f3 45 a0 c8 c4 ba 16 8e a4 5a 3b 43 b3 25 1b a2 e6 bb 25 1f 51 8e a6 2b 	AES256
+1825566060	00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 	AES256
+1942490476	00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 	AES256
+2019151212	00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 	AES256
+
+
+$ ./aeskeyfind -t 50 -v /Volumes/UNTITLED11/memdump.raw
+Keyfind progress: 0%
+FOUND POSSIBLE 256-BIT KEY AT BYTE 99c3028 
+
+KEY: 5c52f8f0ec6538dcbc946d7041b084f14feaf9545f28a3e9acf701163cc48343
+
+EXTENDED KEY: 
+5c52f8f0ec6538dcbc946d7041b084f1
+4feaf9545f28a3e9acf701163cc48343
+41bee21baddbdac7114fb7b750ff3346
+1cfc3a0e43d499e7ef2398f1d3e71bb2
+d711d57d7aca0fba6b85b80d3b7a8b4b
+fe2607bdbdf29e5a52d106ab81361d19
+d6b50171ac7f0ecbc7fab6c6fc803d8d
+4eeb20e0f319bebaa1c8b81120fea508
+65b331c6c9cc3f0d0e3689cbf2b6b446
+c7a5adba34bc13009574ab11b58a0e19
+0b18e513c2d4da1ecce253d53e54e793
+7585396641392a66d44d817761c78f6e
+ed6b7afc2fbfa0e2e35df337dd0914a4
+b484c32ff5bde94921f0683e4037e750
+37ff29f518408917fb1d7a2026146e84
+
+CONSTRAINTS ON ROWS:
+0000001400000000000000000000000000000000000000000000000000000000
+0000009900000000000000000000000000000000000000000000000000000000
+000000f300000000000000000000000000000000000000000000000000000000
+0000004800000000000000000000000000000000000000000000000000000000
+0000002a00000000000000000000000000000000000000000000000000000000
+0000001000000000000000000000000000000000000000000000000000000000
+000000f6000000000000000000000000
+3531f08e4ba2466d72eaf0e0ae086d7cec3596d9394d8c2c8e95b8b7bec5eb84
+029086c67ec9a2027011adbf75f6a1feb08153874ef6869ca47a0c37902307b4
+14afee4f0828648045decc8d05e70c41f4f5a4fffd983fb69f08b6e534590b83
+fe38635b943d818e9c13b8274039c0cc5ce4ff6e225aa69f4121a6f4ab51bd66
+07b56cfbc4681f781f4b86d5dc2a78eb0e4e34067feab1ea916abe38ea701b92
+902530d818631955b2c11adfc361fe3e90ecbcf4fcda64b7538822917b1aa5aa
+9450c89d1b14e4edc9eafa0571a0e4e142bcde268a434ebf2880f951cb00d419
+
+We can use Volatility framework to examine a memory dump. https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
+This shows the lineage of the processes 
+$ python vol.py -f /Volumes/UNTITLED11/memdump.raw pstree
+Volatility Foundation Volatility Framework 2.6.1
+Name                                                  Pid   PPid   Thds   Hnds Time
+-------------------------------------------------- ------ ------ ------ ------ ----
+ 0x8a711a00:System                                      4      0     80   2636 1970-01-01 00:00:00 UTC+0000
+...
+..... 0x89ff49e0:mxstartup.exe                        252   1212      0 ------ 2020-05-05 08:28:12 UTC+0000
+...... 0x89f04838:mxmaster.exe                        488    252      3     61 2020-05-05 08:28:13 UTC+0000
+....... 0x89efe898:mxstorage.exe                      512    488      1     36 2020-05-05 08:28:13 UTC+0000
+....... 0x89ef67e8:nxMount.exe                        520    488      1     32 2020-05-05 08:28:13 UTC+0000
+....... 0x89e91368:mxgcatcher.exe                     640    488      2     41 2020-05-05 08:28:15 UTC+0000
+....... 0x89e9cbc8:mxgdeliver.exe                     292    488      2     44 2020-05-05 08:28:15 UTC+0000
+....... 0x89ef7b98:mxnetwork.exe                      504    488      1     68 2020-05-05 08:28:13 UTC+0000
+....... 0x89e9d578:mxgfetcher.exe                     476    488      3     44 2020-05-05 08:28:15 UTC+0000
+....... 0x89ef9598:mxkeychip.exe                      496    488      1    677 2020-05-05 08:28:13 UTC+0000
+....... 0x89e95880:mxinstaller.exe                    632    488      6     53 2020-05-05 08:28:15 UTC+0000
+....... 0x89deb748:nxAuth.exe                        2068    488      3    105 2020-05-05 08:28:41 UTC+0000
 
 $ python vol.py -f /Volumes/UNTITLED11/memdump.raw truecryptsummary
 Volatility Foundation Volatility Framework 2.6.1
@@ -477,6 +574,17 @@ ImageSectionObject 0x8a5e3c28   476    \Device\TrueCryptVolumeS\mxgfetcher.exe
 DataSectionObject 0x8a5e3c28   476    \Device\TrueCryptVolumeS\mxgfetcher.exe
 ImageSectionObject 0x89e98358   292    \Device\TrueCryptVolumeS\mxgdeliver.exe
 DataSectionObject 0x89e98358   292    \Device\TrueCryptVolumeS\mxgdeliver.exe
+...
+
+$ file /tmp/zzzz/*
+/tmp/zzzz/file.1044.0x89fa3490.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
+/tmp/zzzz/file.1044.0x8a098380.img:  PE32 executable (GUI) Intel 80386, for MS Windows
+/tmp/zzzz/file.1100.0x89fa30c8.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
+/tmp/zzzz/file.1100.0x89ff9b08.dat:  PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
+/tmp/zzzz/file.1100.0x8a0ae738.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
+/tmp/zzzz/file.1100.0x8a0b13e0.img:  PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
+/tmp/zzzz/file.1100.0x8a605290.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
+/tmp/zzzz/file.1100.0x8a690f30.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
 ...
 
 Regardless of how you obtained the key, once you get the drives mounted, you can begin modifying the system to be more friendly for casual non gaming use. (Such as dumping key chips)

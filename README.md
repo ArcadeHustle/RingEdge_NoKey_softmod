@@ -126,6 +126,8 @@ Well after the dick wagging on Assembler Games a random technical examination of
 ```
 http://d4.princess.ne.jp/diary/20158.html
 
+The commentary offers a great starting point for resarch into Ring* security. 
+
 ```
 "Basically it looks like a normal PC. As you can see from the actual specifications, it is an AT compatible machine. The motherboard looks like MS-9667, but there is no stamp"
 "key-chip communication is a rather troublesome process. I don't know the key-chip because I can't get it."
@@ -139,7 +141,7 @@ http://d4.princess.ne.jp/diary/20157.html
 ```
 https://club.tgfcer.com/thread-7148133-1-1.html
 
-The partition layout is as follows.
+Upon doing the studies requested on TGFC forum above you will find that the partition layout is as follows.
 ```
 Partition 1 - \System\ (Boot Partition)
 Partition 2 - \MiniNT  (Recovery Partition)
@@ -150,8 +152,8 @@ Partition 6 -          (? OS Drivers ? Partition)
 Partition 7 -          (Game Partition  - TrueCrypt Protected)
 ```
 
+Even the hint that Ring* products are just commodity PC hardware is supported by documentation on MS9667, and even Sega's specific variant. The documents MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf exist to confirm the suspicion about Sega Ring* technology being based on MS9667 based PC.
 https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html<br>
-MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf exist seemingly confirming the suspicion about it being an MS9667 based PC.  
 
 "The RingEdge BIOS will only boot a SSD that has the valid TDK RS2 signature on the ATA Identify structure and is locked and also needs to have the password calculated by the BIOS and bassed on that TDK RS2 signature"<br>
 https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681443

@@ -246,8 +246,8 @@ https://item.taobao.com/item.htm?id=586390733234<br>
 https://woodu.me/2017/03/<br>
 
 The machine he mentions above is found here... it is a totally NOT bootleg "Lost on Island of Tropics" ("海岛探险游戏机"). "Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island." 
-http://m.amunion.com/product/247889.html
-http://www.haoyunlaigame.com/arc/view-119.html
+http://www.amunion.com/product/247889.html<br>
+http://www.haoyunlaigame.com/arc/view-119.html<br>
 
 
 In addition to bootlegs, you could occasionally find folks offering archival services, the conversation below exposes the concept of a rekey.  <br>

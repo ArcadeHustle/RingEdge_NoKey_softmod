@@ -8,6 +8,7 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
 		* [Enter TrueCrypt](#enter-truecrypt)
 		* [The Chinese Jinwin Sega connection?](#the-chinese-jinwin-sega-connection)
    * [Stage Four: Academic Exercises & Censorship](#stage-four)
+		* [Unlocking the drive](#unlocking-the-drive)
    * [Final Boss: Changing games on Niko's Multi](#final-boss)
    * [Bonus Level: RE2Multi on RE1?1](#bonus-level)
 
@@ -277,6 +278,8 @@ So, yeah the big "secret" is just Truecrypt, as noted above. https://en.wikipedi
 
 Specifically the Ring system makes use of TrueCrypt 4.3 in AES LRW mode for TrueCrypt containers, alongside a keyfile and password. This is coupled with a standard ATA lock as mentioned above. 
 https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
+
+### Unlocking the drive
 
 For what ever reason Ring* information is often censored quickly, and with malice. There are few remaining bits of archived information. Among them however are these gems:
 Both of the archived posts contain partially usable instructions, but can indeed be worked out into a usable technique if you pay close attention.

@@ -325,9 +325,9 @@ Device     Boot    Start      End  Sectors   Size Id Type
 
 ```
 
-You can mount TrueCrypt images, and drives within linux, either encrypted files, dd images (via losetup), or actual drive partitions. 
+Once the drive has been mounted you will as expected encounter a number of TrueCrypt partitions, as well as a file based container in "C:\System\Execute\System". You can mount the TrueCrypt image, and drive partitionss within linux or OSX fairly easily if you do not prefer to use Windows. You can mount either encrypted files directly, or dd based drive images via losetup. Likewise you can of couse simply mount the actual drive partitions. 
 
-First you will need a workign TrueCrypt setup. In theory some versions of Veracrypt are also usable, but LRW support must be present. This should work on linux, but probably will NOT on OSX due to hdiutil being used on the backend. 
+First you will need a working TrueCrypt setup. In theory some versions of Veracrypt are also usable, but LRW support must be present. This should work on linux, but probably will NOT on OSX due to hdiutil being used on the backend. 
 
 Fuse makes LRW work on versions past 4.x, so you'll need that too. https://forums.gentoo.org/viewtopic-t-688399-start-0.html
 
@@ -705,6 +705,9 @@ $ file /tmp/zzzz/*
 /tmp/zzzz/file.1100.0x8a690f30.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
 ...
 ```
+
+### Modifying the OS boot image
+
 Regardless of how you obtained the key, once you get the drives mounted, you can begin modifying the system to be more friendly for casual non gaming use. (Such as dumping key chips)
 
 First we use chntpw to list the users on the system. 

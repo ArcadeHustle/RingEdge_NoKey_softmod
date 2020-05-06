@@ -80,7 +80,7 @@ The subsequent rant about his work as a Jr Malware Researcher for F-Secure (http
 At the same time, it was implied that running Ring games on PC was less than favorable.<br>
 "I have already run Ring games on PC but it's gay" - Jackalus, Jun 19, 2013
 
-4 years later under a new moniker, the tune changes a bit, now running Ring games on PC is favorable, especially with paying Patreon customers!<br>
+4 years later under a new moniker, now running Ring games on PC is favorable, especially with paying Patreon customers!<br>
 "Core work done for RingEdge 2 support, currently disabled. (amAuth emulation)"<br>
 "Changes TeknoParrot 0.4a Patreon Build" - May 29, 2017<br>
 https://www.teknogods.com/viewtopic.php?t=38580

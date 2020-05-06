@@ -391,7 +391,7 @@ https://github.com/neurodroid/TrueCrypt
 If you make use of Paragon NTFS modules for Mac you can also write content to the mounted images.
 https://www.paragon-software.com/us/home/ntfs-mac/
 
-Alternately you can also mount TC drives on OSX using CipherShed, but you'll need to use the patches from TrueCrypt to make them work on modern OSX. Patched versions of the CipherShed and TrueCrypt repos are included in our repo, ready to compile on OSX Cataline 10.15. 
+Alternately you can also mount TC drives on OSX using CipherShed, but you'll need to use the patches from TrueCrypt to make them work on modern OSX. Patched versions of the CipherShed and TrueCrypt repos are included in our repo, ready to compile on OSX Cataline 10.15. We actually include the binaries as well... 
 https://webcache.googleusercontent.com/search?q=cache:rCoVjQzFDMoJ:https://wiki.ciphershed.org/BuildOnOSX+&cd=1&hl=en&ct=clnk&gl=us
 
 This will help you determine which disk encryption programs are compatable with LRW if you wish to try mounting TC images that *hard* way, opposed to just using one of the methods outlined above. Using TrueCrypt on Windows is left as an exercise for the reader, especially considering how heavily documented it it. 

@@ -158,11 +158,23 @@ https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html<br>
 "The RingEdge BIOS will only boot a SSD that has the valid TDK RS2 signature on the ATA Identify structure and is locked and also needs to have the password calculated by the BIOS and bassed on that TDK RS2 signature"<br>
 https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681443
 
-GBDriver RS2 - 2010. RS3 - 2011<br>
+The timeline documentation for TDK GBDriver RS2 & RS3 can be found below. The RS2 came out in 2010, and the RS3 in 2011.<br>
 https://product.tdk.com/en/products/flash-storage/flashstorage-catalog_en.pdf
 
-Serial-ATA-II Compatible NAND-Type Flash Memory Controller IC GBDriver RS2 Series
-https://product.tdk.com/info/en/catalog/datasheets/ew_015_rs2.pdf
+Documentation for the RS2 is located here: https://music.apple.com/us/album/ratchet/1463027710?i=1463027723
+"Serial-ATA-II Compatible NAND-Type Flash Memory Controller IC GBDriver RS2 Series"
+
+The RS2 supports the drive locking functionality, where as the drive encryption is actually handled by TrueCrypt. 
+
+Bypassing the ATA lock is trivial, at this point the key has proliferated as: 7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A
+It can be acquired via SATA analyzer, or something along the lines of a firmware patched SSD based on OCZ Vertex / Jasmine hardware. 
+
+"The Evil SSD Project - When your storage has a mind of its own"
+https://www.os3.nl/_media/2016-2017/courses/ot/martijn_yonne.pdf
+
+See also the IRATEMONK example. https://www.schneier.com/blog/archives/2014/01/iratemonk_nsa_e.html
+
+The nuances of TrueCrypt on Ring* platform has been a heavily censored topic, although not a complicated one at it's root. 
 
 ```
 "SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip,

@@ -170,10 +170,11 @@ Bypassing the ATA lock is trivial, at this point the key has proliferated as: 72
 It can be acquired via SATA analyzer, or something along the lines of a firmware patched SSD based on OCZ Vertex / Jasmine hardware. None the less it has been public as early as 2018.
 https://pastebin.com/2qiQdPQ6
 
-"The Evil SSD Project - When your storage has a mind of its own"
+"The Evil SSD Project - When your storage has a mind of its own"<br>
 https://www.os3.nl/_media/2016-2017/courses/ot/martijn_yonne.pdf
 
-See also the IRATEMONK example. https://www.schneier.com/blog/archives/2014/01/iratemonk_nsa_e.html
+See also the IRATEMONK example for ideas on how an SSD drive could be used to extract the calculated passwords presented by the Sega ATA unlock routines. 
+https://www.schneier.com/blog/archives/2014/01/iratemonk_nsa_e.html
 
 The nuances of TrueCrypt on Ring* platform has been a heavily censored topic, although not a complicated one at it's root. In essence you need to acquire both the keys and password to the TrueCrypt container. Both tasks are fairly trivial at the end of the day.  
 
@@ -413,6 +414,14 @@ It may be possible to exploit a software vulnerability in order to gain access t
 https://blog.frizk.net/2019/04/LeechAgent.html
 
 "The LeechAgent is a 100% free open source endpoint solution geared towards remote physical memory acquisition and analysis on Windows endpoints in Active Directory environments."
+
+There is even a possibility you can get fancy and exploit the IME for DMA access. That is way beyond the scope of this document however!
+https://github.com/ptresearch/IntelTXE-PoC
+IME of course "has full access to the whole DRAM (by using its own DMA engine)"
+https://www.blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-Breakthrough-wp.pdf
+
+"Intel Management Engine (Intel ME) is a proprietary technology that consists of a microcontroller integrated into the Platform Controller Hub (PCH) chip and a set of built-in peripherals. The PCH carries almost all communication between the processor and external devices. Therefore, Intel ME has access to almost all data on the computer. The ability to execute third-party code on Intel ME would allow for a complete compromise of the platform... By exploiting the vulnerability that we found in the bup module, we were able to turn on a mechanism, PCH red unlock, that opens full access to all PCH devices for their use via the DFx chain—in other words, using JTAG. One such device is the x86 ME processor itself, and so we obtained access to its internal JTAG interface. With such access, we could debug code executed on ME, read memory of all processes and the kernel, and manage all devices inside the PCH. We found a total of about 50 internal devices to which only ME has full access, while the main processor has access only to a very limited subset of them."
+https://www.blackhat.com/docs/eu-17/materials/eu-17-Goryachy-How-To-Hack-A-Turned-Off-Computer-Or-Running-Unsigned-Code-In-Intel-Management-Engine-wp.pdf
 
 "I have used the Truecrypt plugins in Volatility but they simply do not work" https://www.forensicfocus.com/Forums/viewtopic/p=6582443/
 

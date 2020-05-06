@@ -165,7 +165,7 @@ Documentation for the RS2 is located here: https://music.apple.com/us/album/ratc
 
 The RS2 supports the drive locking functionality, where as the drive encryption is actually handled by TrueCrypt. 
 
-Bypassing the ATA lock is trivial, at this point the key has proliferated as: 7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A
+Bypassing the ATA lock is trivial, at this point the key has proliferated as: 7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A<br>
 It can be acquired via SATA analyzer, or something along the lines of a firmware patched SSD based on OCZ Vertex / Jasmine hardware. None the less it has been public as early as 2018.
 https://pastebin.com/2qiQdPQ6
 

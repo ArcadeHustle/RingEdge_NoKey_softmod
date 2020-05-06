@@ -265,6 +265,8 @@ http://www.haoyunlaigame.com/arc/view-119.html<br>
 
 # Stage Four
 
+Clearly folks have been profiting off the NoKey, and ReKey image instances, both in the form of Chinese Bootleg machines and their accompanying hardware as well as individual private sales. Discussion about the techniques employed have been forbidden fruit for quite some time. 
+
 "It's pretty very much illegal and too new for this site's content anyway."
 https://webcache.googleusercontent.com/search?q=cache:kPxP6VQIhZYJ:https://www.arcade-projects.com/forums/index.php%3Fthread/10695-sega-ringedge-2-questions-on-obtaining-systems-disks-etc/%26pageNo%3D1+&cd=2&hl=en&ct=clnk&gl=us
 

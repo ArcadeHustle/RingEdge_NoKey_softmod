@@ -110,10 +110,12 @@ https://webcache.googleusercontent.com/search?q=cache:CiZlw8FpwmEJ:https://www.a
 
 # Stage Three
 Well after the dick wagging on Assembler Games a random technical examination of the RingEdge popped up:<br>
-"I have purchased a ring edge that starts a game with a key-chip"<br>
-"And SSD is such a rare item... It is locked by ATA's SECURITY lock, but if you UNLOCK it, you can access it from Windows as usual via USB-SATA bridge. Well, as I wrote the other day, there are unknown partitions."<br>
-"SSD and key-chip are not tied to the motherboard. In other words, even if SSD and key-chip are moved to another ring edge, it will work"<br>
-"Key-chip is linked to the game title. The game does not work even if the key-chip of another game is inserted while it is installed"<br>
+```
+"I have purchased a ring edge that starts a game with a key-chip"
+"And SSD is such a rare item... It is locked by ATA's SECURITY lock, but if you UNLOCK it, you can access it from Windows as usual via USB-SATA bridge. Well, as I wrote the other day, there are unknown partitions."
+"SSD and key-chip are not tied to the motherboard. In other words, even if SSD and key-chip are moved to another ring edge, it will work"
+"Key-chip is linked to the game title. The game does not work even if the key-chip of another game is inserted while it is installed"
+```
 http://d4.princess.ne.jp/diary/20158.html
 
 "Basically it looks like a normal PC. As you can see from the actual specifications, it is an AT compatible machine. The motherboard looks like MS-9667, but there is no stamp"<br>

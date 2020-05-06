@@ -439,6 +439,10 @@ tckfs: This tool seeks asynchronously TrueCrypt key file using combinations of p
 Untrue: Tool for checking passwords against TrueCrypt encrypted volumes and disks, and/or decrypting the data. - https://github.com/nccgroup/Untrue
 Master Key Decryptor: is a python script to assist with decrypting encrypted volumes using the recovered masterkey for various truecrypt type encrypted volumes. https://github.com/AmNe5iA/MKDecrypt
 Truecrypt volume parsing library - https://github.com/4144414D/pytruecrypt
+Interrogate: https://sourceforge.net/projects/interrogate/
+Bulk Extractor: https://github.com/simsong/bulk_extractor.git
+Aes-Finder: https://github.com/mmozeiko/aes-finder.git
+AesKeyFind: https://github.com/makomk/aeskeyfind
 
 One theoretical way to obtain an unencrypted TrueCrypt image is by using the master key pulled from memory. 
 

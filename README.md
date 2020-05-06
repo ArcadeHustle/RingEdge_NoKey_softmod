@@ -152,7 +152,7 @@ Partition 6 -          (? OS Drivers ? Partition)
 Partition 7 -          (Game Partition  - TrueCrypt Protected)
 ```
 
-Even the hint that Ring* products are just commodity PC hardware is supported by documentation on MS9667, and even Sega's specific variant. The documents MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf exist to confirm the suspicion about Sega Ring* technology being based on MS9667 based PC.
+Even the hint that Ring* products are just commodity PC hardware is supported by documentation on MS9667, and even Sega's specific variant. The documents MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf can be used to confirm the suspicion about Sega Ring* technology being based on MS9667 based PC.
 https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html<br>
 
 "The RingEdge BIOS will only boot a SSD that has the valid TDK RS2 signature on the ATA Identify structure and is locked and also needs to have the password calculated by the BIOS and bassed on that TDK RS2 signature"<br>

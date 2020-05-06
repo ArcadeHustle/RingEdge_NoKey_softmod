@@ -463,7 +463,7 @@ One theoretical way to obtain an unencrypted TrueCrypt image is by using the mas
 ./Common/Crypto.h:226:	unsigned __int8 master_keydata[MASTER_KEYDATA_SIZE];	/* ... For LRW (deprecated/legacy), it contains the tweak key before the master key(s). */
 
 Take a memory dump by using mdd.exe, then lets search it for AES keys. 
-
+```
 $ src/bulk_extractor -o /tmp/TC_keys -E aes /Volumes/UNTITLED11/memdump.raw 
 bulk_extractor version: 1.6.0
 Hostname: xxx
@@ -677,7 +677,7 @@ $ file /tmp/zzzz/*
 /tmp/zzzz/file.1100.0x8a605290.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
 /tmp/zzzz/file.1100.0x8a690f30.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
 ...
-
+```
 Regardless of how you obtained the key, once you get the drives mounted, you can begin modifying the system to be more friendly for casual non gaming use. (Such as dumping key chips)
 
 First we use chntpw to list the users on the system. 

@@ -166,6 +166,7 @@ Documentation for the RS2 is located here: https://music.apple.com/us/album/ratc
 The RS2 supports the drive locking functionality, where as the drive encryption is actually handled by TrueCrypt. 
 
 Bypassing the ATA lock is trivial, at this point the key has proliferated as: 7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A<br>
+
 It can be acquired via SATA analyzer, or something along the lines of a firmware patched SSD based on OCZ Vertex / Jasmine hardware. None the less it has been public as early as 2018.
 https://pastebin.com/2qiQdPQ6
 
@@ -174,7 +175,7 @@ https://www.os3.nl/_media/2016-2017/courses/ot/martijn_yonne.pdf
 
 See also the IRATEMONK example. https://www.schneier.com/blog/archives/2014/01/iratemonk_nsa_e.html
 
-The nuances of TrueCrypt on Ring* platform has been a heavily censored topic, although not a complicated one at it's root. 
+The nuances of TrueCrypt on Ring* platform has been a heavily censored topic, although not a complicated one at it's root. In essence you need to acquire both the keys and password to the TrueCrypt container. Both tasks are fairly trivial at the end of the day.  
 
 ```
 "SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip,

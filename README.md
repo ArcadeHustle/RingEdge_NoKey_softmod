@@ -90,7 +90,13 @@ https://twitter.com/ReaverTeknoGods/status/869293180730081280
 
 TeknoParrot currently supports emulation of a good chunk of the Ring library. 
 https://github.com/teknogods/TeknoParrotUI/tree/master/TeknoParrotUi.Common/Descriptions/
-Transformers.json SRC.json SDR.json ProjectDiva.json PPQ.json MaiMaiGreen.json OG.json LGS.json VT4.json LGI3D.json KODrive.json ID8.json ID7.json ID6.json GGXrd.json MB.json LGI.json GG.json FightingClimaxIgnition.json  UDX.json PhantomBreaker.json DOA5.json CaladriusAC.json SSASR.json Mballblitz.json CC.json BorderBreakScramble.json Koihime.json GGXrdSIGN.json FightingClimax.json BladeArcus.json UnderNightInBirth.json GGXX.json ArcadeLove.json MeltyBloodRE2.json ShiningForceCrossRaid.json ShiningForceCrossExlesia.json ShiningForceCrossElysion.json
+```
+Transformers.json SRC.json SDR.json ProjectDiva.json PPQ.json MaiMaiGreen.json OG.json LGS.json VT4.json 
+LGI3D.json KODrive.json ID8.json ID7.json ID6.json GGXrd.json MB.json LGI.json GG.json FightingClimaxIgnition.json  
+UDX.json PhantomBreaker.json DOA5.json CaladriusAC.json SSASR.json Mballblitz.json CC.json BorderBreakScramble.json 
+Koihime.json GGXrdSIGN.json FightingClimax.json BladeArcus.json UnderNightInBirth.json GGXX.json ArcadeLove.json 
+MeltyBloodRE2.json ShiningForceCrossRaid.json ShiningForceCrossExlesia.json ShiningForceCrossElysion.json
+```
 
 "this is not the place to ask for neither for teknoparrot nor for roms."
 https://www.arcade-projects.com/forums/index.php?thread/9093-greetings-from-uk/&postID=145048#post145048

@@ -31,7 +31,7 @@ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=http%3A%
 </p>
 
 Christmas 2018 of course, brought this game back to life via the amazing "TeknoParrot 1.81 X-Mas Reveal".<br>
-Unfortunately this restoration only for PC users as opposed to arcade operators. <br>
+Unfortunately this restoration was only for PC users as opposed to arcade operators. <br>
 https://archive.org/download/Arcade-Sega-RingEdge-2018-12-23
 
 "Sorry guy, didn't see you there!" https://www.youtube.com/watch?v=-ds4xRnI-b8
@@ -46,7 +46,8 @@ Meanwhile, on the *other* side of the interwebs:<br>
 "We set out rules and people couldn't follow them. This new stuff is bringing too much drama."<br>
 https://www.arcade-projects.com/forums/index.php?thread/12974-ringedge-help-section/&postID=210050#post210050
 
-RIP Sega Ringedge, Ringwide and Nu subgroup on AP.<br>
+Lets all pour out some liquor for the Sega Ringedge, Ringwide and Nu subgroup on AP. https://www.youtube.com/watch?v=oK9gLkXe0xw <br>
+Rest In Peace!.<br>
 https://web.archive.org/web/20171014003744/http://www.arcade-projects.com/forums/index.php?board/73-sega-ringedge-ringwide-and-nu/
 
 Additional text relevant to this document can be found below: 
@@ -76,10 +77,10 @@ The initial manifesto that Jackalus laid down is actually a great place to start
 
 The subsequent rant about his work as a Jr Malware Researcher for F-Secure (https://www.linkedin.com/in/giansanti/) was as follows: "I have unpacked hundreds of custom malware packers, Commercial protections: Securom (Yes with VM Redirects, Opcode VM, Constant Hook Stealer etc), SafeDisk(+Nanomites), ASProtect SKE(+VM) blablabla. And when I tell you newer sega games have good protection, it really does have it. Sure you can clone it but emulation and running on PC is pretty much impossible without deprotecting the binary and emulating entire MX drivers/libraries."
 
-It was implied that running Ring games on PC was less than favorable<br>
+At the same time, it was implied that running Ring games on PC was less than favorable.<br>
 "I have already run Ring games on PC but it's gay" - Jackalus, Jun 19, 2013
 
-4 years later under a new moniker, the tune changes a bit:<br>
+4 years later under a new moniker, the tune changes a bit, now running Ring games on PC is favorable, especially with paying Patreon customers!<br>
 "Core work done for RingEdge 2 support, currently disabled. (amAuth emulation)"<br>
 "Changes TeknoParrot 0.4a Patreon Build" - May 29, 2017<br>
 https://www.teknogods.com/viewtopic.php?t=38580

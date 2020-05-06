@@ -10,7 +10,7 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
    * [Stage Four: Academic Exercises & Censorship](#stage-four)
 		* [Unlocking the drive](#unlocking-the-drive)
 		* [Modifying the OS boot image](#modifying-the-os-boot-image)
-	        * [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
+		* [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
 
    * [Final Boss: Changing games on Niko's Multi](#final-boss)
    * [Bonus Level: RE2Multi on RE1?1](#bonus-level)

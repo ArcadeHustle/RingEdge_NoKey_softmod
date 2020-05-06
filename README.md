@@ -5,6 +5,7 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
    * [Stage One: Bye Bye Puyo Puyo!](#stage-one)
    * [Stage Two: Early Ring history](#stage-two)
    * [Stage Three: Ring Piracy Deep Dive](#stage-three)
+	      * [Enter TrueCrypt](#enter-truecrypt)
    * [Stage Four: Academic Exercises & Censorship](#stage-four)
    * [Final Boss: Changing games on Niko's Multi](#final-boss)
    * [Bonus Level: RE2Multi on RE1?1](#bonus-level)
@@ -176,6 +177,7 @@ https://www.os3.nl/_media/2016-2017/courses/ot/martijn_yonne.pdf
 See also the IRATEMONK example for ideas on how an SSD drive could be used to extract the calculated passwords presented by the Sega ATA unlock routines. 
 https://www.schneier.com/blog/archives/2014/01/iratemonk_nsa_e.html
 
+### Enter TrueCrypt
 The nuances of TrueCrypt on Ring* platform has been a heavily censored topic, although not a complicated one at it's root. In essence you need to acquire both the keys and password to the TrueCrypt container. Both tasks are fairly trivial at the end of the day.  
 
 ```

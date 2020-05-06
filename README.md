@@ -273,20 +273,17 @@ https://webcache.googleusercontent.com/search?q=cache:kPxP6VQIhZYJ:https://www.a
 Yet the whole time in private, Ring* drives were for sale like hotcakes via PM on AP... this little gem, a patched version of mxsegaboot and mxkeychip enabling it all. 
 https://archive.org/details/mxsegaboot
 
-So, yeah the big "secret" is just Truecrypt, as noted above. 
-https://en.wikipedia.org/wiki/TrueCrypt
+So, yeah the big "secret" is just Truecrypt, as noted above. https://en.wikipedia.org/wiki/TrueCrypt
 
+Specifically the Ring system makes use of TrueCrypt 4.3 in AES LRW mode for TrueCrypt containers, alongside a keyfile and password. This is coupled with a standard ATA lock as mentioned above. 
 https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
-Specifically the Ring system makes use of TrueCrypt 4.3 in AES LRW mode for TrueCrypt containers, alongside a keyfile and password. 
-
-This will help you determine which disk encryption programs are compatable with LRW if you wish to try mounting TC images that *hard* way, opposed to just using TrueCrypt 
-https://wiki2.org/en/Comparison_of_disk_encryption_software
 
 For what ever reason Ring* information is often censored quickly, and with malice. There are few remaining bits of archived information. Among them however are these gems:
-Both of the archived poss contain partially usable instructions, but can indeed be worked out into a usable technique.
+Both of the archived posts contain partially usable instructions, but can indeed be worked out into a usable technique if you pay close attention.
 https://pastebin.com/zQYxBU1e
 https://pastebin.com/2qiQdPQ6
 
+The first bit of information revealed in the posts was the static ATA unlock key for the TDK RS2 and RS3 hard drives use by default in Ring* machines. A simple hdparm command will unlock the drive, and allow you to interact with it. 
 ```
 # hdparm --user-master u --security-unlock hex:7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A /dev/sdc
 security_password: 72 42 52 5a ba 52 6a 5a ea 72 62 78 ca 42 da 4a 2a 22 3a 2a 0a 22 1a 2a 6a 02 7a 0a 5c ce 4a 0a
@@ -383,6 +380,9 @@ You will first need to install wxwidgets via brew!
 Alternately you can also mount TC drives on OSX using CipherShed, but you'll need to use the patches from TrueCrypt to make them work on modern OSX
 https://webcache.googleusercontent.com/search?q=cache:rCoVjQzFDMoJ:https://wiki.ciphershed.org/BuildOnOSX+&cd=1&hl=en&ct=clnk&gl=us
 Patched versions of the CipherShed and TrueCrypt repos are included in this git repo, ready to compile on OSX Cataline 10.15. 
+
+This will help you determine which disk encryption programs are compatable with LRW if you wish to try mounting TC images that *hard* way, opposed to just using TrueCrypt 
+https://wiki2.org/en/Comparison_of_disk_encryption_software
 
 ```
 $ mkdir /tmp/z; ./CipherShed-OSX-64/src/Main/CipherShed -t System_Pengo -k SystemKeyFile /tmp/z -p segahardpassword 

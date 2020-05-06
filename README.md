@@ -75,7 +75,12 @@ https://web.archive.org/web/20170630214524/https://assemblergames.com/threads/se
 
 The initial manifesto that Jackalus laid down is actually a great place to start... 
 ```
-"Still you don't have the system, for example newer ring games have custom protector that works with the rootkits and only runs when everything is in order and only on original machine. You cannot attach debugger, most debuggers can't even see the process because of ring0 stuff, you cannot dump the process without ring0 methods and even then not easily, you cannot press alt+tab or use any key combination keys (Unless you know how to go around them). The windows protection is very complicated and strong, you are still just speculating here. It's not some jumps you patch to skip the dongle check. And it's not as simple as Taito Type X2 which was mostly a joke."
+"Still you don't have the system, for example newer ring games have custom protector that works with the rootkits 
+and only runs when everything is in order and only on original machine. You cannot attach debugger, most debuggers 
+can't even see the process because of ring0 stuff, you cannot dump the process without ring0 methods and even then 
+not easily, you cannot press alt+tab or use any key combination keys (Unless you know how to go around them). The 
+windows protection is very complicated and strong, you are still just speculating here. It's not some jumps you 
+patch to skip the dongle check. And it's not as simple as Taito Type X2 which was mostly a joke."
 ```
 
 The subsequent rant about his work as a Jr Malware Researcher for F-Secure (https://www.linkedin.com/in/giansanti/) was as follows: "I have unpacked hundreds of custom malware packers, Commercial protections: Securom (Yes with VM Redirects, Opcode VM, Constant Hook Stealer etc), SafeDisk(+Nanomites), ASProtect SKE(+VM) blablabla. And when I tell you newer sega games have good protection, it really does have it. Sure you can clone it but emulation and running on PC is pretty much impossible without deprotecting the binary and emulating entire MX drivers/libraries."

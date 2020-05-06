@@ -1,3 +1,5 @@
+*PRE-RELEASE DO NOT SHARE THIS MESS*
+
 Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally allowing this to be published.
 
 - written by hostile, with supporting information from 
@@ -388,6 +390,9 @@ Hint: The technique most folks use involves patching several Sega binaries to no
 
 Memory can be acquired via a number of means, perhaps the easiest being DMA access over PCI with something like PCILeech https://github.com/ufrisk/pcileech 
 "PCILeech uses PCIe hardware devices to read and write target system memory. This is achieved by using DMA over PCIe. No drivers are needed on the target system"
+
+https://shop.lambdaconcept.com/home/40-screamer-m2.html
+"Screamer M.2 replaces PCIe Screamer R02 with an M.2 form factor and PCIe x4 connectivity"
 
 It may be possible to exploit a software vulnerability in order to gain access to install LeechAgent
 https://blog.frizk.net/2019/04/LeechAgent.html

@@ -217,26 +217,23 @@ https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc
 "SEGA is giving up China market.The JingWen Sega co,ltd has closed at earlier this year,a music game needs frequently update.We have no choice. If nothing unexpected happens,this will be the last update of Wumeng(Chinese version MaiMai).The MaiMai overseas (Version Green) has periodic update per week and the program is totally different to the mainland China version.We cannot get updates and the company has gone.So we find help for carck it."<br>
 https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc-based-arcade-games.42102/page-3#post-745386
 
-"Hi from inside of the great firewall."<br>
+Much of the information above came from Woodu a seemingly random Chinese Sega entheusiast, "Hi from inside of the great firewall". It is unclear at this time where Woodu obtained his Ring* knowledge.<br>
 https://github.com/Woodu
 
-It is unclear at this time where Woodu obtained his Ring* knowledge.<br>
-"This site is not official SEGAJINWIN corp. website, is hosted by Woodu at China Arcade"
-https://segajinwin.com
-
-It is clear he's really obsessed with Sega Jinwin based arcade stuff. 
+What is clear is that he's really obsessed with Sega Jinwin based arcade stuff! 
 "Bought a new domain name"<br>
 "Jingwen Sega really is a magic company."<br>
 "I miss it very much."<br>
 https://woodu.me/youxinmailegeyuming/
 
-You can see the original Sega Jinwin site in on The Internet Archive<br>
+"This site is not official SEGAJINWIN corp. website, is hosted by Woodu at China Arcade". You can see the original Sega Jinwin site in on The Internet Archive<br>
+https://segajinwin.com
 https://web.archive.org/web/20130910052147/http://www.segajinwin.com/
 
-"Established in 2009, Sega Jinwin (Shanghai) Amusement Co. Ltd is a joint-venture of Shanghai Jingwen Investment Co. Ltd., Japan Sega Corporation and affiliated company of China National Center for developing Animation, Cartoon & Game Industry."<br>
+So what is JingWin Sega? It was "Established in 2009, Sega Jinwin (Shanghai) Amusement Co. Ltd is a joint-venture of Shanghai Jingwen Investment Co. Ltd., Japan Sega Corporation and affiliated company of China National Center for developing Animation, Cartoon & Game Industry."<br>
 http://www.amusewind.com/catalog/all_ENTERPRISES/2012629/27_201262912749768_1.html
 
-Woodu has many interesting Ring related things on his site<br>
+Beyond his general love for Sega Woodu has many interesting Ring related things on his site, such as replacement drives<br>
 "It has been a long time since I started doing maimai's magical reform in 15 years, and I haven't even put energy on it for a long time. But still did something a little above. What I can take out recently is that I started selling alternative hard drives for the mainframe. This is also the only relatively legal thing"<br>
 https://woodu.me/author/woodu/
 
@@ -245,14 +242,13 @@ https://woodu.me/eryijiuniansanyue/<br>
 Ringedge2 120G 固态硬盘 ¥300.00 - 599.00<br>
 https://item.taobao.com/item.htm?id=586390733234<br>
 
-"Sega's arcade platform began to completely transform into an X86 based architecture PC, which opened the door to cracking. It is no exaggeration to say that, in addition to the latest arcades such as Ship Mother, DIVA, and Chunithm, SEGA's games can be said to be lost across the board" https://woodu.me/2017/03/<br>
-"This arcade is an arcade machine that has been represented in the era of Jingwen Sega. It is a full Chinese version, and there are still people selling it on Taobao."<br>
+"Sega's arcade platform began to completely transform into an X86 based architecture PC, which opened the door to cracking. It is no exaggeration to say that, in addition to the latest arcades such as Ship Mother, DIVA, and Chunithm, SEGA's games can be said to be lost across the board... This arcade is an arcade machine that has been represented in the era of Jingwen Sega. It is a full Chinese version, and there are still people selling it on Taobao."<br>
+https://woodu.me/2017/03/<br>
 
-Totally NOT bootleg "Lost on Island of Tropics"<br>
-"海岛探险游戏机"<br>
+The machine he mentions above is found here... it is a totally NOT bootleg "Lost on Island of Tropics" ("海岛探险游戏机"). "Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island." 
+http://m.amunion.com/product/247889.html
 http://www.haoyunlaigame.com/arc/view-119.html
 
-"Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island." http://m.amunion.com/product/247889.html
 
 In addition to bootlegs, you could occasionally find folks offering archival services, the conversation below exposes the concept of a rekey.  <br>
 

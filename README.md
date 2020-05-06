@@ -11,6 +11,7 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
 		* [Unlocking the drive](#unlocking-the-drive)
 		* [Modifying the OS boot image](#modifying-the-os-boot-image)
 		* [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
+		* [Obtaining the KeyFile and Volume Password](#obtaining-the-keyfile-and-volume-password)
 
    * [Final Boss: Changing games on Niko's Multi](#final-boss)
    * [Bonus Level: RE2Multi on RE1?1](#bonus-level)
@@ -368,19 +369,6 @@ ii  fuse                                2.9.4-1ubuntu3.1       amd64            
 
 Once fuse works, and your truecrypt has been installed you can mount TC containers. 
 
-```
-$ mkdir /tmp/tc
-$ sudo truecrypt -p segahardpassword -k SystemKeyFile System /tmp/tc
-
-$ ls /tmp/tc
-d3dref9.dll         lockid.txt      mxgdeliver.exe   mxkeychip.exe  mxsegaboot_2052.dll  mxstorage.exe        $RECYCLE.BIN
-default_regset.txt  mxauthdisc.exe  mxgfetcher.exe   mxmaster.exe   mxsegaboot.exe       ORIG_mxkeychip.exe   ringmaster_pub.pem
-develop_regset.txt  mxgcatcher.exe  mxinstaller.exe  mxnetwork.exe  mxshellexecute.exe   ORIG_mxsegaboot.exe  System Volume Information
-
-$ truecrypt -d /tmp/tc
-
-```
-
 A patched version of TrueCrypt can be used to mount images on OSX Catalina 10.15 as described here: 
 http://www.nerdenmeister.org/2013/08/16/build-truecrypt-on-os-x-64-bit-with-hardware-acceleration/
 https://gist.github.com/neurodroid/7059368
@@ -397,16 +385,29 @@ https://webcache.googleusercontent.com/search?q=cache:rCoVjQzFDMoJ:https://wiki.
 This will help you determine which disk encryption programs are compatable with LRW if you wish to try mounting TC images that *hard* way, opposed to just using one of the methods outlined above. Using TrueCrypt on Windows is left as an exercise for the reader, especially considering how heavily documented it it. 
 https://wiki2.org/en/Comparison_of_disk_encryption_software
 
+Here is an example with TrueCrypt on Linux:
+```
+$ mkdir /tmp/tc
+$ sudo truecrypt -p segahardpassword -k SystemKeyFile System /tmp/tc
+
+$ ls /tmp/tc
+d3dref9.dll         lockid.txt      mxgdeliver.exe   mxkeychip.exe  mxsegaboot_2052.dll  mxstorage.exe        $RECYCLE.BIN
+default_regset.txt  mxauthdisc.exe  mxgfetcher.exe   mxmaster.exe   mxsegaboot.exe       ORIG_mxkeychip.exe   ringmaster_pub.pem
+develop_regset.txt  mxgcatcher.exe  mxinstaller.exe  mxnetwork.exe  mxshellexecute.exe   ORIG_mxsegaboot.exe  System Volume Information
+
+$ truecrypt -d /tmp/tc
+
+```
+
+Here is an example with CipherShed on OSX:
 ```
 $ mkdir /tmp/z; ./CipherShed-OSX-64/src/Main/CipherShed -t System_Pengo -k SystemKeyFile /tmp/z -p segahardpassword 
 Protect hidden volume (if any)? (y=Yes/n=No) [No]: 
-```
 
-To unmount 
-```
 $ ./CipherShed-OSX-64/src/Main/CipherShed -d
 ```
 
+### Obtaining the KeyFile and Volume Password
 You may be wondering at this point how exactly the KeyFile was obtained. There were brief notes in the pastebin links above for one technique, but we really need to go in depth into how TrueCrypt can be attacked for academic posterity. 
 
 Hint: The technique most folks use involves patching several Sega binaries to not delete files in a TEMP folder, coupled with a hardcoded drive password similarly found with the same binaries. The below commentary will examine an alternate path to mounting an encrypted TC drive, post memory acquisition. 

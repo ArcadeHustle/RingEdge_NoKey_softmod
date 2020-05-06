@@ -382,24 +382,57 @@ To unmount
 $ ./CipherShed-OSX-64/src/Main/CipherShed -d
 ```
 
-You may be wondering at this point how exactly the KeyFile was obtained. There were brief notes in the pastebin links above, but we really need to go in depth. 
+You may be wondering at this point how exactly the KeyFile was obtained. There were brief notes in the pastebin links above for one technique, but we really need to go in depth into how TrueCrypt can be attacked for academic posterity. 
+
+Hint: The technique most folks use involves patching several Sega binaries to not delete files in a TEMP folder, coupled with a hardcoded drive password similarly found with the same binaries. The below commentary will examine an alternate path to mounting an encrypted TC drive, post memory acquisition. 
+
+Memory can be acquired via a number of means, perhaps the easiest being DMA access over PCI with something like PCILeech https://github.com/ufrisk/pcileech 
+"PCILeech uses PCIe hardware devices to read and write target system memory. This is achieved by using DMA over PCIe. No drivers are needed on the target system"
+
+It may be possible to exploit a software vulnerability in order to gain access to install LeechAgent
+https://blog.frizk.net/2019/04/LeechAgent.html
+
+"The LeechAgent is a 100% free open source endpoint solution geared towards remote physical memory acquisition and analysis on Windows endpoints in Active Directory environments."
+
+"I have used the Truecrypt plugins in Volatility but they simply do not work" https://www.forensicfocus.com/Forums/viewtopic/p=6582443/
+
+https://www.synacktiv.com/posts/pentest/practical-dma-attack-on-windows-10.html
+"In order to proceed to a straightforward DMA attack, many prerequisites must be met"
 
 A number of academic articles on attacking TrueCrypt seem applicable, there was so much news hype on weaknesses within the platform. How do they play out in the real world? How do they impact Sega's implementation? 
 Lets examine a few of the papers: 
 Detecting the use of TrueCrypt - http://docs.media.bitpipe.com/io_10x/io_102267/item_885954/RH%203%20Davies.pdf
-Error Correction and the Cryptographic Key - ftp://ftp.cs.princeton.edu/techreports/2011/897.pdf
-This page contains source code for some of the software that we developed in the course of this research - https://citp.princeton.edu/our-work/memory/code
-Security Analysis of TrueCrypt 7.0a with an Attack on the Keyfile Algorithm - https://cyberside.net.ee/truecrypt/misc/truecrypt_7.0a-analysis-en.pdf, https://cyberside.net.ee/truecrypt/misc/
-Mastering TrueCrypt: Windows 8 and Server 2012 Memory Forensics - https://downloads.volatilityfoundation.org/omfw/2013/OMFW2013_Ligh.pdf
-A Security Analysis of TrueCrypt: Detecting hidden volumes and operating systems - https://www.ma.rhul.ac.uk/static/techrep/2014/RHUL-MA-2014-10.pdf
-#TrueCrypt PlaidCTF Writeup: Fun with Firewire - https://mweissbacher.com/tag/truecrypt
-truecrypt second encryption of the master and XTS key with a back door password - https://security.stackexchange.com/questions/19764/truecrypt-second-encryption-of-the-master-and-xts-key-with-a-back-door-password
-TrueCrypt Master Key Extraction And Volume Identification - https://volatility-labs.blogspot.com/2014/01/truecrypt-master-key-extraction-and.html
-TrueCrypt Security: Securing Yourself against Practical TrueCrypt Attacks - https://resources.infosecinstitute.com/defeating-truecrypt-practical-attacks-truecrypt-security/#gref
-Recovery of Encryption Keys from Memory Using a Linear Scan - https://www.researchgate.net/publication/221548532_Recovery_of_Encryption_Keys_from_Memory_Using_a_Linear_Scan
-"TrueCrypt encrypted containers appear to contain nothing but random data and have no file signature. However, the first 512 bytes of a TrueCrypt container are actually a header, but are encrypted using a Header Key so still appears to be random data.
+"Of greatest use to a forensic investigator is the Registry location “HKEY_ LOCAL_MACHINE \system\MountedDevices”. The data stored in this key could confirm that a mounted volume is indeed a TrueCrypt volume. But it does not differentiate between the standard and hidden TrueCrypt volume types"
 
-TrueCrypt decrypts the header using a user-supplied password or keyfile, salt from offset 0-64 (bytes) and then the process of trial and error using different encryption and key derivation algorithms, modes of encryption (CBC, LRW etc.) and key derivation algorithms. Successful decryption of the header is when bytes 64-68 decrypt to the ASCII string ‘TRUE’. The entire header is then decrypted which in the case of LRW mode, contains the Master Key and Secondary Master Key (Tweak Key) needed to decrypt the actual contents of the container, from the ‘Data Area’ which begins at offset 512."
+Error Correction and the Cryptographic Key - ftp://ftp.cs.princeton.edu/techreports/2011/897.pdf
+"LRW implementations commonly precompute a large multiplication table generated from the tweak key, each entry of which is generated by shifting and possibly XORing with a known value. An entire multiplication table will contain many copies of nearly all of the bits of K2... rueCrypt 4 precomputes a 4048-byte multiplication table consisting of 16 blocks of 16 lines of 4 words of 4 bytes each. Line 0 of block 14 contains the tweak key... The multiplication table is generated line by line from the LRW key by iteratively applying the shift-and-XOR multiply function to generate four new values, and then XORing all combinations of these four values to create 16 more lines of the table."
+
+https://citp.princeton.edu/our-work/memory/code
+"These prototype applications are intended to illustrate the techniques described in the paper (Error Correction and the Cryptographic Key)"
+
+Security Analysis of TrueCrypt 7.0a with an Attack on the Keyfile Algorithm - https://cyberside.net.ee/truecrypt/misc/truecrypt_7.0a-analysis-en.pdf
+"Up to version 4.0 TrueCrypt applied the Cipher Block Chaining mode (CBC)... This mode, however, has considerable weaknesses if applied in the context of a volume encryption... In order to close that security breach TrueCrypt replaced the CBC mode with the LRW mode in version 4.1. The CBC mode was further supported for backward compatibility but new containers were only created with the LRW mode. The LRW mode is named after its inventers Liskov, Rivest and Wagner . In this mode a second key of the same length as the block length is multiplied with a block counter in a Galois field and the result of this mathematical operation is added as well to the plain text before encryption of the block as to the cipher text after that encryption... In version 5.0 TrueCrypt introduced the XTS mode as a replacement for the LRW mode . The XTS mode is a slight modification of the LRW mode designed to compensate for a theoretical little weakness of the LRW mode"
+
+Mastering TrueCrypt: Windows 8 and Server 2012 Memory Forensics - https://downloads.volatilityfoundation.org/omfw/2013/OMFW2013_Ligh.pdf
+"Force it to use ./master.key which came from the RAM dump... Patch based on code by Michael Weissbacher hpp://mweissbacher.com/blog/tag/truecrypt/"
+
+#TrueCrypt PlaidCTF Writeup: Fun with Firewire - https://mweissbacher.com/tag/truecrypt
+"Remember that TrueCrypt first decrypts the header with the password, and then reads the AES-key from the decrypted header. Reading in the header is done in Volume/VolumeHeader.cpp:VolumeHeader::Deserialize(.,.,.). We patch the code there, right after the master and secondary key was read from the decrypted header, and replace it with the hard-coded key value we found in the previous step"
+
+A Security Analysis of TrueCrypt: Detecting hidden volumes and operating systems - https://www.ma.rhul.ac.uk/static/techrep/2014/RHUL-MA-2014-10.pdf
+"TrueCrypt system volume layout containing a hidden operating system... "
+
+truecrypt second encryption of the master and XTS key with a back door password - https://security.stackexchange.com/questions/19764/truecrypt-second-encryption-of-the-master-and-xts-key-with-a-back-door-password
+"Since version 4.2a the format of TrueCrypt headers changed three times with the versions 5.0, 6.0 and 7.0"
+
+TrueCrypt Master Key Extraction And Volume Identification - https://volatility-labs.blogspot.com/2014/01/truecrypt-master-key-extraction-and.html
+"The truecryptsummary plugin gives you a detailed description of all TrueCrypt related artifacts in a given memory dump."
+
+TrueCrypt Security: Securing Yourself against Practical TrueCrypt Attacks - https://resources.infosecinstitute.com/defeating-truecrypt-practical-attacks-truecrypt-security/#gref
+"‘Aeskeyfind’ implements this approach, and we use it to search for AES keys in our memory image... Alternatively, you can use ‘bulk extractor’ to locate keys in memory... We now need to “patch” TrueCrypt so that it accepts the discovered AES keys. Here, we have patched TrueCrypt 7.1. For this purpose, we modify the ‘VolumeHeader.cpp’ file and hard code the AES keys in there" 
+ 
+Recovery of Encryption Keys from Memory Using a Linear Scan - https://www.researchgate.net/publication/221548532_Recovery_of_Encryption_Keys_from_Memory_Using_a_Linear_Scan
+"TrueCrypt encrypted containers appear to contain nothing but random data and have no file signature. However, the first 512 bytes of a TrueCrypt container are actually a header, but are encrypted using a Header Key so still appears to be random data... TrueCrypt decrypts the header using a user-supplied password or keyfile, salt from offset 0-64 (bytes) and then the process of trial and error using different encryption and key derivation algorithms, modes of encryption (CBC, LRW etc.) and key derivation algorithms. Successful decryption of the header is when bytes 64-68 decrypt to the ASCII string ‘TRUE’. The entire header is then decrypted which in the case of LRW mode, contains the Master Key and Secondary Master Key (Tweak Key) needed to decrypt the actual contents of the container, from the ‘Data Area’ which begins at offset 512."
 
 The following tools also provide intellectual reading on the subject at hand. 
 tckfs: This tool seeks asynchronously TrueCrypt key file using combinations of provided key files with provided password. - https://github.com/Octosec/tckfc
@@ -483,6 +516,42 @@ fe38635b943d818e9c13b8274039c0cc5ce4ff6e225aa69f4121a6f4ab51bd66
 07b56cfbc4681f781f4b86d5dc2a78eb0e4e34067feab1ea916abe38ea701b92
 902530d818631955b2c11adfc361fe3e90ecbcf4fcda64b7538822917b1aa5aa
 9450c89d1b14e4edc9eafa0571a0e4e142bcde268a434ebf2880f951cb00d419
+
+$ ./interrogate -a aes -k 256 /Volumes/UNTITLED11/memdump.raw 
+Interrogate  Copyright (C) 2008  Carsten Maartmann-Moe <carmaa@gmail.com>
+This program comes with ABSOLUTELY NO WARRANTY; for details use `-h'.
+This is free software, and you are welcome to redistribute it
+under certain conditions; see bundled file licence.txt for details.
+
+Using key size: 256 bits.
+Using input file: /Volumes/UNTITLED11/memdump.raw.
+Attempting to load entire file into memory, please stand by...
+Success, starting search.
+
+--------------------------------------------------------------------------------
+Found (probable) AES key at offset 099c3028:
+
+5c 52 f8 f0 ec 65 38 dc bc 94 6d 70 41 b0 84 f1 
+4f ea f9 54 5f 28 a3 e9 ac f7 01 16 3c c4 83 43 
+
+Expanded key:
+
+5c 52 f8 f0 ec 65 38 dc bc 94 6d 70 41 b0 84 f1 
+4f ea f9 54 5f 28 a3 e9 ac f7 01 16 3c c4 83 43 
+41 be e2 1b ad db da c7 11 4f b7 b7 50 ff 33 46 
+1c fc 3a 0e 43 d4 99 e7 ef 23 98 f1 d3 e7 1b b2 
+d7 11 d5 7d 7a ca 0f ba 6b 85 b8 0d 3b 7a 8b 4b 
+fe 26 07 bd bd f2 9e 5a 52 d1 06 ab 81 36 1d 19 
+d6 b5 01 71 ac 7f 0e cb c7 fa b6 c6 fc 80 3d 8d 
+4e eb 20 e0 f3 19 be ba a1 c8 b8 11 20 fe a5 08 
+65 b3 31 c6 c9 cc 3f 0d 0e 36 89 cb f2 b6 b4 46 
+c7 a5 ad ba 34 bc 13 00 95 74 ab 11 b5 8a 0e 19 
+0b 18 e5 13 c2 d4 da 1e cc e2 53 d5 3e 54 e7 93 
+75 85 39 66 41 39 2a 66 d4 4d 81 77 61 c7 8f 6e 
+ed 6b 7a fc 2f bf a0 e2 e3 5d f3 37 dd 09 14 a4 
+b4 84 c3 2f f5 bd e9 49 21 f0 68 3e 40 37 e7 50 
+37 ff 29 f5 18 40 89 17 fb 1d 7a 20 26 14 6e 84 
+
 
 We can use Volatility framework to examine a memory dump. https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
 This shows the lineage of the processes 

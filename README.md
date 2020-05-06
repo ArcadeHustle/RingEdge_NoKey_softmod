@@ -317,6 +317,11 @@ Device     Boot    Start      End  Sectors   Size Id Type
 
 ```
 
+If you are a Windows user you should be making use of Victoria for your drive unlock needs. http://archive.is/svEXF. 
+
+OSX users currently will have to rely on the hot swap technique until a proper ATA passthrough tecnique is worked out to send the ATA unlock commands. 
+
+
 ### Mounting TrueCrypt containers
 
 Once the drive has been mounted you will as expected encounter a number of TrueCrypt partitions, as well as a file based container in "C:\System\Execute\System". You can mount the TrueCrypt image, and drive partitionss within linux or OSX fairly easily if you do not prefer to use Windows. You can mount either encrypted files directly, or dd based drive images via losetup. Likewise you can of couse simply mount the actual drive partitions. 
@@ -379,19 +384,17 @@ $ truecrypt -d /tmp/tc
 A patched version of TrueCrypt can be used to mount images on OSX Catalina 10.15 as described here: 
 http://www.nerdenmeister.org/2013/08/16/build-truecrypt-on-os-x-64-bit-with-hardware-acceleration/
 https://gist.github.com/neurodroid/7059368
-A pre-patched version is located here, but you will need to modify the Makefile to make it work on Catalina
+
+A pre-patched version is located here, but you will need to modify the Makefile to make it work on Catalina. We've actually gone through the exercise and included it in our own git repo. 
 https://github.com/neurodroid/TrueCrypt
 
-If you make use of Paragon NTFS modules for Mac you can also write content to the mounted images. \
+If you make use of Paragon NTFS modules for Mac you can also write content to the mounted images.
 https://www.paragon-software.com/us/home/ntfs-mac/
 
-You will first need to install wxwidgets via brew! 
-
-Alternately you can also mount TC drives on OSX using CipherShed, but you'll need to use the patches from TrueCrypt to make them work on modern OSX
+Alternately you can also mount TC drives on OSX using CipherShed, but you'll need to use the patches from TrueCrypt to make them work on modern OSX. Patched versions of the CipherShed and TrueCrypt repos are included in our repo, ready to compile on OSX Cataline 10.15. 
 https://webcache.googleusercontent.com/search?q=cache:rCoVjQzFDMoJ:https://wiki.ciphershed.org/BuildOnOSX+&cd=1&hl=en&ct=clnk&gl=us
-Patched versions of the CipherShed and TrueCrypt repos are included in this git repo, ready to compile on OSX Cataline 10.15. 
 
-This will help you determine which disk encryption programs are compatable with LRW if you wish to try mounting TC images that *hard* way, opposed to just using TrueCrypt 
+This will help you determine which disk encryption programs are compatable with LRW if you wish to try mounting TC images that *hard* way, opposed to just using one of the methods outlined above. Using TrueCrypt on Windows is left as an exercise for the reader, especially considering how heavily documented it it. 
 https://wiki2.org/en/Comparison_of_disk_encryption_software
 
 ```

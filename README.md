@@ -10,6 +10,8 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
    * [Stage Four: Academic Exercises & Censorship](#stage-four)
 		* [Unlocking the drive](#unlocking-the-drive)
 		* [Modifying the OS boot image](#modifying-the-os-boot-image)
+	        * [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
+
    * [Final Boss: Changing games on Niko's Multi](#final-boss)
    * [Bonus Level: RE2Multi on RE1?1](#bonus-level)
 
@@ -325,6 +327,8 @@ Device     Boot    Start      End  Sectors   Size Id Type
 'Documents and Settings'   ntldr         '$RECYCLE.BIN'    System    '$UGM'                        WINDOWS
 
 ```
+
+### Mounting TrueCrypt containers
 
 Once the drive has been mounted you will as expected encounter a number of TrueCrypt partitions, as well as a file based container in "C:\System\Execute\System". You can mount the TrueCrypt image, and drive partitionss within linux or OSX fairly easily if you do not prefer to use Windows. You can mount either encrypted files directly, or dd based drive images via losetup. Likewise you can of couse simply mount the actual drive partitions. 
 

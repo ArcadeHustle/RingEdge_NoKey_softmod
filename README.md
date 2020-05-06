@@ -407,6 +407,10 @@ Untrue: Tool for checking passwords against TrueCrypt encrypted volumes and disk
 Master Key Decryptor: is a python script to assist with decrypting encrypted volumes using the recovered masterkey for various truecrypt type encrypted volumes. https://github.com/AmNe5iA/MKDecrypt
 Truecrypt volume parsing library - https://github.com/4144414D/pytruecrypt
 
+One theoretical way to obtain an unencrypted TrueCrypt image is by using the master key pulled from memory. 
+
+./Common/Crypto.h:226:	unsigned __int8 master_keydata[MASTER_KEYDATA_SIZE];	/* ... For LRW (deprecated/legacy), it contains the tweak key before the master key(s). */
+
 Take a memory dump by using mdd.exe, then lets search it for AES keys. 
 
 $ src/bulk_extractor -o /tmp/TC_keys -E aes /Volumes/UNTITLED11/memdump.raw 

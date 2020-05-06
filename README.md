@@ -918,15 +918,17 @@ http://www.neo-arcadia.com/forum/viewtopic.php?t=62415
 
 Editing Niko's RE2Multi is very straight forward. Steps 1, 2, 3, 4 we should all be familiar with...
 
+```
 unlock multi drive with ata password
 decrypt partition 7 with keyfile in C:\RE2Multi\re2multi.key
 Copy 'Virtua Tennis 4' folder into Game folder. It should look and be structured like the others already, but double check. game.bat file is setup and ready to go.
 dismount truecrpt partition
 relock drive with ata sec pass (if you wish! or just cut power)
 test in RE1
-
+```
 If you with to tamper with Niko's multi live you'll probably want the SystemUser password as well as Admin level privs. 
 
+```
 Download ms11-080-AddUser.exe
 Copy to USB stick
 Download mimikatz: https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20200502/mimikatz_trunk.zip
@@ -940,7 +942,7 @@ cd into win32 mimikatz directory
 type: runas /user:hacker mimikatz.exe
 type: sekurlsa::kerberos
 (press alt+spacebar, then E, then L, to scroll)
-
+```
 The password for SystemUser is <6/=U=#tpe!$*3!5
 
 <Add notes on BIOS password here>

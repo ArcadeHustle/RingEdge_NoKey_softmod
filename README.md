@@ -398,6 +398,10 @@ Hint: The technique most folks use involves patching several Sega binaries to no
 Memory can be acquired via a number of means, perhaps the easiest being DMA access over PCI with something like PCILeech https://github.com/ufrisk/pcileech 
 "PCILeech uses PCIe hardware devices to read and write target system memory. This is achieved by using DMA over PCIe. No drivers are needed on the target system"
 
+
+PicoDMA: DMA Attacks at Your Fingertips - https://www.youtube.com/watch?v=j8pCjgaByVo
+https://i.blackhat.com/USA-19/Wednesday/us-19-Sandin-PicoDMA-DMA-Attacks-At-Your-Fingertips.pdf
+
 https://shop.lambdaconcept.com/home/40-screamer-m2.html
 "Screamer M.2 replaces PCIe Screamer R02 with an M.2 form factor and PCIe x4 connectivity"
 

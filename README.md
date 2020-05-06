@@ -132,21 +132,23 @@ http://d4.princess.ne.jp/diary/20158.html
 "NTFS is a basic 3 partition configuration consisting of 2 partitions and an extended partition (content unknown). The first NTFS will bring up the RINGEDGE system. Of course, since there is no key-chip, it will stop with an error. The second is a system update. Probably an update of RINGEDGE itself. Maybe the game installation is also over here? The contents of the extended partition are completely unknown. Is it decrypted using the key of the key-chip?"
 ```
 http://d4.princess.ne.jp/diary/20157.html
-
+```
 "See someone abroad who said that the contents of the hard disk partition can be decrypted by hot plugging, but it is too risky to do this. I wonder if there is a great god who has studied this problem here?"<br>
 "Encrypted, I am afraid it is not so easy to unlock"<br>
 "But even if you extract it, you still have to modify the exe"<br>
+```
 https://club.tgfcer.com/thread-7148133-1-1.html
 
-The partition layout is as follows.<br>
-Partition 1 - \System\ (Boot Partition)<br>
-Partition 2 - \MiniNT  (Recovery Partition)<br>
-Partition 3 - 518 Meg  (?TrueCrypt? Partition)<br>
-Partition 4 - 	       (Update Partition - TrueCrypt Protected)<br>
-Partition 5 -          (? ? Partition)<br>
-Partition 6 -          (? OS Drivers ? Partition)<br>
-Partition 7 -          (Game Partition  - TrueCrypt Protected)<br>
-
+The partition layout is as follows.
+```
+Partition 1 - \System\ (Boot Partition)
+Partition 2 - \MiniNT  (Recovery Partition)
+Partition 3 - 518 Meg  (?TrueCrypt? Partition)
+Partition 4 - 	       (Update Partition - TrueCrypt Protected)
+Partition 5 -          (? ? Partition)
+Partition 6 -          (? OS Drivers ? Partition)
+Partition 7 -          (Game Partition  - TrueCrypt Protected)
+```
 
 https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html<br>
 MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf exist seemingly confirming the suspicion about it being an MS9667 based PC.  
@@ -160,12 +162,14 @@ https://product.tdk.com/en/products/flash-storage/flashstorage-catalog_en.pdf
 Serial-ATA-II Compatible NAND-Type Flash Memory Controller IC GBDriver RS2 Series
 https://product.tdk.com/info/en/catalog/datasheets/ew_015_rs2.pdf
 
-"SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip, <br>
-the process is really complex, but it generates a file on c:\windows\temp with the keyfile, <br>
-then mounts the TC container and after the TC Container is successfully mounted deletes the <br>
-Keyfile from C:\windows\temp, is just 2 minutes to pach that, is only a matter to remove the<br>
-DeleteFile function from SegaBoot with simple NOPs and let SegaBoot to mount the game, then the<br>
-Keyfile will be there on c:\windows\temp"<br>
+```
+"SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip,
+the process is really complex, but it generates a file on c:\windows\temp with the keyfile,
+then mounts the TC container and after the TC Container is successfully mounted deletes the
+Keyfile from C:\windows\temp, is just 2 minutes to pach that, is only a matter to remove the
+DeleteFile function from SegaBoot with simple NOPs and let SegaBoot to mount the game, then the
+Keyfile will be there on c:\windows\temp"
+```
 https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681449
 
 "You might be able to just take off the delete permission from windows temp"<br>

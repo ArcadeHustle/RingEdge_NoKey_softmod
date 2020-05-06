@@ -147,17 +147,6 @@ http://d4.princess.ne.jp/diary/20157.html
 ```
 https://club.tgfcer.com/thread-7148133-1-1.html
 
-Upon doing the studies requested on TGFC forum above you will find that the partition layout is as follows.
-```
-Partition 1 - \System\ (Boot Partition)
-Partition 2 - \MiniNT  (Recovery Partition)
-Partition 3 - 518 Meg  (?TrueCrypt? Partition)
-Partition 4 - 	       (Update Partition - TrueCrypt Protected)
-Partition 5 -          (? ? Partition)
-Partition 6 -          (? OS Drivers ? Partition)
-Partition 7 -          (Game Partition  - TrueCrypt Protected)
-```
-
 Even the hint that Ring* products are just commodity PC hardware is supported by documentation on MS9667, and even Sega's specific variant. The documents MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf can be used to confirm the suspicion about Sega Ring* technology being based on MS9667 based PC.
 https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html<br>
 
@@ -331,6 +320,17 @@ Device     Boot    Start      End  Sectors   Size Id Type
 ### Mounting TrueCrypt containers
 
 Once the drive has been mounted you will as expected encounter a number of TrueCrypt partitions, as well as a file based container in "C:\System\Execute\System". You can mount the TrueCrypt image, and drive partitionss within linux or OSX fairly easily if you do not prefer to use Windows. You can mount either encrypted files directly, or dd based drive images via losetup. Likewise you can of couse simply mount the actual drive partitions. 
+
+You will find that the partition layout is as follows.
+```
+Partition 1 - \System\ (Boot Partition)
+Partition 2 - \MiniNT  (Recovery Partition)
+Partition 3 - 518 Meg  (?TrueCrypt? Partition)
+Partition 4 - 	       (Update Partition - TrueCrypt Protected)
+Partition 5 -          (? ? Partition)
+Partition 6 -          (? OS Drivers ? Partition)
+Partition 7 -          (Game Partition  - TrueCrypt Protected)
+```
 
 First you will need a working TrueCrypt setup of some sort, either the original, or a fork. In theory some versions of Veracrypt are usable, but LRW support must be present, your best bet is the Linux version. 
 https://www.veracrypt.fr/code/VeraCrypt/tree/src/Common/Volumes.c?h=VeraCrypt_1.17&id=03867fbf5653c0260e71271e0ddf46ed1045b488#n805

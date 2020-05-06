@@ -443,6 +443,7 @@ Interrogate: https://sourceforge.net/projects/interrogate/
 Bulk Extractor: https://github.com/simsong/bulk_extractor.git
 Aes-Finder: https://github.com/mmozeiko/aes-finder.git
 AesKeyFind: https://github.com/makomk/aeskeyfind
+Stark aes_keyschedule: https://github.com/SideChannelMarvels/Stark/blob/master/aes_keyschedule.c
 
 One theoretical way to obtain an unencrypted TrueCrypt image is by using the master key pulled from memory. 
 

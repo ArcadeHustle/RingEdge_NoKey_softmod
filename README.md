@@ -1,7 +1,7 @@
 *PRE-RELEASE DO NOT SHARE THIS MESS*
 
 Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally allowing this to be published.
-- written by hostile, with supporting information from 
+- written by hostile, with supporting information from the community at large!
 
 <p align="center">
 <img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/walsdawg.jpeg"><img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/darksoft.jpeg">

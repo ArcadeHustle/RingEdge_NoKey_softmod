@@ -202,6 +202,20 @@ As expected with this sort of information floating around, it did not take long 
 "Topic: Initial D8 Server Ringedge (Original, No Bootleg!)", so wait, where is the bootleg one you made then? lol.<br>
 http://www.ukvac.com/forum/initial-d8-server-ringedge-original-no-bootleg_topic367630.html
 
+In addition to bootlegs, you could occasionally find folks offering archival services, the conversation below exposes the concept of a rekey.<br>
+
+"if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)... Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."<br>
+https://web.archive.org/web/20190403174837/https://assemblergames.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/
+
+Mahjong for example has a KeyChip ID of SBVF, and it is a VERY easy to obtain KeyChip... I wonder why so may shared images are rekeyed to it? ;)<br>
+https://gakman.forumgaming.fr/t72-ringedge-ringwide#454
+
+There was an effort at one point to document as many chip ID's as possible on AP forums, this sort of effort is extremely useful for archival of all known KeyChips. <br>
+https://webcache.googleusercontent.com/search?q=cache:kfuo1iRQy3wJ:https://www.arcade-projects.com/forums/index.php%3Fthread/4456-ringedge-keychip-id/+&cd=1&hl=en&ct=clnk&gl=us
+
+If we come full circle to modern times, folks have finally brought forth conversations about a Ring* keychip emulator. This sort of concept has been deployed in private for quite some time by various players.<br>
+https://github.com/ArcadeHustle/RingEdge_SSD_Softmod/issues/1
+
 ### The Chinese Jinwin Sega connection? 
 One of the first examples of bootlegging was a Chinese Operation Ghost Nokey.<br>
 "I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome... I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015<br>
@@ -245,25 +259,9 @@ https://item.taobao.com/item.htm?id=586390733234<br>
 "Sega's arcade platform began to completely transform into an X86 based architecture PC, which opened the door to cracking. It is no exaggeration to say that, in addition to the latest arcades such as Ship Mother, DIVA, and Chunithm, SEGA's games can be said to be lost across the board... This arcade is an arcade machine that has been represented in the era of Jingwen Sega. It is a full Chinese version, and there are still people selling it on Taobao."<br>
 https://woodu.me/2017/03/<br>
 
-The machine he mentions above is found here... it is a totally NOT bootleg "Lost on Island of Tropics" ("海岛探险游戏机"). "Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island." 
+The machine he mentions above is found here... it is a totally NOT bootleg "Lost on Island of Tropics" ("海岛探险游戏机"). "Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island."<br>
 http://www.amunion.com/product/247889.html<br>
 http://www.haoyunlaigame.com/arc/view-119.html<br>
-
-
-In addition to bootlegs, you could occasionally find folks offering archival services, the conversation below exposes the concept of a rekey.  <br>
-
-"if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)... Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."<br>
-https://www.assembler-games.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/#post-866358<br>
-https://web.archive.org/web/20190403174837/https://assemblergames.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/
-
-Mahjong for example is SBVF a VERY easy to obtain KeyChip... wonder why so may shared images are keyed to it? ;)<br>
-https://gakman.forumgaming.fr/t72-ringedge-ringwide#454
-
-There was an effort at one point to document as many chip ID's as possible on AP forums. <br>
-https://webcache.googleusercontent.com/search?q=cache:kfuo1iRQy3wJ:https://www.arcade-projects.com/forums/index.php%3Fthread/4456-ringedge-keychip-id/+&cd=1&hl=en&ct=clnk&gl=us
-
-Modern times have finally brought forth conversations about a Ring* keychip emulator.<br>
-https://github.com/ArcadeHustle/RingEdge_SSD_Softmod/issues/1
 
 # Stage Four
 

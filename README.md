@@ -11,19 +11,19 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
   <img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/arcadeprojects.jpeg"><img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/brizzo.jpeg">
 </p>
 
-   * [Stage One: Bye Bye Puyo Puyo!](#stage-one)
-   * [Stage Two: Early Ring history](#stage-two)
-   * [Stage Three: Ring Piracy Deep Dive](#stage-three)
+* [Stage One: Bye Bye Puyo Puyo!](#stage-one)
+* [Stage Two: Early Ring history](#stage-two)
+* [Stage Three: Ring Piracy Deep Dive](#stage-three)
 		* [Enter TrueCrypt](#enter-truecrypt)
 		* [The Chinese Jinwin Sega connection?](#the-chinese-jinwin-sega-connection)
-   * [Stage Four: Academic Exercises & Censorship](#stage-four)
+* [Stage Four: Academic Exercises & Censorship](#stage-four)
 		* [Unlocking the drive](#unlocking-the-drive)
 		* [Modifying the OS boot image](#modifying-the-os-boot-image)
 		* [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
 		* [Obtaining the KeyFile and Volume Password](#obtaining-the-keyfile-and-volume-password)
-
-   * [Final Boss: Changing games on Niko's Multi](#final-boss)
-   * [Bonus Level: RE2Multi on RE1?1](#bonus-level)
+		* [Playing around with Volatility](#playing-around-with-volatility)
+* [Final Boss: Changing games on Niko's Multi](#final-boss)
+* [Bonus Level: RE2Multi on RE1?1](#bonus-level)
 
 # Stage One:
 
@@ -436,8 +436,6 @@ https://www.blackhat.com/docs/us-17/thursday/us-17-Evdokimov-Intel-AMT-Stealth-B
 "Intel Management Engine (Intel ME) is a proprietary technology that consists of a microcontroller integrated into the Platform Controller Hub (PCH) chip and a set of built-in peripherals. The PCH carries almost all communication between the processor and external devices. Therefore, Intel ME has access to almost all data on the computer. The ability to execute third-party code on Intel ME would allow for a complete compromise of the platform... By exploiting the vulnerability that we found in the bup module, we were able to turn on a mechanism, PCH red unlock, that opens full access to all PCH devices for their use via the DFx chain—in other words, using JTAG. One such device is the x86 ME processor itself, and so we obtained access to its internal JTAG interface. With such access, we could debug code executed on ME, read memory of all processes and the kernel, and manage all devices inside the PCH. We found a total of about 50 internal devices to which only ME has full access, while the main processor has access only to a very limited subset of them."
 https://www.blackhat.com/docs/eu-17/materials/eu-17-Goryachy-How-To-Hack-A-Turned-Off-Computer-Or-Running-Unsigned-Code-In-Intel-Management-Engine-wp.pdf
 
-"I have used the Truecrypt plugins in Volatility but they simply do not work" https://www.forensicfocus.com/Forums/viewtopic/p=6582443/
-
 https://www.synacktiv.com/posts/pentest/practical-dma-attack-on-windows-10.html
 "In order to proceed to a straightforward DMA attack, many prerequisites must be met"
 
@@ -606,10 +604,15 @@ c7 a5 ad ba 34 bc 13 00 95 74 ab 11 b5 8a 0e 19
 ed 6b 7a fc 2f bf a0 e2 e3 5d f3 37 dd 09 14 a4 
 b4 84 c3 2f f5 bd e9 49 21 f0 68 3e 40 37 e7 50 
 37 ff 29 f5 18 40 89 17 fb 1d 7a 20 26 14 6e 84 
+```
 
+### Playing around with Volatility
+
+"I have used the Truecrypt plugins in Volatility but they simply do not work" https://www.forensicfocus.com/Forums/viewtopic/p=6582443/
 
 We can use Volatility framework to examine a memory dump. https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
 This shows the lineage of the processes 
+```
 $ python vol.py -f /Volumes/UNTITLED11/memdump.raw pstree
 Volatility Foundation Volatility Framework 2.6.1
 Name                                                  Pid   PPid   Thds   Hnds Time

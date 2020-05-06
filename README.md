@@ -328,14 +328,16 @@ Device     Boot    Start      End  Sectors   Size Id Type
 
 Once the drive has been mounted you will as expected encounter a number of TrueCrypt partitions, as well as a file based container in "C:\System\Execute\System". You can mount the TrueCrypt image, and drive partitionss within linux or OSX fairly easily if you do not prefer to use Windows. You can mount either encrypted files directly, or dd based drive images via losetup. Likewise you can of couse simply mount the actual drive partitions. 
 
-First you will need a working TrueCrypt setup. In theory some versions of Veracrypt are also usable, but LRW support must be present. This should work on linux, but probably will NOT on OSX due to hdiutil being used on the backend. 
+First you will need a working TrueCrypt setup of some sort, either the original, or a fork. In theory some versions of Veracrypt are usable, but LRW support must be present, your best bet is the Linux version. 
+https://www.veracrypt.fr/code/VeraCrypt/tree/src/Common/Volumes.c?h=VeraCrypt_1.17&id=03867fbf5653c0260e71271e0ddf46ed1045b488#n805
 
-Fuse makes LRW work on versions past 4.x, so you'll need that too. https://forums.gentoo.org/viewtopic-t-688399-start-0.html
+FUSE software consists of a kernel extension and various user space libraries that makes LRW work on non Windows versions of TrueCrypt past 4.x. You'll need that too if you are an OSX, or Linux user trying to follow along. https://forums.gentoo.org/viewtopic-t-688399-start-0.html
 
-```
+Either path you choose you'll need some form of TrueCrypt source. The below example shows Truecrypt5 being installed on Ubuntu. The source code was pulled from the git repo below. 
 https://github.com/DrWhax/truecrypt-archive
 https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
 
+```
 # wget https://github.com/stefansundin/truecrypt-archive/raw/master/truecrypt-5.1a-ubuntu-x64.tar.gz
 # tar -zxvf truecrypt-5.1a-ubuntu-x64.tar.gz 
 # ./truecrypt-5.1a-setup-ubuntu-x64 

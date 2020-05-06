@@ -5,7 +5,8 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
    * [Stage One: Bye Bye Puyo Puyo!](#stage-one)
    * [Stage Two: Early Ring history](#stage-two)
    * [Stage Three: Ring Piracy Deep Dive](#stage-three)
-	      * [Enter TrueCrypt](#enter-truecrypt)
+		* [Enter TrueCrypt](#enter-truecrypt)
+		* [The Chinese Jinwin Sega connection?](#the-chinese-jinwin-sega-connection)
    * [Stage Four: Academic Exercises & Censorship](#stage-four)
    * [Final Boss: Changing games on Niko's Multi](#final-boss)
    * [Bonus Level: RE2Multi on RE1?1](#bonus-level)
@@ -196,11 +197,12 @@ https://web.archive.org/web/20170630214524/https://www.assemblergames.com/thread
 "Its much more easy than that, just get a file access tool like filemon and see the parameters segaboot is giving to truecrypt, you will know where its storing the binary file that truecrypt uses as password to decrypt the partition"<br>
 https://www.assembler-games.com/threads/sega-ringedge-motherboard-inside-pictures.46424/
 
-As expected it did not take long for folks to start selling "bootleg" versions of Ring games that did not require a key. Sometimes refered to as "NoKey" games.<br>
+As expected with this sort of information floating around, it did not take long for folks to start selling "bootleg" versions of Ring games that did not require a key. Sometimes refered to as "NoKey" games, these games made use of leaked TrueCrypt keys to subsequently modify the games behavior preventing it from requiring a proper KeyChip from Sega.<br>
 
 "Topic: Initial D8 Server Ringedge (Original, No Bootleg!)", so wait, where is the bootleg one you made then? lol.<br>
 http://www.ukvac.com/forum/initial-d8-server-ringedge-original-no-bootleg_topic367630.html
 
+### The Chinese Jinwin Sega connection? 
 One of the first examples of bootlegging was a Chinese Operation Ghost Nokey.<br>
 "I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome... I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015<br>
 http://archive.is/M1hvR

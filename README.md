@@ -206,6 +206,13 @@ This same company was later dismantled, along with it's conterfeit games.
 https://www.intergameonline.com/coin-op/news/china-sues-merit-game-thieves
 
 ### The Chinese Jinwin Sega connection? 
+"Sega's arcade platform began to completely transform into an X86 based architecture PC, which opened the door to cracking. It is no exaggeration to say that, in addition to the latest arcades such as Ship Mother, DIVA, and Chunithm, SEGA's games can be said to be lost across the board... This arcade is an arcade machine that has been represented in the era of Jingwen Sega. It is a full Chinese version, and there are still people selling it on Taobao."<br>
+https://woodu.me/2017/03/<br>
+
+The machine mentioned above is found here... it is a totally NOT bootleg "Lost on Island of Tropics" ("海岛探险游戏机"). "Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island."<br>
+http://www.amunion.com/product/247889.html<br>
+http://www.haoyunlaigame.com/arc/view-119.html<br>
+
 One of the first examples of bootlegging was a Chinese Operation Ghost Nokey.<br>
 "I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome... I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015<br>
 http://archive.is/M1hvR
@@ -244,13 +251,6 @@ https://woodu.me/author/woodu/
 https://woodu.me/eryijiuniansanyue/<br>
 Ringedge2 120G 固态硬盘 ¥300.00 - 599.00<br>
 https://item.taobao.com/item.htm?id=586390733234<br>
-
-"Sega's arcade platform began to completely transform into an X86 based architecture PC, which opened the door to cracking. It is no exaggeration to say that, in addition to the latest arcades such as Ship Mother, DIVA, and Chunithm, SEGA's games can be said to be lost across the board... This arcade is an arcade machine that has been represented in the era of Jingwen Sega. It is a full Chinese version, and there are still people selling it on Taobao."<br>
-https://woodu.me/2017/03/<br>
-
-The machine he mentions above is found here... it is a totally NOT bootleg "Lost on Island of Tropics" ("海岛探险游戏机"). "Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island."<br>
-http://www.amunion.com/product/247889.html<br>
-http://www.haoyunlaigame.com/arc/view-119.html<br>
 
 ### Enter TrueCrypt
 The nuances of TrueCrypt on Ring* platform has been a heavily censored topic, although not a complicated one at it's root. In essence you need to acquire both the keys and password to the TrueCrypt container. Both tasks are fairly trivial at the end of the day.  

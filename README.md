@@ -226,10 +226,11 @@ What is clear is that he's really obsessed with Sega Jinwin based arcade stuff!<
 "Bought a new domain name"<br>
 "Jingwen Sega really is a magic company."<br>
 "I miss it very much."<br>
-https://woodu.me/youxinmailegeyuming/
-
-"This site is not official SEGAJINWIN corp. website, is hosted by Woodu at China Arcade". You can see the original Sega Jinwin site in on The Internet Archive<br>
+"This site is not official SEGAJINWIN corp. website, is hosted by Woodu at China Arcade".<br>
+https://woodu.me/youxinmailegeyuming/<br>
 https://segajinwin.com
+
+You can see the original Sega Jinwin site in on The Internet Archive<br>
 https://web.archive.org/web/20130910052147/http://www.segajinwin.com/
 
 So what is JingWin Sega? It was "Established in 2009, Sega Jinwin (Shanghai) Amusement Co. Ltd is a joint-venture of Shanghai Jingwen Investment Co. Ltd., Japan Sega Corporation and affiliated company of China National Center for developing Animation, Cartoon & Game Industry."<br>

@@ -201,6 +201,10 @@ https://www.chinafix.com/thread-991881-1-1.html
 It should be noted that “the first criminal case in China involving an infringer of coin-op amusement games" occured in Panyu China. In the raid that took place at Chengtai factory in Panyu "10 suspected copies of complete Sega products" were seized. 
 https://www.intergameonline.com/coin-op/news/counterfeit-megatouch-units-seized-in-china
 
+This same company was later dismantled, along it's conterfeit games. 
+"In the ruling, Chengtai Electronics Science and Technology Company was found to have violated trademark laws, while also sustaining illegal business operations charges."
+https://www.intergameonline.com/coin-op/news/china-sues-merit-game-thieves
+
 ### Enter TrueCrypt
 The nuances of TrueCrypt on Ring* platform has been a heavily censored topic, although not a complicated one at it's root. In essence you need to acquire both the keys and password to the TrueCrypt container. Both tasks are fairly trivial at the end of the day.  
 

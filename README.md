@@ -176,9 +176,9 @@ Additional commentary on Hiroyuki's home page (ひろゆきのホームページ
 "NTFS is a basic 3 partition configuration consisting of 2 partitions and an extended partition (content unknown). The first NTFS will bring up the RINGEDGE system. Of course, since there is no key-chip, it will stop with an error. The second is a system update. Probably an update of RINGEDGE itself. Maybe the game installation is also over here? The contents of the extended partition are completely unknown. Is it decrypted using the key of the key-chip?"
 ```
 http://d4.princess.ne.jp/diary/20157.html
-```
 
 The disk encryption was something that confused folks at first, we obviously now know that it is based on TrueCrypt.
+```
 "See someone abroad who said that the contents of the hard disk partition can be decrypted by hot plugging, but it is too risky to do this. I wonder if there is a great god who has studied this problem here?"
 "Encrypted, I am afraid it is not so easy to unlock"
 "But even if you extract it, you still have to modify the exe"

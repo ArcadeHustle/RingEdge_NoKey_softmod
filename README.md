@@ -133,7 +133,7 @@ Well after the dick wagging on Assembler Games a random technical examination of
 ```
 http://d4.princess.ne.jp/diary/20158.html
 
-The ATA locks were a hurdle that was noted by other folks that were doing similar research into how the Ring* platform works.<br>
+ATA locks were a hurdle noted by other folks that were doing similar research into how the Ring* platform works.<br>
 "The RingEdge BIOS will only boot a SSD that has the valid TDK RS2 signature on the ATA Identify structure and is locked and also needs to have the password calculated by the BIOS and bassed on that TDK RS2 signature"<br>
 https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681443
 

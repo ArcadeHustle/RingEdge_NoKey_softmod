@@ -118,8 +118,7 @@ AP on the otherhand refuses to allow anything related to Teknoparrot, or Ringedg
 "this is not the place to ask for neither for teknoparrot nor for roms."<br>
 https://www.arcade-projects.com/forums/index.php?thread/9093-greetings-from-uk/&postID=145048#post145048
 
-At a certain point interest picked up on the Arcade Projects forums about the Ring based systems, eventually leading to the need to censor some of the commentary on the security mechanisms employed by Sega.  
-"What can one do with a RingEdge?"
+At a certain point interest picked up on the Arcade Projects threat "What can one do with a RingEdge?", eventually leading to the need to censor some of the commentary on the security mechanisms employed by Sega.  
 http://archive.is/wOIjp
 
 Once folks in the "Ringedge/2/wide/Nu game list" thread heard "they can run locally and offline!", the thirst began. 

@@ -186,7 +186,8 @@ The disk encryption was something that confused folks at first, we obviously now
 https://club.tgfcer.com/thread-7148133-1-1.html
 
 The mention of MS-9667 is of course quite intriguing. Some of the early revisions of Ring* hardware still had this part number silk screened on the board.<br>
-"[National motherboard repair alliance] MSI foundry MS-9667 VER: 1.0 SEGA 775 professional repair of faulty motherboard"<br>
+"[National motherboard repair alliance] <br>
+MSI foundry MS-9667 VER: 1.0 SEGA 775 professional repair of faulty motherboard"<br>
 https://tw.bid.yahoo.com/item/【全國主機板維修聯盟】微星代工-MS-9667-VER-1-0-SEG-100693217459
 
 Someone in China dumped the bios from this specific version citing a large number of deployed consolse in Panyu.<br>

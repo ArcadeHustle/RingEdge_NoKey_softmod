@@ -155,7 +155,7 @@ The ATA key can be acquired via commercial SATA analyzer, ghetto style wirewrap+
 
 <img src=https://blog.shackspace.de/wp-content/uploads/2011/04/DSC_2883.jpg>
 
-"Open Sesame: Harddrive Password Hacking with a OpenBench Logic Sniffer"
+"Open Sesame: Harddrive Password Hacking with a OpenBench Logic Sniffer"<br>
 https://shackspace.de/2011/04/27/open-sesame-harddrive-password-hacking-with-a-openbench-logic-sniffer/
 
 https://hackaday.com/2011/04/28/ide-bus-sniffing-and-hard-drive-password-recovery/

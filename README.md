@@ -114,7 +114,7 @@ Koihime.json GGXrdSIGN.json FightingClimax.json BladeArcus.json UnderNightInBirt
 MeltyBloodRE2.json ShiningForceCrossRaid.json ShiningForceCrossExlesia.json ShiningForceCrossElysion.json
 ```
 
-ArcadeProjects on the otherhand refuses to allow anything related to Teknoparrot, or Ringedge to be discussed as a general rule.<br>
+AP on the otherhand refuses to allow anything related to Teknoparrot, or Ringedge to be discussed as a general rule.<br>
 "this is not the place to ask for neither for teknoparrot nor for roms."
 https://www.arcade-projects.com/forums/index.php?thread/9093-greetings-from-uk/&postID=145048#post145048
 

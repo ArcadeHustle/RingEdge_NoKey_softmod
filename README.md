@@ -40,11 +40,12 @@ Christmas 2018 of course, brought this game back to life via the amazing "TeknoP
 Unfortunately this restoration was only for PC users as opposed to arcade operators. <br>
 https://archive.org/download/Arcade-Sega-RingEdge-2018-12-23
 
-"Sorry guy, didn't see you there!" https://www.youtube.com/watch?v=-ds4xRnI-b8
+"Sorry guy, didn't see you there!" 
+[![Sorry Guy](http://img.youtube.com/vi/-ds4xRnI-b8/0.jpg)](https://www.youtube.com/watch?v=-ds4xRnI-b8?t=190 )
 
-"Now it is time to take out my Santa bag, and give you presents" https://youtu.be/-ds4xRnI-b8?t=190
+"Now it is time to take out my Santa bag, and give you presents"
 
-What about *actual* Ring hardware owners, and arcade operators in need? Have they been left out of the most recent TeknoParrot CoronaVirus (COVID-19) Update just the same? 
+What about *actual* Ring hardware owners, and arcade operators in need? Have we been left out of the most recent TeknoParrot CoronaVirus (COVID-19) Update just the same? Are there no presents for us? 
 
 "Hello my friends, it seems that we are in the middle of a cross road, and now I have decided that I will enable all the RingEdge, RindEdge2, and RingWide cores on Teknoparrot, directly to public. Also if the entire internet dies because of coronavirus, I have given the archive and the source code to a few friends, expect an update. Good luck everybody." https://www.youtube.com/watch?v=lS3gSW3ZskQ
 
@@ -52,7 +53,8 @@ Meanwhile, on the *other* side of the interwebs:<br>
 "We set out rules and people couldn't follow them. This new stuff is bringing too much drama."<br>
 https://www.arcade-projects.com/forums/index.php?thread/12974-ringedge-help-section/&postID=210050#post210050
 
-Lets all pour out some liquor for the Sega Ringedge, Ringwide and Nu subgroup on AP. https://www.youtube.com/watch?v=oK9gLkXe0xw <br>
+Lets all pour out some liquor for the Sega Ringedge, Ringwide and Nu subgroup on AP. 
+https://www.youtube.com/watch?v=oK9gLkXe0xw <br>
 Rest In Peace!.<br>
 https://web.archive.org/web/20171014003744/http://www.arcade-projects.com/forums/index.php?board/73-sega-ringedge-ringwide-and-nu/
 

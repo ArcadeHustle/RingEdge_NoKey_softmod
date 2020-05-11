@@ -189,6 +189,7 @@ The mention of MS-9667 is of course quite intriguing. Some of the early revision
 "[National motherboard repair alliance] <br>
 MSI foundry MS-9667 VER: 1.0 SEGA 775 professional repair of faulty motherboard"<br>
 https://tw.bid.yahoo.com/item/【全國主機板維修聯盟】微星代工-MS-9667-VER-1-0-SEG-100693217459
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/MS9667.jpeg">
 
 Someone in China dumped the bios from this specific version citing a large number of deployed consolse in Panyu.<br>
 "Dedicated anime game console motherboard BIOS, this motherboard BIOS is easy to break, upload it to everyone to repair this board, it is convenient" (file:SEGA MS-9667 rev1.0.zip)<br>

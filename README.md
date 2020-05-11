@@ -140,7 +140,7 @@ https://web.archive.org/web/20170628094958/https://www.assemblergames.com/thread
 The manufacturing timeline for TDK GBDriver RS2 & RS3 indicates that the RS2 came out in 2010, and the RS3 in 2011. https://product.tdk.com/en/products/flash-storage/flashstorage-catalog_en.pdf
 
 Documentation for the RS2 is located here:<br>
-https://product.tdk.com/en/products/flash-storage/flashstorage-catalog_en.pdf
+https://product.tdk.com/en/products/flash-storage/flashstorage-catalog_en.pdf<br>
 "Serial-ATA-II Compatible NAND-Type Flash Memory Controller IC GBDriver RS2 Series"<br>
 
 Documentation for the RS3 likewise can be found here:<br>

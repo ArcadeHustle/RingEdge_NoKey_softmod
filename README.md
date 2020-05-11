@@ -212,6 +212,7 @@ https://woodu.me/2017/03/<br>
 The machine mentioned above is found here... it is a totally NOT bootleg "Lost on Island of Tropics" ("海岛探险游戏机"). "Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island."<br>
 http://www.amunion.com/product/247889.html<br>
 http://www.haoyunlaigame.com/arc/view-119.html<br>
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/bootleg.jpeg">
 
 One of the first examples of bootlegging was a Chinese Operation Ghost Nokey.<br>
 "I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome... I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015<br>

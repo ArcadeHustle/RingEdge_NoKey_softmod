@@ -142,9 +142,9 @@ The commentary offers a great starting point for resarch into Ring* security.
 ```
 http://d4.princess.ne.jp/diary/20157.html
 ```
-"See someone abroad who said that the contents of the hard disk partition can be decrypted by hot plugging, but it is too risky to do this. I wonder if there is a great god who has studied this problem here?"<br>
-"Encrypted, I am afraid it is not so easy to unlock"<br>
-"But even if you extract it, you still have to modify the exe"<br>
+"See someone abroad who said that the contents of the hard disk partition can be decrypted by hot plugging, but it is too risky to do this. I wonder if there is a great god who has studied this problem here?"
+"Encrypted, I am afraid it is not so easy to unlock"
+"But even if you extract it, you still have to modify the exe"
 ```
 https://club.tgfcer.com/thread-7148133-1-1.html
 

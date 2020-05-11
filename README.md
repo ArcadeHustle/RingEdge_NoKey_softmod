@@ -198,7 +198,7 @@ Someone in China dumped the bios from this specific version citing a large numbe
 "I am here in Panyu, China's game console base, a large number of game console motherboard repair"<br>
 https://www.chinafix.com/thread-991881-1-1.html
 
-It should be noted that “the first criminal case in China involving an infringer of coin-op amusement games" occured in Panyu CHina. In the raid that took place at Chengtai factory in Panyu "10 suspected copies of complete Sega products" were seized. 
+It should be noted that “the first criminal case in China involving an infringer of coin-op amusement games" occured in Panyu China. In the raid that took place at Chengtai factory in Panyu "10 suspected copies of complete Sega products" were seized. 
 https://www.intergameonline.com/coin-op/news/counterfeit-megatouch-units-seized-in-china
 
 ### Enter TrueCrypt

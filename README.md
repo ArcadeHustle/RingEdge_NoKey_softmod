@@ -133,6 +133,40 @@ Well after the dick wagging on Assembler Games a random technical examination of
 ```
 http://d4.princess.ne.jp/diary/20158.html
 
+The ATA locks were a hurdle that was noted by other folks that were doing similar research into how the Ring* platform works.<br>
+"The RingEdge BIOS will only boot a SSD that has the valid TDK RS2 signature on the ATA Identify structure and is locked and also needs to have the password calculated by the BIOS and bassed on that TDK RS2 signature"<br>
+https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681443
+
+The manufacturing timeline for TDK GBDriver RS2 & RS3 indicates that the RS2 came out in 2010, and the RS3 in 2011. https://product.tdk.com/en/products/flash-storage/flashstorage-catalog_en.pdf
+
+Documentation for the RS2 is located here: https://product.tdk.com/en/products/flash-storage/flashstorage-catalog_en.pdf
+"Serial-ATA-II Compatible NAND-Type Flash Memory Controller IC GBDriver RS2 Series"
+
+Documentation for the RS3 likewise can be found here: https://product.tdk.com/info/en/catalog/datasheets/ew_018_rs3.pdf
+"Serial ATA 3Gbps Compatible NAND-Type Flash Memory Controller IC GBDriver RS3 Series"
+
+The RS2, and RS3 series drives support ATA drive locking functionality to prevent casual access, where as the drive encryption itself is actually handled by TrueCrypt. 
+
+Bypassing the ATA lock is trivial, at this point the key has proliferated as: 7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A<br>
+
+The ATA key can be acquired via commercial SATA analyzer, ghetto style wirewrap+OpenBench, or even something along the lines of a firmware patched SSD based on OCZ Vertex / Jasmine hardware. 
+
+<img src=https://blog.shackspace.de/wp-content/uploads/2011/04/DSC_2883.jpg>
+
+"Open Sesame: Harddrive Password Hacking with a OpenBench Logic Sniffer"
+https://shackspace.de/2011/04/27/open-sesame-harddrive-password-hacking-with-a-openbench-logic-sniffer/
+
+https://hackaday.com/2011/04/28/ide-bus-sniffing-and-hard-drive-password-recovery/
+
+"The Evil SSD Project - When your storage has a mind of its own"<br>
+https://www.os3.nl/_media/2016-2017/courses/ot/martijn_yonne.pdf
+
+See also the IRATEMONK example for ideas on how an SSD drive could be used to extract the calculated passwords presented by the Sega ATA unlock routines. 
+https://www.schneier.com/blog/archives/2014/01/iratemonk_nsa_e.html
+
+None the less the ATA key has been public as early as 2018.
+https://pastebin.com/2qiQdPQ6
+
 The commentary offers a great starting point for resarch into Ring* security. 
 
 ```
@@ -142,35 +176,17 @@ The commentary offers a great starting point for resarch into Ring* security.
 ```
 http://d4.princess.ne.jp/diary/20157.html
 ```
+
+The disk encryption was something that confused folks at first. 
 "See someone abroad who said that the contents of the hard disk partition can be decrypted by hot plugging, but it is too risky to do this. I wonder if there is a great god who has studied this problem here?"
 "Encrypted, I am afraid it is not so easy to unlock"
 "But even if you extract it, you still have to modify the exe"
 ```
 https://club.tgfcer.com/thread-7148133-1-1.html
 
+
 Even the hint that Ring* products are just commodity PC hardware is supported by documentation on MS9667, and even Sega's specific variant. The documents MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf can be used to confirm the suspicion about Sega Ring* technology being based on MS9667 based PC.
 https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html<br>
-
-"The RingEdge BIOS will only boot a SSD that has the valid TDK RS2 signature on the ATA Identify structure and is locked and also needs to have the password calculated by the BIOS and bassed on that TDK RS2 signature"<br>
-https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681443
-
-The timeline documentation for TDK GBDriver RS2 & RS3 can be found below. The RS2 came out in 2010, and the RS3 in 2011. https://product.tdk.com/en/products/flash-storage/flashstorage-catalog_en.pdf
-
-Documentation for the RS2 is located here: https://music.apple.com/us/album/ratchet/1463027710?i=1463027723
-"Serial-ATA-II Compatible NAND-Type Flash Memory Controller IC GBDriver RS2 Series"
-
-The RS2 supports the drive locking functionality, where as the drive encryption is actually handled by TrueCrypt. 
-
-Bypassing the ATA lock is trivial, at this point the key has proliferated as: 7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A<br>
-
-It can be acquired via SATA analyzer, or something along the lines of a firmware patched SSD based on OCZ Vertex / Jasmine hardware. None the less it has been public as early as 2018.
-https://pastebin.com/2qiQdPQ6
-
-"The Evil SSD Project - When your storage has a mind of its own"<br>
-https://www.os3.nl/_media/2016-2017/courses/ot/martijn_yonne.pdf
-
-See also the IRATEMONK example for ideas on how an SSD drive could be used to extract the calculated passwords presented by the Sega ATA unlock routines. 
-https://www.schneier.com/blog/archives/2014/01/iratemonk_nsa_e.html
 
 ### Enter TrueCrypt
 The nuances of TrueCrypt on Ring* platform has been a heavily censored topic, although not a complicated one at it's root. In essence you need to acquire both the keys and password to the TrueCrypt container. Both tasks are fairly trivial at the end of the day.  

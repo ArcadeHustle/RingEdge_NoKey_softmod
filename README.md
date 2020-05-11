@@ -222,7 +222,7 @@ https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc
 
 Much of the information above came from Woodu a seemingly random Chinese Sega entheusiast, "Hi from inside of the great firewall". It is unclear at this time where Woodu obtained his Ring* knowledge. https://github.com/Woodu
 
-What is clear is that he's really obsessed with Sega Jinwin based arcade stuff! 
+What is clear is that he's really obsessed with Sega Jinwin based arcade stuff!<br> 
 "Bought a new domain name"<br>
 "Jingwen Sega really is a magic company."<br>
 "I miss it very much."<br>

@@ -14,8 +14,8 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
 * [Stage One: Bye Bye Puyo Puyo!](#stage-one)
 * [Stage Two: Early Ring history](#stage-two)
 * [Stage Three: Ring Piracy Deep Dive](#stage-three)
-	* [Enter TrueCrypt](#enter-truecrypt)
 	* [The Chinese Jinwin Sega connection?](#the-chinese-jinwin-sega-connection)
+	* [Enter TrueCrypt](#enter-truecrypt)
 * [Stage Four: Academic Exercises & Censorship](#stage-four)
 	* [Unlocking the drive](#unlocking-the-drive)
 	* [Modifying the OS boot image](#modifying-the-os-boot-image)
@@ -205,44 +205,6 @@ This same company was later dismantled, along with it's conterfeit games.
 "In the ruling, Chengtai Electronics Science and Technology Company was found to have violated trademark laws, while also sustaining illegal business operations charges."
 https://www.intergameonline.com/coin-op/news/china-sues-merit-game-thieves
 
-### Enter TrueCrypt
-The nuances of TrueCrypt on Ring* platform has been a heavily censored topic, although not a complicated one at it's root. In essence you need to acquire both the keys and password to the TrueCrypt container. Both tasks are fairly trivial at the end of the day.  
-
-```
-"SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip,
-the process is really complex, but it generates a file on c:\windows\temp with the keyfile,
-then mounts the TC container and after the TC Container is successfully mounted deletes the
-Keyfile from C:\windows\temp, is just 2 minutes to pach that, is only a matter to remove the
-DeleteFile function from SegaBoot with simple NOPs and let SegaBoot to mount the game, then the
-Keyfile will be there on c:\windows\temp"
-```
-https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681449
-
-"You might be able to just take off the delete permission from windows temp"<br>
-https://web.archive.org/web/20170630214524/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-3#post-681518
-
-"Its much more easy than that, just get a file access tool like filemon and see the parameters segaboot is giving to truecrypt, you will know where its storing the binary file that truecrypt uses as password to decrypt the partition"<br>
-https://www.assembler-games.com/threads/sega-ringedge-motherboard-inside-pictures.46424/
-
-As expected with this sort of information floating around, it did not take long for folks to start selling "bootleg" versions of Ring games that did not require a key. Sometimes refered to as "NoKey" games, these games made use of leaked TrueCrypt keys to subsequently modify the games behavior preventing it from requiring a proper KeyChip from Sega.<br>
-
-"Topic: Initial D8 Server Ringedge (Original, No Bootleg!)", so wait, where is the bootleg one you made then? lol.<br>
-http://www.ukvac.com/forum/initial-d8-server-ringedge-original-no-bootleg_topic367630.html
-
-In addition to bootlegs, you could occasionally find folks offering archival services, the conversation below exposes the concept of a rekey.<br>
-
-"if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)... Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."<br>
-https://web.archive.org/web/20190403174837/https://assemblergames.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/
-
-Mahjong for example has a KeyChip ID of SBVF, and it is a VERY easy to obtain KeyChip... I wonder why so may shared images are rekeyed to it? ;)<br>
-https://gakman.forumgaming.fr/t72-ringedge-ringwide#454
-
-There was an effort at one point to document as many chip ID's as possible on AP forums, this sort of effort is extremely useful for archival of all known KeyChips. <br>
-https://webcache.googleusercontent.com/search?q=cache:kfuo1iRQy3wJ:https://www.arcade-projects.com/forums/index.php%3Fthread/4456-ringedge-keychip-id/+&cd=1&hl=en&ct=clnk&gl=us
-
-If we come full circle to modern times, folks have finally brought forth conversations about a Ring* keychip emulator. This sort of concept has been deployed in private for quite some time by various players.<br>
-https://github.com/ArcadeHustle/RingEdge_SSD_Softmod/issues/1
-
 ### The Chinese Jinwin Sega connection? 
 One of the first examples of bootlegging was a Chinese Operation Ghost Nokey.<br>
 "I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome... I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015<br>
@@ -289,6 +251,44 @@ https://woodu.me/2017/03/<br>
 The machine he mentions above is found here... it is a totally NOT bootleg "Lost on Island of Tropics" ("海岛探险游戏机"). "Island Adventure" is a joyful and thrilling shooting game, inheriting the system of the classic shooting game "Let's go jungle", with wonderful stories, compact plots and fun and simple operations to perform wonderfully And a thrilling trip to the island."<br>
 http://www.amunion.com/product/247889.html<br>
 http://www.haoyunlaigame.com/arc/view-119.html<br>
+
+### Enter TrueCrypt
+The nuances of TrueCrypt on Ring* platform has been a heavily censored topic, although not a complicated one at it's root. In essence you need to acquire both the keys and password to the TrueCrypt container. Both tasks are fairly trivial at the end of the day.  
+
+```
+"SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip,
+the process is really complex, but it generates a file on c:\windows\temp with the keyfile,
+then mounts the TC container and after the TC Container is successfully mounted deletes the
+Keyfile from C:\windows\temp, is just 2 minutes to pach that, is only a matter to remove the
+DeleteFile function from SegaBoot with simple NOPs and let SegaBoot to mount the game, then the
+Keyfile will be there on c:\windows\temp"
+```
+https://web.archive.org/web/20170628094958/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-2#post-681449
+
+"You might be able to just take off the delete permission from windows temp"<br>
+https://web.archive.org/web/20170630214524/https://www.assemblergames.com/threads/sega-ringedge-motherboard-inside-pictures.46424/page-3#post-681518
+
+"Its much more easy than that, just get a file access tool like filemon and see the parameters segaboot is giving to truecrypt, you will know where its storing the binary file that truecrypt uses as password to decrypt the partition"<br>
+https://www.assembler-games.com/threads/sega-ringedge-motherboard-inside-pictures.46424/
+
+As expected with this sort of information floating around, it did not take long for folks to start selling "bootleg" versions of Ring games that did not require a key. Sometimes refered to as "NoKey" games, these games made use of leaked TrueCrypt keys to subsequently modify the games behavior preventing it from requiring a proper KeyChip from Sega.<br>
+
+"Topic: Initial D8 Server Ringedge (Original, No Bootleg!)", so wait, where is the bootleg one you made then? lol.<br>
+http://www.ukvac.com/forum/initial-d8-server-ringedge-original-no-bootleg_topic367630.html
+
+In addition to bootlegs, you could occasionally find folks offering archival services, the conversation below exposes the concept of a rekey.<br>
+
+"if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)... Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."<br>
+https://web.archive.org/web/20190403174837/https://assemblergames.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/
+
+Mahjong for example has a KeyChip ID of SBVF, and it is a VERY easy to obtain KeyChip... I wonder why so may shared images are rekeyed to it? ;)<br>
+https://gakman.forumgaming.fr/t72-ringedge-ringwide#454
+
+There was an effort at one point to document as many chip ID's as possible on AP forums, this sort of effort is extremely useful for archival of all known KeyChips. <br>
+https://webcache.googleusercontent.com/search?q=cache:kfuo1iRQy3wJ:https://www.arcade-projects.com/forums/index.php%3Fthread/4456-ringedge-keychip-id/+&cd=1&hl=en&ct=clnk&gl=us
+
+If we come full circle to modern times, folks have finally brought forth conversations about a Ring* keychip emulator. This sort of concept has been deployed in private for quite some time by various players.<br>
+https://github.com/ArcadeHustle/RingEdge_SSD_Softmod/issues/1
 
 # Stage Four
 

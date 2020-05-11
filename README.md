@@ -115,7 +115,7 @@ MeltyBloodRE2.json ShiningForceCrossRaid.json ShiningForceCrossExlesia.json Shin
 ```
 
 AP on the otherhand refuses to allow anything related to Teknoparrot, or Ringedge to be discussed as a general rule.<br>
-"this is not the place to ask for neither for teknoparrot nor for roms."
+"this is not the place to ask for neither for teknoparrot nor for roms."<br>
 https://www.arcade-projects.com/forums/index.php?thread/9093-greetings-from-uk/&postID=145048#post145048
 
 At a certain point interest picked up on the Arcade Projects forums about the Ring based systems, eventually leading to the need to censor some of the commentary on the security mechanisms employed by Sega.  

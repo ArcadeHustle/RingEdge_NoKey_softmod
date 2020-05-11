@@ -33,7 +33,7 @@ http://puyoquest-am.blog.jp/archives/1063562161.html<br>
 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=http%3A%2F%2Fpuyoquest-am.blog.jp%2Farchives%2F1063562161.html<br>
 
 <p align="center">
-  <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/puyo.jpeg">
+  <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/puyo.jpeg">
 </p>
 
 Christmas 2018 of course, brought this game back to life via the amazing "TeknoParrot 1.81 X-Mas Reveal".<br>

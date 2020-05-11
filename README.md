@@ -220,8 +220,7 @@ https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc
 "SEGA is giving up China market.The JingWen Sega co,ltd has closed at earlier this year,a music game needs frequently update.We have no choice. If nothing unexpected happens,this will be the last update of Wumeng(Chinese version MaiMai).The MaiMai overseas (Version Green) has periodic update per week and the program is totally different to the mainland China version.We cannot get updates and the company has gone.So we find help for carck it."<br>
 https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc-based-arcade-games.42102/page-3#post-745386
 
-Much of the information above came from Woodu a seemingly random Chinese Sega entheusiast, "Hi from inside of the great firewall". It is unclear at this time where Woodu obtained his Ring* knowledge.<br>
-https://github.com/Woodu
+Much of the information above came from Woodu a seemingly random Chinese Sega entheusiast, "Hi from inside of the great firewall". It is unclear at this time where Woodu obtained his Ring* knowledge. https://github.com/Woodu
 
 What is clear is that he's really obsessed with Sega Jinwin based arcade stuff! 
 "Bought a new domain name"<br>

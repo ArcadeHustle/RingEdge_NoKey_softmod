@@ -46,7 +46,7 @@ https://archive.org/download/Arcade-Sega-RingEdge-2018-12-23
 
 What about *actual* Ring hardware owners, and arcade operators in need? Have we been left out of the most recent TeknoParrot CoronaVirus (COVID-19) Update just the same? Are there no presents for us? 
 
-[![Hello my friends](http://img.youtube.com/vi/lS3gSW3ZskQ/0.jpg)](https://www.youtube.com/watch?v=lS3gSW3ZskQ)<br>
+[![Hello my friends](http://img.youtube.com/vi/lS3gSW3ZskQ/2.jpg)](https://www.youtube.com/watch?v=lS3gSW3ZskQ)<br>
 "Hello my friends, it seems that we are in the middle of a cross road, and now I have decided that I will enable all the RingEdge, RindEdge2, and RingWide cores on Teknoparrot, directly to public. Also if the entire internet dies because of coronavirus, I have given the archive and the source code to a few friends, expect an update. Good luck everybody."
 
 Meanwhile, on the *other* side of the interwebs:<br>

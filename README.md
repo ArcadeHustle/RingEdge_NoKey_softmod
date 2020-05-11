@@ -147,7 +147,7 @@ Documentation for the RS3 likewise can be found here:<br>
 https://product.tdk.com/info/en/catalog/datasheets/ew_018_rs3.pdf<br>
 "Serial ATA 3Gbps Compatible NAND-Type Flash Memory Controller IC GBDriver RS3 Series"
 
-The RS2, and RS3 series drives support ATA drive locking functionality to prevent casual access, where as the drive encryption itself is actually handled by TrueCrypt. 
+In the Sega Ring* plaftorm the RS2, and RS3 series drives provide support ATA drive locking functionality to prevent casual access, where as the drive encryption itself is actually handled by TrueCrypt. 
 
 Bypassing the ATA lock is trivial, at this point the key has proliferated as: 7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A<br>
 

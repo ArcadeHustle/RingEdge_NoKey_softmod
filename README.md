@@ -124,7 +124,7 @@ Once folks in the "Ringedge/2/wide/Nu game list" thread heard "they can run loca
 https://webcache.googleusercontent.com/search?q=cache:CiZlw8FpwmEJ:https://www.arcade-projects.com/forums/index.php%3Fthread/6466-ringedge-2-wide-nu-game-list/%26pageNo%3D2+&cd=1&hl=en&ct=clnk&gl=us
 
 # Stage Three
-Well after the dick wagging on Assembler Games a random technical examination of the RingEdge popped up:<br>
+Well after the dick wagging on Assembler Games a random technical examination of the RingEdge popped up on Hiroyuki's home page (ひろゆきのホームページ):<br>
 ```
 "I have purchased a ring edge that starts a game with a key-chip"
 "And SSD is such a rare item... It is locked by ATA's SECURITY lock, but if you UNLOCK it, you can access it from Windows as usual via USB-SATA bridge. Well, as I wrote the other day, there are unknown partitions."
@@ -151,7 +151,7 @@ In the Sega Ring* plaftorm the RS2, and RS3 series drives provide support ATA dr
 
 Bypassing the ATA lock is trivial, at this point the key has proliferated as: 7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A<br>
 
-The ATA key can be acquired via commercial SATA analyzer, ghetto style wirewrap+OpenBench, or even something along the lines of a firmware patched SSD based on OCZ Vertex / Jasmine hardware. 
+The ATA key can be acquired via commercial SATA analyzer, ghetto style SATA<->IDE Adapter+wirewrap+OpenBench, or even something along the lines of a firmware patched SSD based on OCZ Vertex / Jasmine hardware. 
 
 <img src=https://blog.shackspace.de/wp-content/uploads/2011/04/DSC_2883.jpg>
 
@@ -162,13 +162,13 @@ https://hackaday.com/2011/04/28/ide-bus-sniffing-and-hard-drive-password-recover
 "The Evil SSD Project - When your storage has a mind of its own"<br>
 https://www.os3.nl/_media/2016-2017/courses/ot/martijn_yonne.pdf
 
-See also the IRATEMONK example for ideas on how an SSD drive could be used to extract the calculated passwords presented by the Sega ATA unlock routines. 
+See also the IRATEMONK example for ideas on how an SSD drive could be used to extract the calculated passwords presented by the Sega ATA unlock routines.<br> 
 https://www.schneier.com/blog/archives/2014/01/iratemonk_nsa_e.html
 
-None the less the ATA key has been public as early as 2018.
+None the less the ATA key has been public as early as 2018, and can be easily acquired even had it not been.
 https://pastebin.com/2qiQdPQ6
 
-The commentary offers a great starting point for resarch into Ring* security. 
+Additional commentary on Hiroyuki's home page (ひろゆきのホームページ) offers a great starting point for research into Ring* security. 
 
 ```
 "Basically it looks like a normal PC. As you can see from the actual specifications, it is an AT compatible machine. The motherboard looks like MS-9667, but there is no stamp"
@@ -178,15 +178,23 @@ The commentary offers a great starting point for resarch into Ring* security.
 http://d4.princess.ne.jp/diary/20157.html
 ```
 
-The disk encryption was something that confused folks at first. 
+The disk encryption was something that confused folks at first, we obviously now know that it is based on TrueCrypt.
 "See someone abroad who said that the contents of the hard disk partition can be decrypted by hot plugging, but it is too risky to do this. I wonder if there is a great god who has studied this problem here?"
 "Encrypted, I am afraid it is not so easy to unlock"
 "But even if you extract it, you still have to modify the exe"
 ```
 https://club.tgfcer.com/thread-7148133-1-1.html
 
+The mention of MS-9667 is of course quite intriguing. Some of the early revisions of Ring* hardware still had this part number silk screened on the board.<br>
+"[National motherboard repair alliance] MSI foundry MS-9667 VER: 1.0 SEGA 775 professional repair of faulty motherboard"<br>
+https://tw.bid.yahoo.com/item/【全國主機板維修聯盟】微星代工-MS-9667-VER-1-0-SEG-100693217459
 
-Even the hint that Ring* products are just commodity PC hardware is supported by documentation on MS9667, and even Sega's specific variant. The documents MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf can be used to confirm the suspicion about Sega Ring* technology being based on MS9667 based PC.
+Someone in China dumped the bios from this specific version citing a large number of deployed consolse in Panyu.<br>
+"Dedicated anime game console motherboard BIOS, this motherboard BIOS is easy to break, upload it to everyone to repair this board, it is convenient" (file:SEGA MS-9667 rev1.0.zip)<br>
+"I am here in Panyu, China's game console base, a large number of game console motherboard repair"<br>
+https://www.chinafix.com/thread-991881-1-1.html
+
+MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf appear to be the schematic for the Sega MS9667 variant. 
 https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html<br>
 
 ### Enter TrueCrypt

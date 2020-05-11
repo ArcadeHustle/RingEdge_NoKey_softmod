@@ -40,9 +40,8 @@ Christmas 2018 of course, brought this game back to life via the amazing "TeknoP
 Unfortunately this restoration was only for PC users as opposed to arcade operators. <br>
 https://archive.org/download/Arcade-Sega-RingEdge-2018-12-23
 
-"Sorry guy, didn't see you there!" 
+"Sorry guy, didn't see you there!"<br>
 [![Sorry Guy](http://img.youtube.com/vi/-ds4xRnI-b8/0.jpg)](https://www.youtube.com/watch?v=-ds4xRnI-b8?t=190 )
-
 "Now it is time to take out my Santa bag, and give you presents"
 
 What about *actual* Ring hardware owners, and arcade operators in need? Have we been left out of the most recent TeknoParrot CoronaVirus (COVID-19) Update just the same? Are there no presents for us? 

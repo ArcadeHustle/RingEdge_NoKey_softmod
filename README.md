@@ -190,13 +190,16 @@ The mention of MS-9667 is intriguing, a first. Some of the early revisions of Ri
 https://tw.bid.yahoo.com/item/【全國主機板維修聯盟】微星代工-MS-9667-VER-1-0-SEG-100693217459
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/MS9667.jpeg">
 
-Someone in China dumped the bios from this specific version citing a large number of deployed consolse in Panyu.<br>
+MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf appear to be the schematic for the Sega MS9667 variant. 
+https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html<br>
+
+Someone in China dumped the bios from this specific version citing a large number of deployed consoles in Panyu.<br>
 "Dedicated anime game console motherboard BIOS, this motherboard BIOS is easy to break, upload it to everyone to repair this board, it is convenient" (file:SEGA MS-9667 rev1.0.zip)<br>
 "I am here in Panyu, China's game console base, a large number of game console motherboard repair"<br>
 https://www.chinafix.com/thread-991881-1-1.html
 
-MS9667_rev_0a_sch.pdf and MS9667_rev_0b_sch_RING_AALG.pdf appear to be the schematic for the Sega MS9667 variant. 
-https://elektrotanya.com/msi_ms-9667_rev_0b_sch.pdf/download.html<br>
+It should be noted that “the first criminal case in China involving an infringer of coin-op amusement games" occured in Panyu CHina. In the raid that took place at Chengtai factory in Panyu "10 suspected copies of complete Sega products" were seized. 
+https://www.intergameonline.com/coin-op/news/counterfeit-megatouch-units-seized-in-china
 
 ### Enter TrueCrypt
 The nuances of TrueCrypt on Ring* platform has been a heavily censored topic, although not a complicated one at it's root. In essence you need to acquire both the keys and password to the TrueCrypt container. Both tasks are fairly trivial at the end of the day.  

@@ -54,7 +54,7 @@ Meanwhile, on the *other* side of the interwebs:<br>
 https://www.arcade-projects.com/forums/index.php?thread/12974-ringedge-help-section/&postID=210050#post210050
 
 Lets all pour out some liquor for the Sega Ringedge, Ringwide and Nu subgroup on AP. 
-https://www.youtube.com/watch?v=oK9gLkXe0xw <br>
+[![liquor pour](http://img.youtube.com/vi/oK9gLkXe0xw/0.jpg)](https://www.youtube.com/watch?v=oK9gLkXe0xw)<br>
 Rest In Peace!.<br>
 https://web.archive.org/web/20171014003744/http://www.arcade-projects.com/forums/index.php?board/73-sega-ringedge-ringwide-and-nu/
 

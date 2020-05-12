@@ -523,7 +523,7 @@ You can see from the disassembly that different keys are used at different times
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/MountUpdatePartition.png">
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/SilentMountHiddenDriveWithKey.png">
 
-In order to get the game keys, we will need to understand where they come from, or alternately where they go. With the System container mounted we can begin to explore. 
+In order to get the game keys, we will need to understand where they come from, or alternately where they go. With the System container mounted we can begin to explore, we do know ultimately that both the key file and password are passed on to TrueCrypt as arguments. We can absolutly take advantage of that fact to our advantage to make dumping keys easy.   
 
 Hint: The technique most folks use involves patching Sega mx* binaries to not delete files that are placed in the windows TEMP folder. During key generation the TrueCrypt keys that are derived from KeyChip interrogation are temporarily placed in C:\Windows\TEMP via mkstemp(), and subsequently deleted. The pastebin links shared above walk through a clunky process by which the files can be retrieved. This previously shared technique that has proliferated into the community involves patching DeleteFileA() inside of mxsegaboot.exe so that the resulting file can be collected from the TEMP folder. 
 

@@ -818,14 +818,14 @@ The password for SystemUser is <6/=U=#tpe!$*3!5
 
 # Bonus level: RE2Multi on RE1?!
 
-There are basically two drivers that need to be installed on the RE2Multi image to make it work on RE1. These drivers are already present on Niko's multi in the following folders:
+There are basically two drivers that need to be installed on the RE2Multi image to make it work on RE1. These drivers are already present on Niko's multi in the following folders:<br>
 C:\Program Files\NVIDIA Corporation\Drs\ 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/nvidia.png">
 
 C:\WINDOWS\system32\DRVSTORE\mxsram_84E083611D520D67EB8997E30D46709A4946EAF3\
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/mxsram.png">
 
-A "patch" in the form of a .zip file that can be uncompressed on Niko's multi can be found here: 
+A "patch" in the form of a .zip file that can be uncompressed on Niko's multi can be found here:<br>
 https://archive.org/details/niko-multi-re-1-c-drive-patch
 
 Most games work fine on either platform, however some games like DOA5 will require extra RAM. Other games for RingWige, and RingEdge should work fine as well, some however may require special IO boards, or other hardware like TrackBall's to work properly. 

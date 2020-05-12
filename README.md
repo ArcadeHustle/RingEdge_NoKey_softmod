@@ -20,7 +20,6 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
 	* [Unlocking the drive](#unlocking-the-drive)
 	* [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
 	* [Obtaining the KeyFiles and Volume Password](#obtaining-the-keyfiles-and-volume-password)
-	* [Playing around with Volatility](#playing-around-with-volatility)
 	* [Modifying the OS boot image](#modifying-the-os-boot-image)
 * [Final Boss: Changing games on Niko's Multi](#final-boss-changing-games-on-nikos-multi)
 * [Bonus level: RE2Multi on RE1?!](#bonus-level-re2multi-on-re1)
@@ -541,119 +540,6 @@ You should also note how geminifs is used to create symbolic links across the va
 
 The commentary linked below will examine an alternate path to mounting an encrypted TC drive, via stolen TrueCrypt master keys. This is post memory acquisition based technique that is generally outside the scope of this writeup. It has been included for academic posterity with regard to attacking TrueCrypt based systems.
 https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/MemoryForensics.md
-
-### Playing around with Volatility
-
-"I have used the Truecrypt plugins in Volatility but they simply do not work" https://www.forensicfocus.com/Forums/viewtopic/p=6582443/
-
-We can use Volatility framework to examine a memory dump. https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
-This shows the lineage of the processes 
-```
-$ python vol.py -f /Volumes/UNTITLED11/memdump.raw pstree
-Volatility Foundation Volatility Framework 2.6.1
-Name                                                  Pid   PPid   Thds   Hnds Time
--------------------------------------------------- ------ ------ ------ ------ ----
- 0x8a711a00:System                                      4      0     80   2636 1970-01-01 00:00:00 UTC+0000
-...
-..... 0x89ff49e0:mxstartup.exe                        252   1212      0 ------ 2020-05-05 08:28:12 UTC+0000
-...... 0x89f04838:mxmaster.exe                        488    252      3     61 2020-05-05 08:28:13 UTC+0000
-....... 0x89efe898:mxstorage.exe                      512    488      1     36 2020-05-05 08:28:13 UTC+0000
-....... 0x89ef67e8:nxMount.exe                        520    488      1     32 2020-05-05 08:28:13 UTC+0000
-....... 0x89e91368:mxgcatcher.exe                     640    488      2     41 2020-05-05 08:28:15 UTC+0000
-....... 0x89e9cbc8:mxgdeliver.exe                     292    488      2     44 2020-05-05 08:28:15 UTC+0000
-....... 0x89ef7b98:mxnetwork.exe                      504    488      1     68 2020-05-05 08:28:13 UTC+0000
-....... 0x89e9d578:mxgfetcher.exe                     476    488      3     44 2020-05-05 08:28:15 UTC+0000
-....... 0x89ef9598:mxkeychip.exe                      496    488      1    677 2020-05-05 08:28:13 UTC+0000
-....... 0x89e95880:mxinstaller.exe                    632    488      6     53 2020-05-05 08:28:15 UTC+0000
-....... 0x89deb748:nxAuth.exe                        2068    488      3    105 2020-05-05 08:28:41 UTC+0000
-
-$ python vol.py -f /Volumes/UNTITLED11/memdump.raw truecryptsummary
-Volatility Foundation Volatility Framework 2.6.1
-Service              truecrypt state SERVICE_RUNNING
-Kernel Module        truecrypt.sys at 0xb31f8000 - 0xb3225000
-Symbolic Link        P: -> \Device\TrueCryptVolumeP mounted 2020-05-05 08:28:36 UTC+0000
-Symbolic Link        Volume{556d4862-8eaa-11ea-93eb-00d0f1164195} -> \Device\TrueCryptVolumeO mounted 2020-05-05 08:28:35 UTC+0000
-Symbolic Link        P: -> \Device\TrueCryptVolumeP mounted 2020-05-05 08:28:36 UTC+0000
-Symbolic Link        S: -> \Device\TrueCryptVolumeS mounted 2020-05-05 08:28:13 UTC+0000
-Symbolic Link        O: -> \Device\TrueCryptVolumeO mounted 2020-05-05 08:28:36 UTC+0000
-Symbolic Link        Volume{556d485f-8eaa-11ea-93eb-00d0f1164195} -> \Device\TrueCryptVolumeS mounted 2020-05-05 08:28:13 UTC+0000
-Symbolic Link        S: -> \Device\TrueCryptVolumeS mounted 2020-05-05 08:28:13 UTC+0000
-Symbolic Link        Volume{556d4862-8eaa-11ea-93eb-00d0f1164195} -> \Device\TrueCryptVolumeO mounted 2020-05-05 08:28:35 UTC+0000
-Symbolic Link        P: -> \Device\TrueCryptVolumeP mounted 2020-05-05 08:28:36 UTC+0000
-Symbolic Link        Volume{556d4863-8eaa-11ea-93eb-00d0f1164195} -> \Device\TrueCryptVolumeP mounted 2020-05-05 08:28:36 UTC+0000
-Symbolic Link        O: -> \Device\TrueCryptVolumeO mounted 2020-05-05 08:28:35 UTC+0000
-Symbolic Link        P: -> \Device\TrueCryptVolumeP mounted 2020-05-05 08:28:36 UTC+0000
-Symbolic Link        S: -> \Device\TrueCryptVolumeS mounted 2020-05-05 08:28:13 UTC+0000
-...
-File Object          \Device\TrueCryptVolumeP\RE2multi\menu\imageformats\qico.dll at 0x9947360
-File Object          \Device\TrueCryptVolumeO\Games\Blade Arcus from Shining [SDAF]\Blade-Arcus-from-Shining.jpg at 0x994d778
-File Object          \Device\TrueCryptVolumeP\RE2multi\menu\theme\CyberPunk\480p.style at 0x994dc58
-File Object          \Device\TrueCryptVolumeP᱘E2multi\assets\JVSDll.dll at 0x994e648
-File Object          \Device\TrueCryptVolumeP\RE2multi\assets\JVSDll.dll at 0x994e778
-File Object          \Device\TrueCryptVolumeP\RE2multi\menu\imageformats\qjpeg.dll at 0x994e980
-File Object          \Device\TrueCryptVolumeP孠E2multi\menu\plugins\video_output\libdirect2d_plugin.dll at 0x994ea80
-File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\video_output\libcaca_plugin.dll at 0x994eb18
-File Object          \Device\TrueCryptVolumeP鄈�multi\menu\plugins\video_output\libyuv_plugin.dll at 0x994f260
-File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\video_output\libwingdi_plugin.dll at 0x994f2f8
-File Object          \Device\TrueCryptVolumeP䞈៰multi\menu\plugins\video_output\libwingdi_plugin.dll at 0x994f570
-File Object          \Device\TrueCryptVolumeP\RE2multi\menu\theme\CyberPunk\bg_480p.jpg at 0x994f980
-File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\video_output\libglwin32_plugin.dll at 0x994fb80
-File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\video_output\libyuv_plugin.dll at 0x9951300
-File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\plugins.dat at 0x9951ae8
-...
-File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\access\librar_plugin.dll at 0xa1ed2a8
-File Object          \Device\TrueCryptVolumeP\RE2multi\menu\plugins\access\libudp_plugin.dll at 0xa1edb68
-Driver               \Driver\truecrypt at 0x9c56d78 range 0xb31f8000 - 0xb3224340
-Device               TrueCryptVolumeP at 0x8a645030 type FILE_DEVICE_DISK
-Container            Path: <HIDDEN>
-Device               TrueCryptVolumeO at 0x8a644808 type FILE_DEVICE_DISK
-Container            Path: \??\C:\Documents and Settings\k8team\Start Menu\Programs\Startup\desktop.ini?
-Device               TrueCryptVolumeS at 0x89f06030 type FILE_DEVICE_DISK
-Container            Path: \??\C:\System\Execute\System
-Device               TrueCrypt at 0x89f9bcb0 type FILE_DEVICE_UNKNOWN
-
-$ python vol.py -f /Volumes/UNTITLED11/memdump.raw dumpfiles --dump-dir /tmp/zzzz
-Volatility Foundation Volatility Framework 2.6.1
-DataSectionObject 0x8a11ab50   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SYSTEM
-SharedCacheMap 0x8a11ab50   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SYSTEM
-DataSectionObject 0x8a0abdd0   4      \Device\HarddiskVolume1\WINDOWS\system32\config\DEFAULT
-SharedCacheMap 0x8a0abdd0   4      \Device\HarddiskVolume1\WINDOWS\system32\config\DEFAULT
-DataSectionObject 0x8a0a9af0   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SAM
-SharedCacheMap 0x8a0a9af0   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SAM
-DataSectionObject 0x8a610a10   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SOFTWARE
-SharedCacheMap 0x8a610a10   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SOFTWARE
-DataSectionObject 0x8a134a50   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SECURITY
-SharedCacheMap 0x8a134a50   4      \Device\HarddiskVolume1\WINDOWS\system32\config\SECURITY
-...
-ImageSectionObject 0x89f88618   496    \Device\TrueCryptVolumeS\mxkeychip.exe
-DataSectionObject 0x89f88618   496    \Device\TrueCryptVolumeS\mxkeychip.exe
-ImageSectionObject 0x89f866d0   504    \Device\TrueCryptVolumeS\mxnetwork.exe
-DataSectionObject 0x89f866d0   504    \Device\TrueCryptVolumeS\mxnetwork.exe
-ImageSectionObject 0x89efb318   512    \Device\TrueCryptVolumeS\mxstorage.exe
-DataSectionObject 0x89efb318   512    \Device\TrueCryptVolumeS\mxstorage.exe
-ImageSectionObject 0x89f02b80   520    \Device\TrueCryptVolumeS\nxMount.exe
-DataSectionObject 0x89f02b80   520    \Device\TrueCryptVolumeS\nxMount.exe
-ImageSectionObject 0x89e9f768   632    \Device\TrueCryptVolumeS\mxinstaller.exe
-DataSectionObject 0x89e9f768   632    \Device\TrueCryptVolumeS\mxinstaller.exe
-ImageSectionObject 0x89e9c2b8   640    \Device\TrueCryptVolumeS\mxgcatcher.exe
-DataSectionObject 0x89e9c2b8   640    \Device\TrueCryptVolumeS\mxgcatcher.exe
-ImageSectionObject 0x8a5e3c28   476    \Device\TrueCryptVolumeS\mxgfetcher.exe
-DataSectionObject 0x8a5e3c28   476    \Device\TrueCryptVolumeS\mxgfetcher.exe
-ImageSectionObject 0x89e98358   292    \Device\TrueCryptVolumeS\mxgdeliver.exe
-DataSectionObject 0x89e98358   292    \Device\TrueCryptVolumeS\mxgdeliver.exe
-...
-
-$ file /tmp/zzzz/*
-/tmp/zzzz/file.1044.0x89fa3490.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
-/tmp/zzzz/file.1044.0x8a098380.img:  PE32 executable (GUI) Intel 80386, for MS Windows
-/tmp/zzzz/file.1100.0x89fa30c8.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
-/tmp/zzzz/file.1100.0x89ff9b08.dat:  PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
-/tmp/zzzz/file.1100.0x8a0ae738.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
-/tmp/zzzz/file.1100.0x8a0b13e0.img:  PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
-/tmp/zzzz/file.1100.0x8a605290.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
-/tmp/zzzz/file.1100.0x8a690f30.img:  PE32 executable (DLL) (console) Intel 80386, for MS Windows
-...
-```
 
 ### Modifying the OS boot image
 

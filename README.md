@@ -315,7 +315,7 @@ https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
 
 For what ever reason Ring* information is often censored quickly, and with malice. There are few remaining bits of archived information. Among them however are these gems:
 Both of the archived posts contain partially usable instructions, but can indeed be worked out into a usable technique if you pay close attention.
-https://pastebin.com/zQYxBU1e
+https://pastebin.com/zQYxBU1e<br>
 https://pastebin.com/2qiQdPQ6
 
 The first bit of information revealed in the posts was the static ATA unlock key for the TDK RS2 and RS3 hard drives use by default in Ring* machines. A simple hdparm command will unlock the drive, and allow you to interact with it. 
@@ -447,9 +447,9 @@ $ ./CipherShed-OSX-64/src/Main/CipherShed -d
 ```
 
 ### Obtaining the KeyFiles and Volume Password
-You may be wondering at this point how exactly the KeyFiles are obtained. There were brief notes in the pastebin links above for one technique, but we really need to go in depth into how TrueCrypt can be attacked for academic posterity. 
+You may be wondering at this point how exactly the KeyFiles are obtained. There were brief notes in the pastebin links above for one technique, but we really need to go in depth into how TrueCrypt on the Ring* platform can be attacked for academic posterity at the very least. 
 
-If you are not familiar with Alternate Data Streams on NTFS you will want to start here:<br>
+If you are not familiar with Alternate Data Streams on NTFS you will want to start here, because Sega chose to store the initial System and Update TrueCrypt keys in a hidden ADS stream right off the root of the drive in C:\System\Execute\DLL<br>
 "Practical Guide to Alternative Data Streams in NTFS"<br>
 http://www.irongeek.com/i.php?page=security/altds
 

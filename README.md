@@ -514,7 +514,6 @@ The contents of the UpdateKeyFile have not been shared with the public in the pa
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS2.jpeg">
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS3.jpeg">
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS4.jpeg">
-
 This is only the first step, and it doesn't even net you access to the game partition. Quite the contrary, it only grants access to the programs that retrieve the game container TrueCrypt key from the physical hardware key. In other words, now that the first hurdle has been completed, the second shows its head. 
 
 In order to get the game keys, we will need to understand where they come from, or alternately where they go. 

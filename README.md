@@ -515,8 +515,8 @@ Hint: The technique most folks use involves patching Sega mx* binaries to not de
 
 Once the keyfile has been obtained it can be coupled with a hardcoded drive password ("segahardpassword") that can be found within the same binary. 
 
-The below commentary will examine an alternate path to mounting an encrypted TC drive, post memory acquisition.
-
+The below commentary will examine an alternate path to mounting an encrypted TC drive, via stolen TrueCrypt master keys, post memory acquisition.
+https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/MemoryForensics.md
 
 ### Playing around with Volatility
 

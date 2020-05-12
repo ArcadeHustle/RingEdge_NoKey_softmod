@@ -216,19 +216,21 @@ http://www.amunion.com/product/247889.html<br>
 http://www.haoyunlaigame.com/arc/view-119.html<br>
 https://youtu.be/ipwE6E6xrPw?t=45
 
-One of the first examples of bootlegging was a Chinese Operation Ghost Nokey.<br>
+"SEGA is giving up China market.The JingWen Sega co,ltd has closed at earlier this year,a music game needs frequently update.We have no choice. If nothing unexpected happens,this will be the last update of Wumeng(Chinese version MaiMai).The MaiMai overseas (Version Green) has periodic update per week and the program is totally different to the mainland China version.We cannot get updates and the company has gone.So we find help for carck it."<br>
+https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc-based-arcade-games.42102/page-3#post-745386
+
+One of the first public examples of bootlegging was actually a Chinese Operation Ghost Nokey.<br>
 "I've got a RINGEDGE cabient and game is OPERATION GHOST but it seems be a Chinese bootleg don't need the key chip and make me awesome... I want to unplug the SSD driver and explore the game file, but it also a gbdriver rs3, and has encrypted." -  Nov 15, 2015<br>
 http://archive.is/M1hvR
-
-There were also a few interesting *leaks* from the Chinese sega Factory: "the guy who send this to me is at the factory... The seller sells many ODM motherboards,including Ringedge and Lindbergh boards.and he called me and send this to me today earlier. 
-Anyone knows what's this?"<br>
-https://assembler-games.com/threads/so-recently-i-got-a-strange-board-from-a-factory-which-makes-sega-boards.57620/#post-825992
 
 "Here I have a Simplified Chinese version music game called MaiMai running on RingEdge2 platform. In order to avoid the spam detector please send me a message if you want to get the raw iso data. We tried to make a copy of this disk but failed.If you have tools to decrypt it , please tell us."<br>
 https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc-based-arcade-games.42102/page-3#post-745324
 
-"SEGA is giving up China market.The JingWen Sega co,ltd has closed at earlier this year,a music game needs frequently update.We have no choice. If nothing unexpected happens,this will be the last update of Wumeng(Chinese version MaiMai).The MaiMai overseas (Version Green) has periodic update per week and the program is totally different to the mainland China version.We cannot get updates and the company has gone.So we find help for carck it."<br>
-https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc-based-arcade-games.42102/page-3#post-745386
+"MaiMai Green (another version than supported by teknoparrot. That one is the Chinese bootleg ?)"
+http://www.emuline.org/topic/1696-arcade-pc-maimai-finale-sega-ringedge/?do=findComment&comment=60218
+
+There were also a few interesting hardware *leaks* from the Chinese sega Factory: "the guy who send this to me is at the factory... The seller sells many ODM motherboards,including Ringedge and Lindbergh boards.and he called me and send this to me today earlier. Anyone knows what's this?"<br>
+https://assembler-games.com/threads/so-recently-i-got-a-strange-board-from-a-factory-which-makes-sega-boards.57620/#post-825992
 
 Much of the information above came from Woodu a seemingly random Chinese Sega entheusiast, it is unclear at this time where he obtained his Ring* knowledge.<br>
 "Hi from inside of the great firewall" https://github.com/Woodu

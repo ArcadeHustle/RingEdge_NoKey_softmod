@@ -539,7 +539,7 @@ https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/TrueCrypt-win
 You should also note how geminifs is used to create symbolic links across the various mounted containers before presenting them for the game launch. 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/UnmountTC.png">
 
-The below commentary will examine an alternate path to mounting an encrypted TC drive, via stolen TrueCrypt master keys, post memory acquisition.
+The commentary linked below will examine an alternate path to mounting an encrypted TC drive, via stolen TrueCrypt master keys. This is post memory acquisition based technique that is generally outside the scope of this writeup. It has been included for academic posterity with regard to attacking TrueCrypt based systems.
 https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/MemoryForensics.md
 
 ### Playing around with Volatility

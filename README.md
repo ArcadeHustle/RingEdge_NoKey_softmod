@@ -270,7 +270,7 @@ Ringedge2 120G 固态硬盘 ¥300.00 - 599.00<br>
 https://item.taobao.com/item.htm?id=586390733234<br>
 
 ### Enter TrueCrypt
-The nuances of TrueCrypt on Ring* platform have been a heavily censored topic, although not a complicated one at it's root. In essence you need to acquire both the keys and password to the TrueCrypt container. Both tasks are fairly trivial at the end of the day.  
+The nuances of TrueCrypt on Ring* platform have been a heavily censored topic, although not a complicated one at it's root. In essence you need to acquire both the keys and password to the TrueCrypt containers that you wish to access. Both tasks are fairly trivial at the end of the day.  
 
 ```
 "SegaBoot generates the KeyFile for the TC container of the game on the fly, using the KeyChip,

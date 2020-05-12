@@ -516,21 +516,25 @@ The contents of the UpdateKeyFile have not been shared with the public in the pa
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS4.jpeg">
 This is only the first step, and it doesn't even net you access to the game partition. Quite the contrary, it only grants access to the programs that retrieve the game container TrueCrypt key from the physical hardware key. In other words, now that the first hurdle has been completed, the second shows its head. 
 
-You can see from the disassembly that different keys are used at different times. 
+Once the SystemKeyfile has been obtained it can be coupled with a hardcoded mount password ("segahardpassword") that can be found within the same binary, and subsequently used to mount the associated TrueCrypt container file "System" inside of "C:\System\Execute".  
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/MountSystemPartitionSegaHardPass.png">
+
+You can see from the disassembly that different keys are used at different times to mount volumes. 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/MountUpdatePartition.png">
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/SilentMountHiddenDriveWithKey.png">
 
-In order to get the game keys, we will need to understand where they come from, or alternately where they go. 
+In order to get the game keys, we will need to understand where they come from, or alternately where they go. With the System container mounted we can begin to explore. 
 
 Hint: The technique most folks use involves patching Sega mx* binaries to not delete files that are placed in the windows TEMP folder. During key generation the TrueCrypt keys that are derived from KeyChip interrogation are temporarily placed in C:\Windows\TEMP via mkstemp(), and subsequently deleted. The pastebin links shared above walk through a clunky process by which the files can be retrieved. This previously shared technique that has proliferated into the community involves patching DeleteFileA() inside of mxsegaboot.exe so that the resulting file can be collected from the TEMP folder. 
 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/DeletefileA.png">
 
-We find it much simpler to just patch TrueCrypt to dump the keyfile and pass. TrueCrypt.exe does after all sit on a nonprotected portion of the file system. 
+We find it much simpler to just patch TrueCrypt to dump the keyfile and pass. TrueCrypt.exe does after all sit on a nonprotected portion of the file system. You can simply copy the patched files onto the game drive, and reboot to dump the keys. 
 https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/TrueCrypt-win32_keydump.patch
 
-Once the keyfile has been obtained it can be coupled with a hardcoded drive password ("segahardpassword") that can be found within the same binary. 
-<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/MountSystemPartitionSegaHardPass.png">
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/BackdooredTrueCrypt.png">
+
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/dumpedkey.png">
 
 You should also note how geminifs is used to create symbolic links across the various mounted containers before presenting them for the game launch. 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/UnmountTC.png">

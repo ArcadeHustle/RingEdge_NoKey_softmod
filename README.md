@@ -769,7 +769,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WindowsEmbedded\ProductVersi
 
 Finally perhaps the most annoying thing that needs changed, is the 1x1 pixel Cursor file that Sega chose to use to obfuscate the UI. C:\windows\Cursors\Cursor.cur will need to be deleted, and replaced with something more usable. (what happens if we just delete it? does it revert to a standard cursor?)
 
-# Final Boss: Changing games on Niko's Multi
+# Final Boss: Changing games on Niko's Multi and other Ring platforms
 
 "Someone know how we can change games inside a ringedge motherboard?"<br>
 http://www.neo-arcadia.com/forum/viewtopic.php?t=62415
@@ -791,6 +791,18 @@ Inland Professional 120GB SSD - (4335233676) Key: 324152498a530248ea42fa4aca42da
 Crucial BX500 120GB SSD - (CT120BX500SSD1) Key: 3250aa589242b259f273627b2273da4a2a223a2a0a221a2a6a026b6e5bce4b86
 TDK RS2, RS3 SSD - (OEM Sega) Key: 7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A
 ```
+
+### How to ReKey a Game drive to a new keychip
+
+This is simply a matter of using the built in TrueCrypt key functionality. <br>
+"Volumes -> Add/Remove Keyfiles to/from Volume... This function allows you to re-encrypt a volume header with a header encryption key derived from any number of keyfiles (with or without a password), or no keyfiles at all. Thus, a volume which is possible to mount using only a password can be converted to a volume that require keyfiles (in addition to the password) in order to be possible to mount... This function can also be used to change/set volume keyfiles (i.e., to remove some or all keyfiles, and to apply new ones)."
+https://www.truecrypt71a.com/documentation/keyfiles/
+
+Open up TrueCrypt, and adjust the keys as you see fit. Have an old Mahjong key that you want to use on another drive? Dump it using the patched TrueCrypt executables that were shared above, and then add the dumped key to the game container partition that you wish to use it with. 
+
+### How to NoKey a drive
+
+For now the inner workings of how the KeyChip emulators work will be left as an exercise for the reader, with access to Niko's multi image, and this document you have all you need to begin your studies. It should be fairly obvious that you don't need to understand how they work to successfully use them as replacements for existing mx* binaries. 
 
 ### SystemUser privs on Nikos Multi and other Ring systems. 
 If you wish to tamper with Niko's as it runs live, you'll probably want the SystemUser password as well as Administrative level privleges. The password can be obtained by exploiting a kernel level vulnerability, and subsequently running MimiKatz. 

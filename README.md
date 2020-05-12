@@ -465,7 +465,7 @@ LS(1)                     BSD General Commands Manual                    LS(1)
      -@      Display extended attribute keys and sizes in long (-l) output.<br>
 ```
 
-Below is an example of both examining, and extracting the contents of a mounted RingEdge drive via OSX. Specifically the C:\System\Execute\DLL folder holds ADS streams containing the key files needed to mount both the C:\System\Execute\System file, and the Update partition on a Ring Game drive. 
+The first step both examining, and extracting the encrypted contents of a mounted RingEdge drive via OSX are shown below. Specifically the C:\System\Execute\DLL folder holds ADS streams containing the key files needed to mount both the C:\System\Execute\System file, and the Update partition on a Ring Game drive. You will need to extract them to make use of them. 
 ```
 $ ls -l@  /Volumes/Untitled\ 1/System/Execute/
 total 25194

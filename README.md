@@ -260,7 +260,7 @@ https://web.archive.org/web/20130910052147/http://www.segajinwin.com/
 So what is JingWin Sega? It was "Established in 2009, Sega Jinwin (Shanghai) Amusement Co. Ltd is a joint-venture of Shanghai Jingwen Investment Co. Ltd., Japan Sega Corporation and affiliated company of China National Center for developing Animation, Cartoon & Game Industry."<br>
 http://www.amusewind.com/catalog/all_ENTERPRISES/2012629/27_201262912749768_1.html
 
-Beyond his general love for Sega Woodu has many interesting Ring related things on his site, such as replacement drives<br>
+Beyond his general love for Sega Woodu has many interesting Ring related things on his site, such as replacement drives for the Ring series. 
 "It has been a long time since I started doing maimai's magical reform in 15 years, and I haven't even put energy on it for a long time. But still did something a little above. What I can take out recently is that I started selling alternative hard drives for the mainframe. This is also the only relatively legal thing"<br>
 https://woodu.me/author/woodu/
 

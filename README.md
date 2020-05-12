@@ -193,7 +193,7 @@ The disk encryption was something that confused folks at first, we obviously now
 ```
 https://club.tgfcer.com/thread-7148133-1-1.html
 
-The mention of MS-9667 is intriguing, a first. Some of the early revisions of Ring* hardware still had this part number silk screened on the board, where as more modern variants including RingEdge 2 do not.<br>
+The mention of MS-9667 is intriguing, at first. Some of the early revisions of Ring* hardware still had this part number silk screened on the board, where as more modern variants including RingEdge 2 do not.<br>
 "MSI foundry MS-9667 VER: 1.0 SEGA 775 professional repair of faulty motherboard"<br>
 https://tw.bid.yahoo.com/item/【全國主機板維修聯盟】微星代工-MS-9667-VER-1-0-SEG-100693217459
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/MS9667.jpeg">

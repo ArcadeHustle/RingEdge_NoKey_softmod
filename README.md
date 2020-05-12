@@ -296,7 +296,6 @@ http://www.ukvac.com/forum/initial-d8-server-ringedge-original-no-bootleg_topic3
 In addition to bootlegs, you could occasionally find folks offering archival services, the conversation below exposes the concept of a rekey.<br>
 
 "if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)... Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."<br>
-https://web.archive.org/web/20190403174837/https://assemblergames.com/threads/is-it-possible-to-get-ringedge-to-run-ringwide-games.60346/
 
 Mahjong for example has a KeyChip ID of SBVF, and it is a VERY easy to obtain KeyChip... I wonder why so may shared images are rekeyed to it? ;)<br>
 https://gakman.forumgaming.fr/t72-ringedge-ringwide#454

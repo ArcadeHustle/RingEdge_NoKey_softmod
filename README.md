@@ -453,8 +453,7 @@ If you are not familiar with Alternate Data Streams on NTFS you will want to sta
 "Practical Guide to Alternative Data Streams in NTFS"<br>
 http://www.irongeek.com/i.php?page=security/altds
 
-"The NTFS file system provides applications the ability to create alternate data streams of information. By default, all data is stored in a file's main unnamed data stream, but by using the syntax 'file:stream', you are able to read and write to alternates."<br>
-https://docs.microsoft.com/en-us/sysinternals/downloads/streams
+"The NTFS file system provides applications the ability to create alternate data streams of information. By default, all data is stored in a file's main unnamed data stream, but by using the syntax 'file:stream', you are able to read and write to alternates." https://docs.microsoft.com/en-us/sysinternals/downloads/streams
 
 From either a linux or Mac system we can view the streams via ls, or xattr
 ```

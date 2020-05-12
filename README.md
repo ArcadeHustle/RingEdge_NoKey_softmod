@@ -539,6 +539,8 @@ https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/tree/master/TrueCrypt-win
 You should also note how geminifs is used to create symbolic links across the various mounted containers before presenting them for the game launch. 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/UnmountTC.png">
 
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/fsutil.jpeg">
+
 The commentary linked below will examine an alternate path to mounting an encrypted TC drive, via stolen TrueCrypt master keys. This is post memory acquisition based technique that is generally outside the scope of this writeup. It has been included for academic posterity with regard to attacking TrueCrypt based systems.
 https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/MemoryForensics.md
 
@@ -769,37 +771,43 @@ Finally perhaps the most annoying thing that needs changed, is the 1x1 pixel Cur
 
 # Final Boss: Changing games on Niko's Multi
 
-"Someone know how we can change games inside a ringedge motherboard?"
+"Someone know how we can change games inside a ringedge motherboard?"<br>
 http://www.neo-arcadia.com/forum/viewtopic.php?t=62415
 
-Editing Niko's RE2Multi is very straight forward. Steps 1, 2, 3, 4 we should all be familiar with...
+The easy answer to the question above is to simply make use of Niko's Multi by editing it to suit your needs. Editing Niko's RE2Multi is very straight forward. At this point all the required steps should be familiar. 
 
 ```
-unlock multi drive with ata password
-decrypt partition 7 with keyfile in C:\RE2Multi\re2multi.key
-Copy 'Virtua Tennis 4' folder into Game folder. It should look and be structured like the others already, but double check. game.bat file is setup and ready to go.
-dismount truecrpt partition
-relock drive with ata sec pass (if you wish! or just cut power)
-test in RE1
+1. Unlock Niko's multi drive with the ata password that you used to create it
+   PNY CS900 120GB SSD - (SSD7CS900-120-RB) Key: 0242826a1253ca5bf242ea78d263524ab213d22a0a460be66a467f865c8a5a86
+   Inland Professional 120GB SSD - (4335233676) Key: 324152498a530248ea42fa4aca42da4a2a223a2a0a221a2a6a027a0a4a025a0a
+   Crucial BX500 120GB SSD - (CT120BX500SSD1) Key: 3250aa589242b259f273627b2273da4a2a223a2a0a221a2a6a026b6e5bce4b86
+2. Decrypt partition 7 with keyfile in C:\RE2Multi\re2multi.key
+3. Copy a named game folder such as 'Virtua Tennis 4' into the Game folder. 
+4. Make sure your game is structured like the others already.
+5. Ensure that game.bat file is setup and ready to execute.
+4. Unmount the game partition TrueCrypt container. 
+5. Relock drive with ata password, or if you wish in some cases you can just cut power, and wait for a moment. 
 ```
-If you with to tamper with Niko's multi live you'll probably want the SystemUser password as well as Admin level privs. 
+
+### SystemUser privs on Nikos Multi and other Ring systems. 
+If you wish to tamper with Niko's as it runs live, you'll probably want the SystemUser password as well as Administrative level privleges. The password can be obtained by exploiting a kernel level vulnerability, and subsequently running MimiKatz. 
 
 ```
-Download ms11-080-AddUser.exe
-Copy to USB stick
-Download mimikatz: https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20200502/mimikatz_trunk.zip
-Unzip mimikatz onto USB stick
-Boot re2multi
-hit C to go to commmand prompt
-Plug in USB stick
-type: D:
-type: ms11-080-AddUser.exe -O XP
-cd into win32 mimikatz directory
-type: runas /user:hacker mimikatz.exe
-type: sekurlsa::kerberos
-(press alt+spacebar, then E, then L, to scroll)
+1. Download ms11-080-AddUser: https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS11-080
+2. Copy ms11-080-AddUser.exe to USB stick
+3. Download mimikatz: https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20200502/mimikatz_trunk.zip
+4. Unzip mimikatz onto USB stick
+5. Boot re2multi
+6. hit C to go to commmand prompt
+7. Plug in USB stick
+8. type: D:
+9. type: ms11-080-AddUser.exe -O XP
+10. cd into win32 mimikatz directory
+11. type: runas /user:hacker mimikatz.exe, and enter password Hacker!
+12. type: sekurlsa::kerberos
 ```
 The password for SystemUser is <6/=U=#tpe!$*3!5
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/MimiKatz.jpeg">
 
 <Add notes on BIOS password here>
 

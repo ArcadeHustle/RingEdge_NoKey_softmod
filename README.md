@@ -11,19 +11,19 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
   <img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/arcadeprojects.jpeg"><img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/brizzo.jpeg">
 </p>
 
-   * [Stage One: Bye Bye Puyo Puyo!](#stage-one-bye-bye-puyo-puyo)
-   * [Stage Two: Early Ring history](#stage-two-early-ring-history)
-   * [Stage Three: Ring Piracy Deep Dive](#stage-three-ring-piracy-deep-dive)
-   	* [The Chinese Jinwin Sega connection?](#the-chinese-jinwin-sega-connection)
-   	* [Enter TrueCrypt](#enter-truecrypt)
-   * [Stage Four: Academic Exercies &amp; Censorship](#stage-four-academic-exercies--censorship)
-   	* [Unlocking the drive](#unlocking-the-drive)
-   	* [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
-   	* [Obtaining the KeyFiles and Volume Password](#obtaining-the-keyfiles-and-volume-password)
-   	* [Playing around with Volatility](#playing-around-with-volatility)
-   	* [Modifying the OS boot image](#modifying-the-os-boot-image)
-   * [Final Boss: Changing games on Niko's Multi](#final-boss-changing-games-on-nikos-multi)
-   * [Bonus level: RE2Multi on RE1?!](#bonus-level-re2multi-on-re1)
+* [Stage One: Bye Bye Puyo Puyo!](#stage-one-bye-bye-puyo-puyo)
+* [Stage Two: Early Ring history](#stage-two-early-ring-history)
+* [Stage Three: Ring Piracy Deep Dive](#stage-three-ring-piracy-deep-dive)
+	* [The Chinese Jinwin Sega connection?](#the-chinese-jinwin-sega-connection)
+	* [Enter TrueCrypt](#enter-truecrypt)
+* [Stage Four: Academic Exercies &amp; Censorship](#stage-four-academic-exercies--censorship)
+	* [Unlocking the drive](#unlocking-the-drive)
+	* [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
+	* [Obtaining the KeyFiles and Volume Password](#obtaining-the-keyfiles-and-volume-password)
+	* [Playing around with Volatility](#playing-around-with-volatility)
+	* [Modifying the OS boot image](#modifying-the-os-boot-image)
+* [Final Boss: Changing games on Niko's Multi](#final-boss-changing-games-on-nikos-multi)
+* [Bonus level: RE2Multi on RE1?!](#bonus-level-re2multi-on-re1)
 
 # Stage One: Bye Bye Puyo Puyo!
 

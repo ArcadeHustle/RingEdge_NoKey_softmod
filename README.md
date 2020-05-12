@@ -778,15 +778,18 @@ The easy answer to the question above is to simply make use of Niko's Multi by e
 
 ```
 1. Unlock Niko's multi drive with the ata password that you used to create it
-   PNY CS900 120GB SSD - (SSD7CS900-120-RB) Key: 0242826a1253ca5bf242ea78d263524ab213d22a0a460be66a467f865c8a5a86
-   Inland Professional 120GB SSD - (4335233676) Key: 324152498a530248ea42fa4aca42da4a2a223a2a0a221a2a6a027a0a4a025a0a
-   Crucial BX500 120GB SSD - (CT120BX500SSD1) Key: 3250aa589242b259f273627b2273da4a2a223a2a0a221a2a6a026b6e5bce4b86
 2. Decrypt partition 7 with keyfile in C:\RE2Multi\re2multi.key
 3. Copy a named game folder such as 'Virtua Tennis 4' into the Game folder. 
 4. Make sure your game is structured like the others already.
 5. Ensure that game.bat file is setup and ready to execute.
 4. Unmount the game partition TrueCrypt container. 
 5. Relock drive with ata password, or if you wish in some cases you can just cut power, and wait for a moment. 
+
+Known Drive Keys:
+PNY CS900 120GB SSD - (SSD7CS900-120-RB) Key: 0242826a1253ca5bf242ea78d263524ab213d22a0a460be66a467f865c8a5a86
+Inland Professional 120GB SSD - (4335233676) Key: 324152498a530248ea42fa4aca42da4a2a223a2a0a221a2a6a027a0a4a025a0a
+Crucial BX500 120GB SSD - (CT120BX500SSD1) Key: 3250aa589242b259f273627b2273da4a2a223a2a0a221a2a6a026b6e5bce4b86
+TDK RS2, RS3 SSD - (OEM Sega) Key: 7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A
 ```
 
 ### SystemUser privs on Nikos Multi and other Ring systems. 

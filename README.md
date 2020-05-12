@@ -528,7 +528,7 @@ Hint: The technique most folks use involves patching Sega mx* binaries to not de
 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/DeletefileA.png">
 
-We find it much simpler to just patch TrueCrypt to dump the keyfile and pass. TrueCrypt.exe does after all sit on a nonprotected portion of the file system. You can simply copy the patched files onto the game drive, and reboot to dump the keys.<br>
+We find it simpler to patch TrueCrypt to dump the keyfile and pass. TrueCrypt.exe does after all sit on a nonprotected portion of the file system. You can simply copy the patched files onto the game drive, and reboot to dump the keys.<br>
 https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/TrueCrypt-win32_keydump.patch<br>
 https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/tree/master/TrueCrypt-win32_keydump (binaries)
 

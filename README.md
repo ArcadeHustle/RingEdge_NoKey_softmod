@@ -500,11 +500,12 @@ $ xxd UpdateKeyFile
 ```
 
 The contents of the UpdateKeyFile have not been shared with the public in the past, however the SystemKeyFile has, sans instruciton on how to extract it as we've shown above. You can do the same process on windows via Nirsoft
-<img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/pics/ADS.jpeg">
-<img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/pics/ADS1.jpeg">
-<img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/pics/ADS2.jpeg">
-<img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/pics/ADS3.jpeg">
-<img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/pics/ADS4.jpeg">
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS.jpeg">
+	  https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/raw/master/pics/ADS.jpeg
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS1.jpeg">
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS2.jpeg">
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS3.jpeg">
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS4.jpeg">
 
 Hint: The technique most folks use involves patching several Sega binaries to not delete files in a TEMP folder, coupled with a hardcoded drive password similarly found with the same binaries. The below commentary will examine an alternate path to mounting an encrypted TC drive, post memory acquisition. 
 

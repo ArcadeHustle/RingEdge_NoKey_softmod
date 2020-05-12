@@ -825,8 +825,19 @@ The password for SystemUser is <6/=U=#tpe!$*3!5
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/MimiKatz.jpeg">
 
 ### BIOS password
-<Add notes on BIOS RE1 password calculation here>
-<share known BIOS passwords here> 
+
+Typing ctrl+alt+7 as the Ring* boots will get you a bios prompt. To obtain the BIOS password simply enter an incorrect password three times, within Phoenix TrustedCore(tm) Setup Utility. Notate the code that is displayed, because it is actually a checksum that can be used to derive the bios password. 
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/hash.png">
+
+Two known passwords are: ynruq, and kalcj
+
+These BIOS nuances are documented in a number of articles: 
+"BIOS Password Backdoors in Laptops" 
+https://dogber1.blogspot.com/2009/05/table-of-reverse-engineered-bios.html
+https://281eaff2-a-62cb3a1a-s-sites.googlegroups.com/site/dogber1/blag/pwgen-5dec.py
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/biosbrute.jpeg">
+
+The website for bios-pw.org is known to work for extracting the passwords if you are in a hurry. Their source code is shared here: https://github.com/bacher09/pwgen-for-bios
 
 # Bonus level: RE2Multi on RE1?!
 
@@ -839,6 +850,11 @@ C:\WINDOWS\system32\DRVSTORE\mxsram_84E083611D520D67EB8997E30D46709A4946EAF3\
 
 A "patch" in the form of a .zip file that can be uncompressed on Niko's multi can be found here:<br>
 https://archive.org/details/niko-multi-re-1-c-drive-patch
+
+Prepatched 32Gb versions of Niko's Multi Image that check for game files on a secondary drive can be downloaded from the Internet Archive: 
+https://archive.org/details/re1multi32gb
+
+No games are included, and the orignal TDK RS2, and RS3 drives can be used as a means to preserve original hardware. No new purchases are necessary. 
 
 Most games work fine on either platform, however some games like DOA5 will require extra RAM. Other games for RingWige, and RingEdge should work fine as well, some however may require special IO boards, or other hardware like TrackBall's to work properly. 
 

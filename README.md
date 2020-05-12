@@ -546,7 +546,9 @@ https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/MemoryForensi
 
 Regardless of how you obtained the various keys, once you get the ATA key entered, and the drive unlocked mounted, you can begin modifying the system. The core OS can be made more friendly for casual research, or other non gaming uses with a few registry edits. 
 
-First we use chntpw to list the users on the system. 
+You can use Registry Finder from http://registry-finder.com to the find registry changes within a certain date range which will make the changes Sega made to the base system image stick out like a sore thumb. 
+
+First we need to download chntpw, then as a sanity check we will use it to list the users on the system. 
 ```
 # cd /tmp/a/WINDOWS/system32/config
 # wget https://pogostick.net/~pnh/ntpasswd/chntpw-source-140201.zip
@@ -576,8 +578,6 @@ ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 262144 [40000] bytes, containing 5 pages (+ 1 headerpage)
 Used for data: 208/15824 blocks/bytes, unused: 6/4496 blocks/bytes.
 
-
-
 <>========<> chntpw Main Interactive Menu <>========<>
 
 Loaded hives: <../SAM>
@@ -588,9 +588,7 @@ Loaded hives: <../SAM>
   9 - Registry editor, now with full write support!
   q - Quit (you will be asked if there is something to save)
 
-
 What to do? [1] -> 1
-
 
 ===== chntpw Edit User Info & Passwords ====
 
@@ -689,8 +687,6 @@ ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 6291456 [600000] bytes, containing 1387 pages (+ 1 headerpage)
 Used for data: 113449/5924568 blocks/bytes, unused: 3464/183240 blocks/bytes.
 
-
-
 <>========<> chntpw Main Interactive Menu <>========<>
 
 Loaded hives: <../SYSTEM>
@@ -698,7 +694,6 @@ Loaded hives: <../SYSTEM>
       - - -
   9 - Registry editor, now with full write support!
   q - Quit (you will be asked if there is something to save)
-
 
 What to do? [1] -> 9
 Simple registry editor. ? for help.
@@ -716,7 +711,6 @@ DWORD: Old value 1 [0x1], enter new value (prepend 0x if hex, empty to keep old 
 DWORD: New value 0 [0x0], 
 
 \ControlSet001\Services\kbfilter\Parameters> q
-
 
 > cd \ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile\AuthorizedApplications
 > cd List
@@ -741,7 +735,6 @@ DWORD: Old value 1 [0x1], enter new value (prepend 0x if hex, empty to keep old 
 -> 0
 DWORD: New value 0 [0x0], 
 
-
 <>========<> chntpw Main Interactive Menu <>========<>
 
 Loaded hives: <../SYSTEM>
@@ -749,7 +742,6 @@ Loaded hives: <../SYSTEM>
       - - -
   9 - Registry editor, now with full write support!
   q - Quit (you will be asked if there is something to save)
-
 
 What to do? [1] -> q
 
@@ -761,19 +753,19 @@ Write hive files? (y/n) [n] : y
 
 ```
 
-Some other keys to consider looking at
+There are a number of other keys to consider looking at in making your experience more usable for reverse engineering. 
 ```
-REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 0 /f 
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System\DisableTaskMgr
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\HideIcons
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideMyComputerIcons
+```
 
-HideMyComputerIcons in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
-
+If you are curious about the exact version of Windows used you can also take a quick look at
+```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WindowsEmbedded\ProductVersion
 ```
 
-Cursor.cur needs replaced also. C:\windows\Cursors, download a new one from the internet
-
-You can use http://registry-finder.com use the Find changes within date range feature to find the changes Sega made to the base system image. 
+Finally perhaps the most annoying thing that needs changed, is the 1x1 pixel Cursor file that Sega chose to use to obfuscate the UI. C:\windows\Cursors\Cursor.cur will need to be deleted, and replaced with something more usable. (what happens if we just delete it? does it revert to a standard cursor?)
 
 # Final Boss: Changing games on Niko's Multi
 

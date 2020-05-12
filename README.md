@@ -795,7 +795,7 @@ TDK RS2, RS3 SSD - (OEM Sega) Key: 7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221
 ### How to ReKey a Game drive to a new keychip
 
 This is simply a matter of using the built in TrueCrypt key functionality. <br>
-"Volumes -> Add/Remove Keyfiles to/from Volume... This function allows you to re-encrypt a volume header with a header encryption key derived from any number of keyfiles (with or without a password), or no keyfiles at all. Thus, a volume which is possible to mount using only a password can be converted to a volume that require keyfiles (in addition to the password) in order to be possible to mount... This function can also be used to change/set volume keyfiles (i.e., to remove some or all keyfiles, and to apply new ones)."
+"Volumes -> Add/Remove Keyfiles to/from Volume... This function allows you to re-encrypt a volume header with a header encryption key derived from any number of keyfiles (with or without a password), or no keyfiles at all. Thus, a volume which is possible to mount using only a password can be converted to a volume that require keyfiles (in addition to the password) in order to be possible to mount... This function can also be used to change/set volume keyfiles (i.e., to remove some or all keyfiles, and to apply new ones)."<br>
 https://www.truecrypt71a.com/documentation/keyfiles/
 
 Open up TrueCrypt, and adjust the keys as you see fit. Have an old Mahjong key that you want to use on another drive? Dump it using the patched TrueCrypt executables that were shared above, and then add the dumped key to the game container partition that you wish to use it with. 

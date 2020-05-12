@@ -543,7 +543,7 @@ https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/MemoryForensi
 
 ### Modifying the OS boot image
 
-Regardless of how you obtained the key, once you get the drives mounted, you can begin modifying the system to be more friendly for casual non gaming use. (Such as dumping key chips)
+Regardless of how you obtained the various keys, once you get the ATA key entered, and the drive unlocked mounted, you can begin modifying the system. The core OS can be made more friendly for casual research, or other non gaming uses with a few registry edits. 
 
 First we use chntpw to list the users on the system. 
 ```
@@ -677,7 +677,7 @@ Write hive files? (y/n) [n] : y
 
 ```
 
-Next we move on to makign the UI more usable. 
+Next we move on to making the UI more usable. 
 
 ```
 
@@ -761,20 +761,18 @@ Write hive files? (y/n) [n] : y
 ```
 
 Some other keys to consider looking at
+```
 REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 0 /f 
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\HideIcons
 
 HideMyComputerIcons in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WindowsEmbedded\ProductVersion
+```
 
 Cursor.cur needs replaced also. C:\windows\Cursors, download a new one from the internet
 
 You can use http://registry-finder.com use the Find changes within date range feature to find the changes Sega made to the base system image. 
-
-Please note: You may no longer need to have the *proper* / *original* security key in order to play the a drive. Don't be a dick... 
-like others before today. Use this to back up your hardware for preservation sake, not for resale purposes! Keep your orignal key chips
-on hand. If you sell the drive, sell the key chip with it. Don't sell rekeyed, or nokeyed drives. 
 
 # Final Boss: Changing games on Niko's Multi
 
@@ -815,6 +813,8 @@ The password for SystemUser is <6/=U=#tpe!$*3!5
 # Bonus level: RE2Multi on RE1?!
 
 Have fun! Be safe!
+
+Please note: You may no longer need to have the *proper* / *original* security key in order to play a Ring* platform game drive. Don't be a dick... like others before today. Use this to back up your hardware for preservation sake, not for resale purposes! Keep your orignal key chips on hand. If you sell the drive, sell the key chip with it. Don't sell rekeyed, or nokeyed drives. 
 
 Official video tutorial for the RingEdge SSD softmod by Mitsu (as usual!) can be found here: https://www.youtube.com/watch?v=l0nq1pQXX90
 

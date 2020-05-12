@@ -676,7 +676,7 @@ Write hive files? (y/n) [n] : y
 
 ```
 
-Next we move on to making the UI more usable. 
+Next we move on to making the UI more usable, by disabling the firewall, and kbfilter settings.  
 
 ```
 
@@ -760,7 +760,7 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\Hi
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideMyComputerIcons
 ```
 
-If you are curious about the exact version of Windows used you can also take a quick look at
+If you are curious about the exact version of Windows used you can also take a quick look at the following key. 
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WindowsEmbedded\ProductVersion
 ```

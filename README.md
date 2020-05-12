@@ -69,6 +69,15 @@ https://library.osu.edu/site/copyright/2019/03/20/2018-dmca-section-1201-exempti
 "CFR §201.40(b)(12)"<br> 
 "For personal, local gameplay; or To allow preservation in a playable format..."<br>
 
+"Computer programs protected by dongles that prevent access due to malfunction or damage and which are obsolete. A dongle shall be considered obsolete if it is no longer manufactured or if a replacement or repair is no longer reasonably available in the commercial marketplace."
+https://www.copyright.gov/fedreg/2006/71fr68472.html
+
+"The final rule allows eligible libraries, archives, and museums to circumvent technological protection measures on certain lawfully acquired computer programs (including video games) to preserve computer programs and computer program-dependent materials."
+https://clinic.cyber.harvard.edu/2018/10/26/a-victory-for-software-preservation-dmca-exemption-granted-for-spn/
+
+"Exemption to Prohibition on Circumvention of Copyright Protection Systems for Access Control Technologies"
+https://www.govinfo.gov/content/pkg/FR-2018-10-26/pdf/2018-23241.pdf
+
 Please note that the following text is considered "for purposes of good-faith security research". This write up will give you all the knowledge, and access you need to backup and preserve your RingEdge hardware featuring Puyo Puyo !! Quest Arcade. This preservation may also apply to other devices, and games in the Ring* family such as RingEdge2, and RingWide. 
 
 Please remember the wise words of Mitsurugi_w "The info itself is not new or special. It's all over the web anyways" 

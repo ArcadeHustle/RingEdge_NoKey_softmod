@@ -318,7 +318,7 @@ Both of the archived posts contain partially usable instructions, but can indeed
 https://pastebin.com/zQYxBU1e<br>
 https://pastebin.com/2qiQdPQ6
 
-The first bit of information revealed in the posts was the static ATA unlock key for the TDK RS2 and RS3 hard drives use by default in Ring* machines. A simple hdparm command will unlock the drive, and allow you to interact with it. 
+The first bit of information revealed in the posts was the static ATA unlock key for the TDK RS2 and RS3 hard drives use by default in Ring* machines. A simple hdparm command will unlock the drive, and allow you to interact with it. As mentioned previously even without this post the ATA key is trivial to obtain via a number of methods. 
 ```
 # hdparm --user-master u --security-unlock hex:7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A /dev/sdc
 security_password: 72 42 52 5a ba 52 6a 5a ea 72 62 78 ca 42 da 4a 2a 22 3a 2a 0a 22 1a 2a 6a 02 7a 0a 5c ce 4a 0a

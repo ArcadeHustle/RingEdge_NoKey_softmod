@@ -11,21 +11,21 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
   <img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/arcadeprojects.jpeg"><img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/brizzo.jpeg">
 </p>
 
-* [Stage One: Bye Bye Puyo Puyo!](#stage-one)
-* [Stage Two: Early Ring history](#stage-two)
-* [Stage Three: Ring Piracy Deep Dive](#stage-three)
-	* [The Chinese Jinwin Sega connection?](#the-chinese-jinwin-sega-connection)
-	* [Enter TrueCrypt](#enter-truecrypt)
-* [Stage Four: Academic Exercises & Censorship](#stage-four)
-	* [Unlocking the drive](#unlocking-the-drive)
-	* [Modifying the OS boot image](#modifying-the-os-boot-image)
-	* [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
-	* [Obtaining the KeyFile and Volume Password](#obtaining-the-keyfile-and-volume-password)
-	* [Playing around with Volatility](#playing-around-with-volatility)
-* [Final Boss: Changing games on Niko's Multi](#final-boss)
-* [Bonus Level: RE2Multi on RE1?1](#bonus-level)
+   * [Stage One: Bye Bye Puyo Puyo!](#stage-one-bye-bye-puyo-puyo)
+   * [Stage Two: Early Ring history](#stage-two-early-ring-history)
+   * [Stage Three: Ring Piracy Deep Dive](#stage-three-ring-piracy-deep-dive)
+         * [The Chinese Jinwin Sega connection?](#the-chinese-jinwin-sega-connection)
+         * [Enter TrueCrypt](#enter-truecrypt)
+   * [Stage Four: Academic Exercies &amp; Censorship](#stage-four-academic-exercies--censorship)
+         * [Unlocking the drive](#unlocking-the-drive)
+         * [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
+         * [Obtaining the KeyFiles and Volume Password](#obtaining-the-keyfiles-and-volume-password)
+         * [Playing around with Volatility](#playing-around-with-volatility)
+         * [Modifying the OS boot image](#modifying-the-os-boot-image)
+   * [Final Boss: Changing games on Niko's Multi](#final-boss-changing-games-on-nikos-multi)
+   * [Bonus level: RE2Multi on RE1?!](#bonus-level-re2multi-on-re1)
 
-# Stage One:
+# Stage One: Bye Bye Puyo Puyo!
 
 "【お知らせ】サービスを終了いたしました。"<br>
 As of Friday, March 31, 2017 at 27:59 The service has ended for “Puyo Puyo !! Quest Arcade”<br>
@@ -73,7 +73,7 @@ Please note that the following text is considered "for purposes of good-faith se
 
 Please remember the wise words of Mitsurugi_w "The info itself is not new or special. It's all over the web anyways" 
 
-# Stage Two:
+# Stage Two: Early Ring history
 
 For a long time the details of how Ring* game images are ReKeyed, or NoKeyed has been a closely guarded, and heavily traded / paid for secret. With the first decade of deployment coming to a close, it is also time to close off this "Internet Money Maker". None the less, as hardware begins to fail, the threat of required preservation looms. 
 
@@ -123,7 +123,7 @@ http://archive.is/wOIjp
 Once folks in the "Ringedge/2/wide/Nu game list" thread heard "they can run locally and offline!", the *real* thirst began. 
 https://webcache.googleusercontent.com/search?q=cache:CiZlw8FpwmEJ:https://www.arcade-projects.com/forums/index.php%3Fthread/6466-ringedge-2-wide-nu-game-list/%26pageNo%3D2+&cd=1&hl=en&ct=clnk&gl=us
 
-# Stage Three
+# Stage Three: Ring Piracy Deep Dive
 Well after the dick wagging on Assembler Games a random technical examination of the RingEdge popped up on Hiroyuki's home page (ひろゆきのホームページ):<br>
 ```
 "I have purchased a ring edge that starts a game with a key-chip"
@@ -296,7 +296,7 @@ https://webcache.googleusercontent.com/search?q=cache:kfuo1iRQy3wJ:https://www.a
 If we come full circle to modern times, folks have finally brought forth conversations about a Ring* keychip emulator. This sort of concept has been deployed in private for quite some time by various players.<br>
 https://github.com/ArcadeHustle/RingEdge_SSD_Softmod/issues/1
 
-# Stage Four
+# Stage Four: Academic Exercies & Censorship
 
 Clearly folks have been profiting off the NoKey, and ReKey image instances, both in the form of Chinese Bootleg machines and their accompanying hardware as well as individual private sales. Discussion about the techniques employed have been forbidden fruit for quite some time, partially due to these profit motives. The guise has always been *fear* of Sega retaliating... 
 
@@ -1052,7 +1052,7 @@ Please note: You may no longer need to have the *proper* / *original* security k
 like others before today. Use this to back up your hardware for preservation sake, not for resale purposes! Keep your orignal key chips
 on hand. If you sell the drive, sell the key chip with it. Don't sell rekeyed, or nokeyed drives. 
 
-# Final Boss
+# Final Boss: Changing games on Niko's Multi
 
 "Someone know how we can change games inside a ringedge motherboard?"
 http://www.neo-arcadia.com/forum/viewtopic.php?t=62415
@@ -1087,6 +1087,8 @@ type: sekurlsa::kerberos
 The password for SystemUser is <6/=U=#tpe!$*3!5
 
 <Add notes on BIOS password here>
+
+# Bonus level: RE2Multi on RE1?!
 
 Have fun! Be safe!
 

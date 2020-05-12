@@ -519,7 +519,10 @@ This is only the first step, and it doesn't even net you access to the game part
 
 In order to get the game keys, we will need to understand where they come from, or alternately where they go. 
 
-Hint: The technique most folks use involves patching Sega mx* binaries to not delete files that are placed in the windows TEMP folder. During key generation the TrueCrypt keys that are derived from KeyChip interrogation are temporarily placed in C:\Windows\TEMP via mkstemp(), and subsequently deleted. The pastebin links shared above walk through a clunky process by which the files can be retrieved. The technique involves patching DeleteFileA() inside of mxstartup.exe
+Hint: The technique most folks use involves patching Sega mx* binaries to not delete files that are placed in the windows TEMP folder. During key generation the TrueCrypt keys that are derived from KeyChip interrogation are temporarily placed in C:\Windows\TEMP via mkstemp(), and subsequently deleted. The pastebin links shared above walk through a clunky process by which the files can be retrieved. The technique that has previously been shared in the community involves patching DeleteFileA() inside of mxsegaboot.exe.
+
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/DeletefileA.png">
+
 
 We find it much simpler to just patch TrueCrypt to dump the keyfile and pass. TrueCrypt.exe does after all sit on a nonprotected portion of the file system. 
 https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/TrueCrypt-win32_keydump.patch

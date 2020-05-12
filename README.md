@@ -446,8 +446,66 @@ Protect hidden volume (if any)? (y=Yes/n=No) [No]:
 $ ./CipherShed-OSX-64/src/Main/CipherShed -d
 ```
 
-### Obtaining the KeyFile and Volume Password
-You may be wondering at this point how exactly the KeyFile was obtained. There were brief notes in the pastebin links above for one technique, but we really need to go in depth into how TrueCrypt can be attacked for academic posterity. 
+### Obtaining the KeyFiles and Volume Password
+You may be wondering at this point how exactly the KeyFiles are obtained. There were brief notes in the pastebin links above for one technique, but we really need to go in depth into how TrueCrypt can be attacked for academic posterity. 
+
+If you are not familiar with Alternate Data Streams on NTFS you will want to start here:<br>
+"Practical Guide to Alternative Data Streams in NTFS"<br>
+http://www.irongeek.com/i.php?page=security/altds
+
+"The NTFS file system provides applications the ability to create alternate data streams of information. By default, all data is stored in a file's main unnamed data stream, but by using the syntax 'file:stream', you are able to read and write to alternates."<br>
+https://docs.microsoft.com/en-us/sysinternals/downloads/streams
+
+From either a linux or Mac system we can view the streams via ls, or xattr
+```
+$ man ls
+LS(1)                     BSD General Commands Manual                    LS(1)
+...
+     -@      Display extended attribute keys and sizes in long (-l) output.<br>
+```
+
+Below is an example of both examining, and extracting the contents of a mounted RingEdge drive via OSX. Specifically the C:\System\Execute\DLL folder holds ADS streams containing the key files needed to mount both the C:\System\Execute\System file, and the Update partition on a Ring Game drive. 
+```
+$ ls -l@  /Volumes/Untitled\ 1/System/Execute/
+total 25194
+drwxr-xr-x@ 0 mitsurugi  staff         0 Apr 29  2009 DLL
+	SystemKeyFile	      53 
+	UpdateKeyFile	      16 
+-rwxr-xr-x  1 mitsurugi  staff  12582912 Dec 17  2008 System
+-rwxr-xr-x  1 mitsurugi  staff    138240 Aug  7  2009 mxprestartup.exe
+-rwxr-xr-x  1 mitsurugi  staff    178176 Aug  7  2009 mxstartup.exe
+
+$ xattr-2.7 DLL
+SystemKeyFile
+UpdateKeyFile
+
+$ xattr-2.7 -l DLL
+SystemKeyFile: adsaf21519189aq1g56161asdff19as1f9:PF:CA[][_159191wef
+UpdateKeyFile:
+00000000  88 C2 DE 33 46 D1 B1 12 BC A1 F7 3F 94 2C DF 38  |...3F......?.,.8|
+00000010
+
+$ xattr-2.7 -p SystemKeyFile DLL/
+adsaf21519189aq1g56161asdff19as1f9:PF:CA[][_159191wef
+
+$ xattr-2.7 -p UpdateKeyFile DLL
+88 C2 DE 33 46 D1 B1 12 BC A1 F7 3F 94 2C DF 38
+
+$ xattr-2.7 -p UpdateKeyFile DLL | xxd -r -p | xxd
+00000000: 88c2 de33 46d1 b112 bca1 f73f 942c df38  ...3F......?.,.8
+
+$ xattr-2.7 -p UpdateKeyFile DLL | xxd -r -p > UpdateKeyFile
+$ xxd UpdateKeyFile 
+00000000: cc51 bae8 4a5e 00ff 461c 8d45 d4e8 6a42  .Q..J^..F..E..jB
+
+```
+
+The contents of the UpdateKeyFile have not been shared with the public in the past, however the SystemKeyFile has, sans instruciton on how to extract it as we've shown above. You can do the same process on windows via Nirsoft
+<img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/pics/ADS.jpeg">
+<img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/pics/ADS1.jpeg">
+<img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/pics/ADS2.jpeg">
+<img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/pics/ADS3.jpeg">
+<img src="https://github.com/ArcadeHustle/X3_USB_softmod/blob/master/pics/ADS4.jpeg">
 
 Hint: The technique most folks use involves patching several Sega binaries to not delete files in a TEMP folder, coupled with a hardcoded drive password similarly found with the same binaries. The below commentary will examine an alternate path to mounting an encrypted TC drive, post memory acquisition. 
 

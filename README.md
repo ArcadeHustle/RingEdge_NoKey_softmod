@@ -449,6 +449,8 @@ $ ./CipherShed-OSX-64/src/Main/CipherShed -d
 ### Obtaining the KeyFiles and Volume Password
 You may be wondering at this point how exactly the KeyFiles are obtained. There were brief notes in the pastebin links above for one technique, but we really need to go in depth into how TrueCrypt on the Ring* platform can be attacked for academic posterity at the very least. 
 
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS.jpeg">
+
 If you are not familiar with Alternate Data Streams on NTFS you will want to start here, because Sega chose to store the initial System and Update TrueCrypt keys in a hidden ADS stream right off the root of the drive in C:\System\Execute\DLL<br>
 "Practical Guide to Alternative Data Streams in NTFS"<br>
 http://www.irongeek.com/i.php?page=security/altds
@@ -500,8 +502,6 @@ $ xxd UpdateKeyFile
 ```
 
 The contents of the UpdateKeyFile have not been shared with the public in the past, however the SystemKeyFile has, sans instruciton on how to extract it as we've shown above. You can do the same process on windows via Nirsoft
-<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS.jpeg">
-	  https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/raw/master/pics/ADS.jpeg
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS1.jpeg">
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS2.jpeg">
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS3.jpeg">

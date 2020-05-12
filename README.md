@@ -21,7 +21,11 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
 	* [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
 	* [Obtaining the KeyFiles and Volume Password](#obtaining-the-keyfiles-and-volume-password)
 	* [Modifying the OS boot image](#modifying-the-os-boot-image)
-* [Final Boss: Changing games on Niko's Multi](#final-boss-changing-games-on-nikos-multi)
+* [Final Boss: Changing games on Niko's Multi and other Ring platforms](#final-boss-changing-games-on-nikos-multi-and-other-ring-platforms)
+	* [How to ReKey a Game drive to a new keychip](#how-to-rekey-a-game-drive-to-a-new-keychip)
+	* [How to NoKey a drive](#how-to-nokey-a-drive)
+	* [SystemUser privs on Nikos Multi and other Ring systems.](#systemuser-privs-on-nikos-multi-and-other-ring-systems)
+	* [BIOS password](#bios-password)
 * [Bonus level: RE2Multi on RE1?!](#bonus-level-re2multi-on-re1)
 
 # Stage One: Bye Bye Puyo Puyo!

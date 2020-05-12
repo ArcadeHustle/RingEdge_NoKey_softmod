@@ -451,7 +451,7 @@ You may be wondering at this point how exactly the KeyFiles are obtained. There 
 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS.jpeg">
 
-If you are not familiar with Alternate Data Streams on NTFS you will want to start here, because Sega chose to store the initial System and Update TrueCrypt keys in a hidden ADS stream right off the root of the drive in C:\System\Execute\DLL<br>
+If you are not familiar with Alternate Data Streams on NTFS you will want to start here, because Sega chose to store the initial System and Update partition TrueCrypt keys in a hidden ADS stream right off the root of the drive in C:\System\Execute\DLL<br>
 "Practical Guide to Alternative Data Streams in NTFS"<br>
 http://www.irongeek.com/i.php?page=security/altds
 

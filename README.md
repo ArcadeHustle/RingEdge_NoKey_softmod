@@ -101,8 +101,7 @@ patch to skip the dongle check. And it's not as simple as Taito Type X2 which wa
 
 The subsequent rant about his work as a Jr Malware Researcher for F-Secure (https://www.linkedin.com/in/giansanti/) was seemingly unrelated, but will be included anyway on the offhand event you need to measure his e-peen: "I have unpacked hundreds of custom malware packers, Commercial protections: Securom (Yes with VM Redirects, Opcode VM, Constant Hook Stealer etc), SafeDisk(+Nanomites), ASProtect SKE(+VM) blablabla. And when I tell you newer sega games have good protection, it really does have it. Sure you can clone it but emulation and running on PC is pretty much impossible without deprotecting the binary and emulating entire MX drivers/libraries."
 
-Immediately after said rant, reaver implied that running Ring games on PC was less than favorable anyway, implying that the discussion was pointless.<br>
-"I have already run Ring games on PC but it's gay" - Jackalus, Jun 19, 2013
+Immediately after said rant, reaver implied that running Ring games on PC was less than favorable anyway, implying that the discussion was pointless. "I have already run Ring games on PC but it's gay" - Jackalus, Jun 19, 2013
 
 4 years later, running Ring games on PC is determined to be favorable, especially with paying Patreon customers!<br>
 "Core work done for RingEdge 2 support, currently disabled. (amAuth emulation)"<br>

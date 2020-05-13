@@ -297,8 +297,7 @@ In addition to bootlegs, you could occasionally find folks offering archival ser
 
 "if you want any RingWide game for RingEdge, i can supply you it on a 32Gbytes SSD remastered for work on RingEdge, but you need to have an original keychip on the RingEdge (any one, like MJ5 is ok)... Not, i don't do multi kits for RingEdge. Those Games are expensive like hell and very difficult to buy. I was talking about a single game on a 32GB SSD. Game not patched, still 100% original just remastered RingWide Game OS for work on a RingEdge."<br>
 
-Mahjong for example has a KeyChip ID of SBVF, and it is a VERY easy to obtain KeyChip... I wonder why so may shared images are rekeyed to it? ;)<br>
-https://gakman.forumgaming.fr/t72-ringedge-ringwide#454
+Mahjong for example has a KeyChip ID of SBVF, and it is a VERY easy to obtain KeyChip... I wonder why so many shared images are rekeyed to it? https://gakman.forumgaming.fr/t72-ringedge-ringwide#454
 
 There was an effort at one point to document as many chip ID's as possible on AP forums, this sort of effort is extremely useful for archival of all known KeyChips. <br>
 https://webcache.googleusercontent.com/search?q=cache:kfuo1iRQy3wJ:https://www.arcade-projects.com/forums/index.php%3Fthread/4456-ringedge-keychip-id/+&cd=1&hl=en&ct=clnk&gl=us

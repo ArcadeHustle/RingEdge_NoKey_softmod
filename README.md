@@ -16,7 +16,7 @@ Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally a
 * [Stage Three: Ring Piracy Deep Dive](#stage-three-ring-piracy-deep-dive)
 	* [The Chinese Jinwin Sega connection?](#the-chinese-jinwin-sega-connection)
 	* [Enter TrueCrypt](#enter-truecrypt)
-* [Stage Four: Academic Exercies &amp; Censorship](#stage-four-academic-exercies--censorship)
+* [Stage Four: Academic Exercises &amp; Censorship](#stage-four-academic-exercies--censorship)
 	* [Unlocking the drive](#unlocking-the-drive)
 	* [Mounting TrueCrypt containers](#mounting-truecrypt-containers)
 	* [Obtaining the KeyFiles and Volume Password](#obtaining-the-keyfiles-and-volume-password)

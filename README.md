@@ -812,7 +812,8 @@ $ vbindiff mxsegaboot.exe ORIG_mxsegaboot.exe
 Funny what the power of one little byte change can help lead to. 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/compare.png">
 
-Note the subtle difference in the build version on the original file, and its patched up replacement? 
+Note the subtle difference in the build version on the original file, and its patched up replacement for this specific image? Completely different build versions are used. 
+
 $ vbindiff mxkeychip.exe ORIG_mxkeychip.exe 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/compare4.png">
 

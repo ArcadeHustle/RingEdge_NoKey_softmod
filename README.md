@@ -809,6 +809,9 @@ For now the inner workings of how the KeyChip emulators work will be left as an 
 $ vbindiff mxsegaboot.exe ORIG_mxsegaboot.exe 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/vbindiff.png">
 
+Funny what the power of one little byte change can help lead to. 
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/compare.png">
+
 ### SystemUser privs on Nikos Multi and other Ring systems. 
 If you wish to tamper with Niko's as it runs live, you'll probably want the SystemUser password as well as Administrative level privleges. The password can be obtained by exploiting a kernel level vulnerability, and subsequently running MimiKatz. 
 

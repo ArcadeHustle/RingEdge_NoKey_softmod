@@ -806,6 +806,9 @@ Open up TrueCrypt, and adjust the keys as you see fit. Have an old Mahjong key t
 
 For now the inner workings of how the KeyChip emulators work will be left as an exercise for the reader, with access to Niko's multi image, and this document you have all you need to begin your studies. It should be fairly obvious that you don't need to understand how they work to successfully use them as replacements for existing mx* binaries. 
 
+$ vbindiff mxsegaboot.exe ORIG_mxsegaboot.exe 
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/vbindiff.png">
+
 ### SystemUser privs on Nikos Multi and other Ring systems. 
 If you wish to tamper with Niko's as it runs live, you'll probably want the SystemUser password as well as Administrative level privleges. The password can be obtained by exploiting a kernel level vulnerability, and subsequently running MimiKatz. 
 

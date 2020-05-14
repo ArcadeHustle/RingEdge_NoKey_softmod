@@ -873,10 +873,14 @@ No games are included, and the orignal TDK RS2, and RS3 drives can be used as a 
 
 Most games work fine on either platform, however some games like DOA5 will require extra RAM. Other games for RingWige, and RingEdge should work fine as well, some however may require special IO boards, or other hardware like TrackBall's to work properly. 
 
+You may also want to read the sister writeup: "Sega Ring[Edge*|Wide] alternate SSD softmod. Need a cloned drive? No problem..."
+https://github.com/ArcadeHustle/RingEdge_SSD_Softmod
+
 Have fun! Be safe!
 
 Please note: You may no longer need to have the *proper* / *original* security key in order to play a Ring* platform game drive. Don't be a dick... like others before today. Use this to back up your hardware for preservation sake, not for resale purposes! Keep your orignal key chips on hand. If you sell the drive, sell the key chip with it. Don't sell rekeyed, or nokeyed drives. 
 
 Official video tutorial for the RingEdge NoKey / ReKey / AddKey softmod by Mitsu (as usual!) can be found here: https://www.youtube.com/watch?v=l0nq1pQXX90
+
 
 

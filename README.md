@@ -812,6 +812,12 @@ $ vbindiff mxsegaboot.exe ORIG_mxsegaboot.exe
 Funny what the power of one little byte change can help lead to. 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/compare.png">
 
+Note the subtle difference in the build version on the original file, and its patched up replacement? 
+$ vbindiff mxkeychip.exe ORIG_mxkeychip.exe 
+<img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/compare4.png">
+
+It doesn't take a genius to figure out what is going on considering only mxsegaboot.exe and mxkeychip.exe are replaced. 
+
 ### SystemUser privs on Nikos Multi and other Ring systems. 
 If you wish to tamper with Niko's as it runs live, you'll probably want the SystemUser password as well as Administrative level privleges. The password can be obtained by exploiting a kernel level vulnerability, and subsequently running MimiKatz. 
 

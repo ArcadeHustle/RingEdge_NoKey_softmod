@@ -497,8 +497,7 @@ $ ./CipherShed-OSX-64/src/Main/CipherShed -d
 
 After mounting the file based container, move on and mount some of the partitions on the physical drive. 
 
-Once you have mounted the remaining drives you will see that this gives us the following final partition layout. 
-You will find that the partition layout is as follows.
+This is the current documented understanding of the final partition layout. 
 ```
 disk5
 disk5s1 - (Boot Partition, \System\Execute\System container w/ SystemKeyFile)

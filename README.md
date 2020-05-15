@@ -1,4 +1,5 @@
-*PRE-RELEASE DO NOT SHARE THIS MESS*
+*Reminder, if you like these repos, fork them so they don't disappear* 
+https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/fork
 
 Big thanks to Mitsurugi_w, Darksoft, and Brizzo of Arcade Projects for finally allowing this to be published.
 - written by hostile, with supporting information from the community at large!

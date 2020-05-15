@@ -382,18 +382,51 @@ OSX users currently will have to rely on the hot swap technique until a proper A
 
 Once the drive has been mounted you will as expected encounter a number of TrueCrypt partitions, as well as a file based container in "C:\System\Execute\System". You can mount the TrueCrypt image, and drive partitionss within linux or OSX fairly easily if you do not prefer to use Windows. You can mount either encrypted files directly, or dd based drive images via losetup. Likewise you can of couse simply mount the actual drive partitions. 
 
-You will find that the partition layout is as follows.
+On OSX the partition layout is as follows:
 ```
-Partition 1 - \System\ (Boot Partition)
-Partition 2 - \MiniNT  (Recovery Partition)
-Partition 3 - 518 Meg  (?TrueCrypt? Partition)
-Partition 4 - 	       (Update Partition - TrueCrypt Protected)
-Partition 5 -          (? ? Partition)
-Partition 6 -          (? OS Drivers ? Partition)
-Partition 7 -          (Game Partition  - TrueCrypt Protected)
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *32.0 GB    disk5
+   1:               Windows_NTFS Untitled                1.1 GB     disk5s1
+   2:               Windows_NTFS Untitled                1.1 GB     disk5s2
+   3:                 DOS_FAT_16                         542.8 MB   disk5s5
+   4:                 DOS_FAT_16                         1.1 GB     disk5s6
+   5:                 DOS_FAT_16                         1.1 GB     disk5s7
+   6:               Windows_NTFS SBWA                    353.7 MB   disk5s8
+   7:                 DOS_FAT_16                         2.9 GB     disk5s9
 ```
 
-First you will need a working TrueCrypt setup of some sort, either the original, or a fork. In theory some versions of Veracrypt are usable, but LRW support must be present, your best bet is the Linux version. 
+Several partitions are simply mountable as standard NTFS drives. 
+```
+$ mount  | grep disk5
+/dev/disk5s1 on /Volumes/Untitled 1 (ufsd_NTFS, local, nodev, nosuid, noowners)
+/dev/disk5s2 on /Volumes/Untitled 2 (ufsd_NTFS, local, nodev, nosuid, noowners)
+/dev/disk5s8 on /Volumes/SBWA (ufsd_NTFS, local, nodev, nosuid, noowners)
+```
+
+The mounted partitions give us an idea of what is on the drive layout. 
+```
+$ ls /Volumes/Untitled\ 1/
+$RECYCLE.BIN			System
+Documents and Settings		System Volume Information
+NTDETECT.COM			WERUNTIME.INI
+Program Files			WINDOWS
+RECYCLER			boot.ini
+RHDSetup.log			ntldr
+
+$ ls /Volumes/Untitled\ 2/
+$RECYCLE.BIN			System Volume Information
+Minint				WERUNTIME.INI
+NTDETECT.COM			ntldr
+RecoverOSVersion.txt
+
+$ ls /Volumes/SBWA/
+$RECYCLE.BIN			System Volume Information
+```
+
+In this case the drive is a RingWide Operation Ghost image. SBWA as seen in the mount path is the keychip ID. 
+http://tms-designs.com/THESHED/default.asp?stockid=168955560
+
+To mount the other partitions, first you will need a working TrueCrypt setup of some sort, either the original, or a fork. In theory some versions of Veracrypt are usable, but LRW support must be present, your best bet is the Linux version. 
 https://www.veracrypt.fr/code/VeraCrypt/tree/src/Common/Volumes.c?h=VeraCrypt_1.17&id=03867fbf5653c0260e71271e0ddf46ed1045b488#n805
 
 FUSE software consists of a kernel extension and various user space libraries that makes LRW work on non Windows versions of TrueCrypt past 4.x. You'll need that too if you are an OSX, or Linux user trying to follow along. https://forums.gentoo.org/viewtopic-t-688399-start-0.html
@@ -440,7 +473,7 @@ https://webcache.googleusercontent.com/search?q=cache:rCoVjQzFDMoJ:https://wiki.
 This will help you determine which disk encryption programs are compatable with LRW if you wish to try mounting TC images that *hard* way, opposed to just using one of the methods outlined above. Using TrueCrypt on Windows is left as an exercise for the reader, especially considering how heavily documented it it. 
 https://wiki2.org/en/Comparison_of_disk_encryption_software
 
-Here is an example with TrueCrypt on Linux:
+Here is an example of how to mount the container found on the boot partition in \System\Execute\System with TrueCrypt on Linux:
 ```
 $ mkdir /tmp/tc
 $ sudo truecrypt -p segahardpassword -k SystemKeyFile System /tmp/tc
@@ -454,12 +487,28 @@ $ truecrypt -d /tmp/tc
 
 ```
 
-Here is an example with CipherShed on OSX:
+Here is the same example with CipherShed on OSX:
 ```
 $ mkdir /tmp/z; ./CipherShed-OSX-64/src/Main/CipherShed -t System_Pengo -k SystemKeyFile /tmp/z -p segahardpassword 
 Protect hidden volume (if any)? (y=Yes/n=No) [No]: 
 
 $ ./CipherShed-OSX-64/src/Main/CipherShed -d
+```
+
+After mounting the file based container, move on and mount some of the partitions on the physical drive. 
+
+Once you have mounted the remaining drives you will see that this gives us the following final partition layout. 
+You will find that the partition layout is as follows.
+```
+disk5
+disk5s1 - (Boot Partition, \System\Execute\System container w/ SystemKeyFile)
+disk5s2 - (Recovery Partition, \MiniNT)
+        - (Extended Partition)
+disk5s5 - (OS Update Partition - TrueCrypt)
+disk5s6 - (unknown)
+disk5s7 - (unknown)
+disk5s8 - (Keychip ID partition, unclear what this is for)
+disk5s9 - (Game Partition - TrueCrypt w/ GameKey)
 ```
 
 ### Obtaining the KeyFiles and Volume Password

@@ -322,12 +322,19 @@ https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
 
 ### Unlocking the drive
 
+Historically drive access has been gained without the need for the ATA unlock key due to the usage of the "Hot Swap" technique. 
+The process not be outlined here due to the simplicity, and because it was already proliferated during the ramp up of the original Xbox hacking scene. Simply apply the same process to your Ring* platform hard drives.<br>
+
+"This is not a suggested method, but it has been known to work. The idea is that you start the Xbox and wait for the dashboard, at which point the drive will be unlocked. Then, while the Xbox is running, you disconnect the IDE cable (but not the power!), and then connect the drive to your PC. Then the drive can be mounted for read/write (using XboxHDM), or imaged directly."
+https://xboxdevwiki.net/Hard_Drive#Unlocking_for_Backups
+
 For what ever reason Ring* information is often censored quickly, and with malice. There are few remaining bits of archived information. Among them however are these gems:
 Both of the archived posts contain partially usable instructions, but can indeed be worked out into a usable technique if you pay close attention.
 https://pastebin.com/zQYxBU1e<br>
 https://pastebin.com/2qiQdPQ6
 
 The first bit of information revealed in the posts was the static ATA unlock key for the TDK RS2 and RS3 hard drives use by default in Ring* machines. A simple hdparm command will unlock the drive, and allow you to interact with it. As mentioned previously even without the pastebin posts the ATA key is trivial to obtain via a number of methods. 
+
 ```
 # hdparm --user-master u --security-unlock hex:7242525ABA526A5AEA726278CA42DA4A2A223A2A0A221A2A6A027A0A5CCE4A0A /dev/sdc
 security_password: 72 42 52 5a ba 52 6a 5a ea 72 62 78 ca 42 da 4a 2a 22 3a 2a 0a 22 1a 2a 6a 02 7a 0a 5c ce 4a 0a
@@ -865,6 +872,8 @@ C:\WINDOWS\system32\DRVSTORE\mxsram_84E083611D520D67EB8997E30D46709A4946EAF3\
 
 A "patch" in the form of a .zip file that can be uncompressed on Niko's multi can be found here:<br>
 https://archive.org/details/niko-multi-re-1-c-drive-patch
+
+Alternately you can find the proper installers for these drivers on the OSUpdate partition. 
 
 Prepatched 32Gb versions of Niko's Multi Image that check for game files on a secondary drive can be downloaded from the Internet Archive: 
 https://archive.org/details/re1multi32gb

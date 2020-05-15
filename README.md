@@ -896,6 +896,7 @@ The password for SystemUser is <6/=U=#tpe!$*3!5
 
 ### BIOS password
 
+#### RingEdge 1
 Typing ctrl+alt+7 as the Ring* boots will get you a bios prompt. To obtain the BIOS password simply enter an incorrect password three times, within Phoenix TrustedCore(tm) Setup Utility. Notate the code that is displayed, because it is actually a checksum that can be used to derive the bios password. 
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/hash.png">
 
@@ -908,6 +909,10 @@ https://281eaff2-a-62cb3a1a-s-sites.googlegroups.com/site/dogber1/blag/pwgen-5de
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/biosbrute.jpeg">
 
 The website for bios-pw.org is known to work for extracting the passwords if you are in a hurry. Their source code is shared here: https://github.com/bacher09/pwgen-for-bios
+
+#### RingEdge 2
+A completely different BIOS is used on RE2, so the above technique does not apply. 
+
 
 # Bonus level: RE2Multi on RE1?!
 

@@ -946,6 +946,10 @@ Have fun! Be safe!
 
 Please note: You may no longer need to have the *proper* / *original* security key in order to play a Ring* platform game drive. Don't be a dick... like others before today. Use this to back up your hardware for preservation sake, not for resale purposes! Keep your orignal key chips on hand. If you sell the drive, sell the key chip with it. Don't sell rekeyed, or nokeyed drives. 
 
+Questions should be submitted as git issues https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/issues, or directed at Mitsurugi_w, or Darksoft on Arcade Projects via private message<br>
+https://www.arcade-projects.com/forums/index.php?user/3-mitsurugi-w/<br>
+https://www.arcade-projects.com/forums/index.php?user/1-darksoft/<br>
+
 Official video tutorial for the RingEdge NoKey / ReKey / AddKey softmod by Mitsu (as usual!) can be found here: https://www.youtube.com/watch?v=l0nq1pQXX90
 
 

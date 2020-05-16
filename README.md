@@ -324,7 +324,7 @@ https://github.com/DrWhax/truecrypt-archive/blob/master/doc/Version-History.md
 ### Unlocking the drive
 
 Historically drive access has been gained without the need for the ATA unlock key due to the usage of the "Hot Swap" technique. 
-The process not be outlined here due to the simplicity, and because it was already proliferated during the ramp up of the original Xbox hacking scene. Simply apply the same process to your Ring* platform hard drives.<br>
+The process will not be outlined here due to the simplicity, and because it was already proliferated during the ramp up of the original Xbox hacking scene. Simply apply the same process to your Ring* platform hard drives.<br>
 
 "This is not a suggested method, but it has been known to work. The idea is that you start the Xbox and wait for the dashboard, at which point the drive will be unlocked. Then, while the Xbox is running, you disconnect the IDE cable (but not the power!), and then connect the drive to your PC. Then the drive can be mounted for read/write (using XboxHDM), or imaged directly."
 https://xboxdevwiki.net/Hard_Drive#Unlocking_for_Backups

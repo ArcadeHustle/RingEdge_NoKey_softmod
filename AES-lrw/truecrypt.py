@@ -284,8 +284,6 @@ def TCPrintInformation(tc):
     print "Master LRW Key:", hexdigest(tc.master_lrwkey)
     print "Format ver    :", hex(tc.format_ver)
     print "Min prog. ver :", hex(program_ver)
-#    print "Volume create :", time.asctime(time.localtime(volume_create))
-#    print "Header create :", time.asctime(time.localtime(header_create))
     print "Volume create :", time.localtime(volume_create)
     print "Header create :", time.localtime(header_create)
     print "="*60

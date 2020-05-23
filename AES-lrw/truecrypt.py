@@ -289,7 +289,7 @@ def TCPrintInformation(tc):
     print "Volume create :", time.localtime(volume_create)
     print "Header create :", time.localtime(header_create)
     print "="*60
-
+    sys.exit(0)
 def cmdline():
     scriptname = sys.argv[0]
     try:

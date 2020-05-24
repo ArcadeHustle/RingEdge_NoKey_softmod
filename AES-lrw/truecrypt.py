@@ -162,7 +162,7 @@ class TrueCryptVolume:
                     decrypted_header = LRWMany(cipher.decrypt, header_lrwkey, 1, header)
                     if TCIsValidVolumeHeader(decrypted_header):
 			print "ORIGINAL HEADER"
-		        print header
+		        print repr(header)
                         # Success.
                         self.decrypted_header = decrypted_header
                         

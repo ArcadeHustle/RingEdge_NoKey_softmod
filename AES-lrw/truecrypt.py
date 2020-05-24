@@ -137,11 +137,9 @@ class TrueCryptVolume:
             for hmac, hmac_name in HMACs:
                 # Generate the keys needed to decrypt the volume header.
                 iterations = 2000
-                if hmac == HMAC_WHIRLPOOL:
-                    iterations = 1000
 
                 info = ''
-                if hmac_name in "RIPEMD-160 Whirlpool":
+                if hmac_name == "RIPEMD-160":
                     info = ' (this will take a while)'
                 progresscallback("Trying " + hmac_name + info)
                 

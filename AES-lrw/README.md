@@ -23,6 +23,12 @@ $ python KeyFileMixedPassGen.py | xxd
 00000030: 61e0 f9c7 5d35 1683 8931 fa58 7dd9 beed  a...]5...1.X}...
 00000040: 0a
 
+A variant of the code has been created that does not need a keyfile, or a password, rather it can make use of a previosuly decrypted header file. 
+$ python truecrypt_UseMasterKeys.py UpdatePartition UpdatePartition.img
+
+This is the pre-cursor to using an extracted master key from memory . 
+
+
 ### AES LRW Key Recovery
 
 There are techniques to recover LRW and Tweak keys from memory... 

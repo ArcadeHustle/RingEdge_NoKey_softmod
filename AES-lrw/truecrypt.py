@@ -36,8 +36,6 @@ import sys
 import os
 
 from rijndael import Rijndael
-from serpent import Serpent
-from twofish import Twofish
 from lrw import *
 from keystrengthening import *
 
@@ -139,11 +137,9 @@ class TrueCryptVolume:
             for hmac, hmac_name in HMACs:
                 # Generate the keys needed to decrypt the volume header.
                 iterations = 2000
-                if hmac == HMAC_WHIRLPOOL:
-                    iterations = 1000
 
                 info = ''
-                if hmac_name in "RIPEMD-160 Whirlpool":
+                if hmac_name == "RIPEMD-160":
                     info = ' (this will take a while)'
                 progresscallback("Trying " + hmac_name + info)
                 
@@ -163,6 +159,8 @@ class TrueCryptVolume:
                     cipher.set_key([header_key1, header_key2, header_key3])
                     decrypted_header = LRWMany(cipher.decrypt, header_lrwkey, 1, header)
                     if TCIsValidVolumeHeader(decrypted_header):
+			print "ORIGINAL HEADER"
+		        print repr(header)
                         # Success.
                         self.decrypted_header = decrypted_header
                         
@@ -287,7 +285,7 @@ def TCPrintInformation(tc):
     print "Volume create :", time.localtime(volume_create)
     print "Header create :", time.localtime(header_create)
     print "="*60
-    sys.exit(0)
+    #sys.exit(0)
 def cmdline():
     scriptname = sys.argv[0]
     try:

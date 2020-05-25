@@ -150,32 +150,30 @@ class TrueCryptVolume:
                     
                     progresscallback("..." + cipher.get_name())
                     
-		    print("Using a hijacked Decrypted header with the master keys visible")
-		    # Example header from Update partition
-		    decrypted_header = 'TRUE\x00\x02\x04\x10Q6&%\x01\xd4\xcf\x82v\xd57\x90\x01\xd4\xcf\x82v\xd57\x90\x00\x00\x00\x00\x19\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x96M\xc5\x8e\xc1\xdb\xf4\x01@\xa9F\xabDD\x95g\x94\xf9\xb1\xc99\x8a\\+\n\xd0B\x17Wp\xd7\xf3\xd5\x1fc\x95\x11\xf7\xb8\x1b!\x12r%\x97Z\xb7^\x14af#\xb7\x13/6\xbe.\xfd\xf4\xb0x\r\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+		    print("Using a hijacked lrw & master keys as stolen from memory")
 
-                    if TCIsValidVolumeHeader(decrypted_header):
-                        # Success.
-                        self.decrypted_header = decrypted_header
-                        
-                        master_keypool = decrypted_header[192:]
-                        master_lrwkey = master_keypool[0:16]
-                        master_key1 = master_keypool[32:64]
-                        master_key2 = master_keypool[64:96]
-                        master_key3 = master_keypool[96:128]
+		    # Example keys from Update Partition
+                    master_lrwkey = '\x96M\xc5\x8e\xc1\xdb\xf4\x01@\xa9F\xabDD\x95g'
+		    print repr(master_lrwkey)
+                    master_key1 = '\xd5\x1fc\x95\x11\xf7\xb8\x1b!\x12r%\x97Z\xb7^\x14af#\xb7\x13/6\xbe.\xfd\xf4\xb0x\r\t'
+		    print repr(master_key1)
+                    master_key2 = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+		    print repr(master_key2)
+                    master_key3 = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+		    print repr(master_key3)
 
-                        self.master_lrwkey = master_lrwkey
-                        self.cipher = cipher
-                        self.cipher.set_key([master_key1, master_key2, master_key3])
-                        self.hidden_size = BE64(decrypted_header[28:28+8])
-                        self.format_ver = BE16(decrypted_header[4:6])
+                    self.master_lrwkey = master_lrwkey
+                    self.cipher = cipher
+                    self.cipher.set_key([master_key1, master_key2, master_key3])
+                    self.hidden_size = 429916160
+                    self.format_ver = 0x2
 
-                        # We don't really need the information below but we save
-                        # it so it can be displayed by print_information()
-                        self.info_hash = hmac_name
+                    # We don't really need the information below but we save
+                    # it so it can be displayed by print_information()
+                    self.info_hash = hmac_name
 
-                        progresscallback("Success!")
-                        return
+                    progresscallback("Success!")
+                    return
         # Failed attempt.
         raise KeyError, "incorrect password (or not a truecrypt volume)"
 
@@ -183,11 +181,6 @@ class TrueCryptVolume:
         if not self.decrypted_header:
             return "<TrueCryptVolume>"
         return "<TrueCryptVolume %s %s>" % (self.cipher.get_name(), self.info_hash)
-
-def TCIsValidVolumeHeader(header):
-    magic = header[0:4]
-    checksum = BE32(header[8:12])
-    return magic == 'TRUE' and CRC32(header[192:448]) == checksum
 
 def TCReadSector(tc, index):
     """Read a sector from the volume."""

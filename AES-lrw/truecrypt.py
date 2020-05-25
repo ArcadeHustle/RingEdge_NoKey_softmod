@@ -289,7 +289,7 @@ def TCPrintInformation(tc):
 def cmdline():
     scriptname = sys.argv[0]
     try:
-        path, password, outfile = sys.argv[1:]
+        path, password, keyfile, outfile = sys.argv[1:]
     except ValueError:
         print >> sys.stderr, "%s volumepath password outfile" % scriptname
         sys.exit(1)
@@ -307,6 +307,8 @@ def cmdline():
         sys.exit(1)
 
     try:
+	import KeyFileMixedPassGen
+	password = KeyFileMixedPassGen.keyfile(password, {keyfile})
         tc = TrueCryptVolume(fileobj, password, Log)
     except KeyError:
         print >> sys.stderr, "incorrect password or not a TrueCrypt volume"

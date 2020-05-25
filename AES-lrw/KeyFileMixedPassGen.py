@@ -89,5 +89,3 @@ def keyfile(password,keyfiles):
 			keyfilePoolString = keyfilePoolString + chr((keyfilePool[x] + ord(password[x])) % 256)
 
 		return keyfilePoolString
-
-print keyfile("segahardpassword", {"/Users/kfinisterre/Desktop/SystemKeyFile"})

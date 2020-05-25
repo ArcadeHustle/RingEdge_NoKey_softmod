@@ -370,6 +370,8 @@ BOOL KeyFilesApply (Password *password, KeyFile *firstKeyFile)
 
 	/* Mix the keyfile pool contents into the password */
 
+	Print ("Before Password: %s\n", password->Text); 
+
 	for (i = 0; i < sizeof (keyPool); i++)
 	{
 		if (i < password->Length)
@@ -380,6 +382,9 @@ BOOL KeyFilesApply (Password *password, KeyFile *firstKeyFile)
 
 	if (password->Length < (int)sizeof (keyPool))
         password->Length = sizeof (keyPool);
+
+	Print ("After Password: %s\n", password->Text); 
+	exit(0);
 
 	burn (keyPool, sizeof (keyPool));
 

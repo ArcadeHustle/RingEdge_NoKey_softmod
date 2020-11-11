@@ -566,7 +566,7 @@ $ xxd UpdateKeyFile
 
 ```
 
-The contents of the UpdateKeyFile have not been shared with the public in the past, however the SystemKeyFile has, sans instruciton on how to extract it as we've shown above. You can do the same process on windows via Nirsoft
+The contents of the UpdateKeyFile have not been shared with the public in the past, however the SystemKeyFile has, without instruction on how to extract it as we've shown above. You can do the same process on windows via Nirsoft
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS1.jpeg">
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS2.jpeg">
 <img src="https://github.com/ArcadeHustle/RingEdge_NoKey_softmod/blob/master/pics/ADS3.jpeg">

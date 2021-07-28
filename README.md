@@ -239,6 +239,7 @@ http://archive.is/M1hvR
 https://web.archive.org/web/20190404164948/https://assemblergames.com/threads/pc-based-arcade-games.42102/page-3#post-745324
 
 "MaiMai Green (another version than supported by teknoparrot. That one is the Chinese bootleg ?)"
+(P.S. That is falsely marked as GreeN, which is actually "舞萌" which is original Maimai for Chinese market, officially released by JingWin-SEGA.)
 http://www.emuline.org/topic/1696-arcade-pc-maimai-finale-sega-ringedge/?do=findComment&comment=60218
 
 There were also a few interesting hardware *leaks* from the Chinese sega Factory: "the guy who send this to me is at the factory... The seller sells many ODM motherboards,including Ringedge and Lindbergh boards.and he called me and send this to me today earlier. Anyone knows what's this?"<br>
@@ -262,7 +263,8 @@ So what is JingWin Sega? It was "Established in 2009, Sega Jinwin (Shanghai) Amu
 http://www.amusewind.com/catalog/all_ENTERPRISES/2012629/27_201262912749768_1.html
 
 Beyond his general love for Sega Woodu has many interesting Ring related things on his site, such as replacement drives for the Ring series. 
-"It has been a long time since I started doing maimai's magical reform in 15 years, and I haven't even put energy on it for a long time. But still did something a little above. What I can take out recently is that I started selling alternative hard drives for the mainframe. This is also the only relatively legal thing"<br>
+
+"It has been so long since I have went into maimai bootlegging scene all by chance since '15 (2015). I haven't been putting effort in it for a long time. But still, did something. What I can talk about is now I begin to sell replacement hard drives for arcade boards. That is the only relatively legal stuff here."<br>
 https://woodu.me/author/woodu/
 
 "SSD for Ringseries. Click here to buy"<br>
